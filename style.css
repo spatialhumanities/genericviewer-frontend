@@ -1,0 +1,34 @@
+html, body {
+	background-color: #bc4a40;
+	height: 98%;
+}
+
+#bodytable {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+#backtable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#headertable {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+#maintable {
+	vertical-align: middle;
+	background-color: #efefef;
+}
+
+#navitable {
+	vertical-align: top;
+	background-color: #efefef;
+}
+

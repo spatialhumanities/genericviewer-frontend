@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestPost to Pundit</title>
+	<script type="text/javascript">
+		alert("start");
+		//OpenID Sign-In überprüfen
+		//window.open('http://as.thepund.it:8080/annotationserver/login.jsp', 'OpenID Login');
+		//Get notebookID
+		var GETrequest = new XMLHttpRequest();
+		GETrequest.onreadystatechange = console.log();
+		GETrequest.withCredentials = true;
+		GETrequest.open("get", "http://as.thepund.it:8080/annotationserver/api/notebooks/current", true);
+
+		GETrequest.send();
+		alert("Callback");
+		var notebookID = GETrequest.responseText;
+		alert(notebookID);
+		alert(document.cookie);
+		notebookID = "64ce0a6a";
+
+		//POST pointer to the annotation target (context)
+		var POSTcontext = new XMLHttpRequest();
+		//parameters=notebookID+encodeURIComponent('?context={"targets":["http://www.inschriften.net/lemgo/inschrift.html#xpointer(start-point(string-range(//BODY/DIV[1]/DIV[5]/DIV[1]/DIV[1]/DIV[1]/P[1]/EM[1]/text()[1],\'\',0))/range-to(string-range(//BODY/DIV[1]/DIV[5]/DIV[1]/DIV[1]/DIV[1]/P[1]/text()[3],\'\',0)))"],"pageContext":"http://www.inschriften.net/lemgo/inschrift.html"}');
+		POSTcontext.withCredentials = true;
+		POSTcontext.open("post", "http://as.thepund.it:8080/annotationserver/api/notebooks/graph/64ce0a6a?context=%7B%22targets%22%3A%5B%22http%3A%2F%2Fwww.marxists.org%2Freference%2Farchive%2Fbenjamin%2F1940%2Fhistory.htm%23xpointer(start-point(string-range(%2F%2FBODY%2FP%5B4%5D%2Ftext()%5B1%5D%2C%27%27%2C31))%2Frange-to(string-range(%2F%2FBODY%2FP%5B4%5D%2Ftext()%5B1%5D%2C%27%27%2C43)))%22%5D%2C%22pageContext%22%3A%22http%3A%2F%2Fwww.marxists.org%2Freference%2Farchive%2Fbenjamin%2F1940%2Fhistory.htm%22%7D", true);
+		POSTcontext.setRequestHeader('Content-Type', 'application/json;charset=UTF-8;');
+		POSTcontext.setRequestHeader('X-requested-With', 'XMLHttpRequest');
+		payLoad = "{\"http://www.marxists.org/reference/archive/benjamin/1940/history.htm#xpointer(start-point(string-range(//BODY/P[4]/text()[1],'',31))/range-to(string-range(//BODY/P[4]/text()[1],'',43)))\":{\"http://schema.org/comment\":[{\"value\":\"Gegenwart-Zeit\",\"type\":\"literal\"}]}}";
+		POSTcontext.send(payLoad);
+		POSTcontext.onerror = function () {
+			alert("Fehler: ".POSTitems.getResponseHeader());
+		}
+		//Answer: AnnotationID
+		alert("callback");
+		annoID = POSTcontext.responseText;//TODO: ID aus JSON-Antwort
+		annoID = annoID.replace('{"AnnotationID":"', '');
+		annoID = annoID.replace('"}', '');
+		annoID = annoID.trim();
+		// annoID="99fe5f5c";
+		var POSTitems = new XMLHttpRequest();
+		POSTitems.withCredentials = true;
+		POSTitems.open("post", "http://as.thepund.it:8080/annotationserver/api/annotations/" + annoID + "/items", true);
+		POSTitems.setRequestHeader('Content-Type', 'application/json;charset=UTF-8;');
+		POSTitems.setRequestHeader('X-requested-With', 'XMLHttpRequest');
+		payLoad = "{\"http://www.marxists.org/reference/archive/benjamin/1940/history.htm#xpointer(start-point(string-range(//BODY/P[4]/text()[1],'',31))/range-to(string-range(//BODY/P[4]/text()[1],'',43)))\":{\"http://www.w3.org/2000/01/rdf-schema#label\":[{\"value\":\"here-and-now\",\"type\":\"literal\"}],\"http://www.w3.org/2004/02/skos/core#altLabel\":[{\"value\":\"here-and-now\",\"type\":\"literal\"}],\"http://purl.org/dc/elements/1.1/description\":[{\"value\":\"here-and-now\",\"type\":\"literal\"}],\"http://purl.org/pundit/ont/ao#hasPageContext\":[{\"value\":\"http://www.marxists.org/reference/archive/benjamin/1940/history.htm\",\"type\":\"uri\"}],\"http://purl.org/dc/terms/isPartOf\":[{\"value\":\"http://www.marxists.org/reference/archive/benjamin/1940/history.htm\",\"type\":\"uri\"}],\"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\":[{\"value\":\"http://purl.org/pundit/ont/ao#fragment-text\",\"type\":\"uri\"}]},\"http://purl.org/pundit/ont/ao#fragment-text\":{\"http://www.w3.org/2000/01/rdf-schema#label\":[{\"value\":\"Text Fragment\",\"type\":\"literal\"}]}}";
+		POSTitems.send(payLoad);
+		POSTitems.onerror = function () {
+			alert("Fehler: ".POSTitems.getResponseHeader());
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

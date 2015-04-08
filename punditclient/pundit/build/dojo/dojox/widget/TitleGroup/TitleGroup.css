@@ -1,0 +1,27 @@
+
+.claro .dojoxTitleGroup .dijitTitlePaneContentOuter {
+	border-bottom: none;
+}
+
+.claro .dojoxTitleGroup .dijitTitlePaneContentOuter .dijitTitlePaneContentOuter,
+.claro .dojoxTitleGroup {
+	border-bottom: 1px solid #b5bcc7;
+}
+
+.soria .dojoxTitleGroup .dijitTitlePaneContentOuter {
+	border-bottom: none;
+}
+
+.soria .dojoxTitleGroup .dijitTitlePaneContentOuter .dijitTitlePaneContentOuter,
+.soria .dojoxTitleGroup {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.nihilo .dojoxTitleGroup .dijitTitlePaneContentOuter {
+	border-bottom: none;
+}
+
+.nihilo .dojoxTitleGroup .dijitTitlePaneContentOuter .dijitTitlePaneContentOuter,
+.nihilo .dojoxTitleGroup {
+	border-bottom: 1px solid #bfbfbf;
+}

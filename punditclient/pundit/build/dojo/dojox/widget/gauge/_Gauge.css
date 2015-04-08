@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+.dojoxGaugeContent {
+	font-family: Verdana;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+}
+
+.dojoxGaugeRange1 {
+	fill: #606060;
+	stroke: #606060;
+}
+
+.dojoxGaugeRange2 {
+	fill: #707070;
+	stroke: #707070;
+}
+
+.dojoxGaugeRange3 {
+	fill: #808080;
+	stroke: #808080;
+}
+
+.dojoxGaugeRange4 {
+	fill: #909090;
+	stroke: #909090;
+}
+
+.dojoxGaugeRange5 {
+	fill: #a0a0a0;
+	stroke: #a0a0a0;
+}
+
+.dojoxGaugeRange6 {
+	fill: #b0b0b0;
+	stroke: #b0b0b0;
+}
+
+.dojoxGaugeRange7 {
+	fill: #c0c0c0;
+	stroke: #c0c0c0;
+}
+
+.dojoxGaugeRange8 {
+	fill: #d0d0d0;
+	stroke: #d0d0d0;
+}
+
+.dojoxGaugeRange9 {
+	fill: #e0e0e0;
+	stroke: #e0e0e0;
+}
+
+.dojoxGaugeRange10 {
+	fill: #f0f0f0;
+	stroke: #f0f0f0;
+}
+
+.testing {
+	fill: blue;
+	stroke: blue;
+}

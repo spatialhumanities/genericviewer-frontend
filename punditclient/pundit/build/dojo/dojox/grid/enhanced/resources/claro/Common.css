@@ -1,0 +1,115 @@
+
+.claro .dojoxGridMasterHeader .dojoxGridRowTable {
+	border-left: 1px solid #bcbcbc;
+	border-right: 1px solid white;
+	background-color: transparent;
+}
+
+.claro .dojoxGridHeader tr:first-child .dojoxGridCell {
+	border-top: 1px solid transparent;
+}
+
+.claro .dojoxGridHeader:first-child .dojoxGridRowTable {
+	border-left-width: 0;
+}
+
+.claro .dojoxGridMasterHeader {
+	background: url("../../../resources/images/header.png") #edf2f7 repeat-x bottom;
+	background: -moz-linear-gradient(top, #edf2f7, #d0dfea);
+	background: -webkit-gradient(linear, left top, left bottom, from(#edf2f7), to(#d0dfea));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFEDF2F7, endColorstr=#FFD0DFEA);
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.claro .dojoxGridCell {
+	padding: 3px 5px;
+	border-color: transparent #e5dac8 #e5dac8 transparent;
+}
+
+.dj_ie6 .claro .dojoxGridCell {
+	border-color: #f5f5f5;
+}
+
+.claro .dojoxGridHeader {
+	background: transparent;
+	margin-left: -2px;
+}
+
+.claro .dojoxGridHeader:first-child {
+	margin-left: -1px;
+}
+
+.claro .dojoxGridHeader .dojoxGridCell {
+	padding: 2px 5px;
+	background: transparent;
+	border-bottom: 1px solid #bcbcbc;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid #bcbcbc;
+	vertical-align: top;
+}
+
+.claro .dojoxGridHeader .dojoxGridCellOver {
+	background: #9dcfff;
+}
+
+.claro .dojoxGridSortNode {
+	white-space: normal;
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.claro .dojoxGridHeader .dojoxGridRowTable tr {
+	background: none;
+}
+
+.claro .dojoxGridCellContent {
+	padding: 4px 6px 4px 6px;
+}
+
+.dj_webkit .claro th.dojoxGridCell > .dojoxGridCellContent {
+	padding: 4px 0;
+}
+
+.claro .dojoxGridRowbarInner {
+	width: 20px;
+}
+
+.claro .dojoxGridHeaderSelected .dojoxGridHeaderActive {
+	background-color: #91c9fe;
+}
+
+.claro td.dojoxGridRowSelected {
+	border-collapse: separate;
+	background: url("../../../resources/images/row_back.png") #cee6fa repeat-x;
+}
+
+.claro .dojoxGridRowOver td.dojoxGridRowSelected {
+	border-top: 1px solid #769dc0;
+	border-bottom: 1px solid #769dc0;
+}
+
+.claro .dojoxGridRowActive td.dojoxGridRowSelected {
+	background-image: url("../../../resources/images/td_button_down.png");
+}
+
+.dj_ie6 .claro .dojoxGridRowOver .dojoxGridCell {
+	border-color: #abd6ff;
+}
+
+.dj_ie6 .claro .dojoxGridRowActive .dojoxGridCell {
+	border-color: #7dbefa;
+}
+
+.claro .dojoxGridCell,
+.claro .dojoxGridCellFocus {
+	outline: none;
+}
+
+.claro .dojoxGridPaginator {
+	background: url("../../../resources/images/header_shadow.png") repeat-x scroll center bottom #e5edf4;
+
+}

@@ -1,0 +1,47 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/flyoutt.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* common styling */
+.menu {font-family: arial, sans-serif; width:106px; height:150px; margin:0; font-size:11px; margin:0 0;}
+.menu ul li a, .menu ul li a:visited {
+	display:block;
+	text-decoration:none;
+	color:#FFFFFF;
+	width:104px;
+	height:20px;
+	text-align:center;
+	border:1px solid #bc4a40;
+	background:#333333;
+	line-height:19px;
+	font-size:11px;
+}
+.menu ul {padding:0; margin:0;list-style-type: none; }
+.menu ul li {float:left; margin-right:1px; position:relative;}
+.menu ul li ul {display: none;}
+
+/* specific to non IE browsers */
+.menu ul li:hover a {color:#FFFFFF; background:#333333;}
+.menu ul li:hover ul {display:block; position:absolute; top:0; left:105px; width:105px;}
+.menu ul li:hover ul li a.hide {background:#333333; color:#FFFFFF;}
+.menu ul li:hover ul li:hover a.hide {width:150px;}
+.menu ul li:hover ul li ul {display: none;}
+.menu ul li:hover ul li a {display:block; background:#333333; color:#FFFFFF; width:150px;}
+.menu ul li:hover ul li a:hover {background:#333333; color:#FFFFFF;}
+.menu ul li:hover ul li:hover ul {display:block; position:absolute; left:151px; top:0; color:#FFFFFF;}
+.menu ul li:hover ul li:hover ul li a {display:block; width:200px; background:#333333; color:#FFFFFF;}
+.menu ul li:hover ul li:hover ul li a:hover {background:#333333; color:#FFFFFF;}
+
+#layerNavi {
+	position:absolute;
+	width:144px;
+	height:177px;
+	z-index:1;
+	left: 10px;
+	top: 10px;
+}

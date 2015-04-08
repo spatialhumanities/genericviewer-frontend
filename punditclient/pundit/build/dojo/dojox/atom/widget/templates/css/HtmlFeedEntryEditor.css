@@ -1,0 +1,95 @@
+.feedEntryEditor {
+	color: #000;
+	background: #fff;
+}
+
+.feedEntryEditorMenuTable {
+	background: #c0c0c0;
+	border: 2px solid;
+	border-top-color: lightgrey;
+	border-left-color: lightgrey;
+	border-right-color: darkgray;
+	border-bottom-color: darkgray;
+}
+
+.feedEntryEditorMenu {
+	cursor: pointer;
+	color: #00f;
+	text-align: left;
+	font-size: small;
+}
+
+.feedEntryEditorDisplayCheckbox {
+	font-size: small;
+	text-align: left;
+}
+
+.feedEntryEditorMenu:hover {
+	text-decoration: underline;
+}
+
+.feedEntryEditorTitle {
+	color: #000;
+	background: #fff;
+	text-align: left;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.feedEntryEditorAuthor {
+	color: #000;
+	background: #fff;
+}
+
+.feedEntryEditorAuthorNames {
+	color: #000;
+	background: #fff;
+	text-align: left;
+	font-size: 110%;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.feedEntryEditorSummary {
+	color: #000;
+	background: #fff;
+}
+
+.feedEntryEditorUpdated {
+	color: #000;
+	background: #fff;
+}
+
+.feedEntryEditorUpdatedText {
+	color: #000;
+	background: #fff;
+	font-size: 110%;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.feedEntryEditorId {
+	color: #000;
+	background: #fff;
+}
+
+.feedEntryEditorIdText {
+	color: #000;
+	background: #fff;
+	font-style: italic;
+	font-size: 110%;
+	font-weight: normal;
+}
+
+.feedEntryEditorContent {
+	color: #000;
+	background: #fff;
+}
+
+.feedEntryEditorContributorNames {
+	color: #000;
+	text-align: left;
+	font-size: 125%;
+	font-style: italic;
+	font-weight: normal;
+}

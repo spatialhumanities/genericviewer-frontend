@@ -1,0 +1,47 @@
+.tundra .dojoxGridFBar {
+	background-color: #eee;
+	border: 1px solid #bfbfbf;
+}
+
+.tundra .dojoxGridFBarFiltered {
+	background: #fafafa url(../../../../../dijit/themes/tundra/images/titleBar.png) repeat-x bottom left;
+}
+
+.tundra .dojoxGridFBarHover {
+	background-color: #ccc;
+	background-image: none;
+}
+
+.tundra .dojoxGridFStatusTip table {
+	border: 1px solid #eee;
+}
+
+.tundra .dojoxGridFStatusTip th {
+	background: #fafafa url(../../../../../dijit/themes/tundra/images/titleBar.png) repeat-x bottom left;
+	border-bottom: 1px solid #eee;
+}
+
+.tundra .dojoxGridFStatusTip th div {
+	border-left: 1px solid white;
+	border-right: 1px solid #eee;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.tundra .dojoxGridFStatusTip th.lastColumn div {
+	border-right: 1px solid white;
+}
+
+.tundra .dojoxGridFStatusTip td {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.tundra .dojoxGridFStatusTipRel,
+.tundra .dojoxGridFStatusTipCondition {
+	font-style: italic;
+}
+
+.tundra .dojoxGridFStatusTipOddRow {
+	background-color: #f2f5f9;
+}

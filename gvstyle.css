@@ -1,0 +1,1192 @@
+canvas  {
+          background: black; }
+          @font-face {
+          font-family: gvicon;
+          src: url(gv-icon-Regular.otf);  
+        }
+        
+        
+*       {
+          margin: 0; 
+          padding: 0; 
+          
+          color: #d6d6d6;
+          text-decoration: none;
+          
+          
+          
+          font-family: Helvetica, Arial, sans-serif;
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
+
+.label, .labelselect {
+  font-family: Helvetica, Arial, sans-serif;
+ 
+
+}
+
+li {list-style: none; }
+li ul li {border: none;}
+
+a.content {
+  text-decoration: underline;
+  color: black;
+  padding: 0px;
+}
+
+.infoFeature {
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 57px;
+}
+
+
+#navigationmap .label, #navigationmap .labelselect {
+  width: 70px; 
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.panoramaselect .labelselect {
+  font-style: italic;
+  line-height: 18px;
+}
+
+body    {
+          background: #212121; 
+          padding: 0 7px;
+        }
+
+#overview {
+          font-size: 50px; 
+          font-family: Helvetica, Arial, sans-serif;
+          float: left; 
+          clear: left; 
+          color: white !important; 
+          border-bottom: 1px solid black; 
+          width: 50%;
+        }
+
+canvas  {
+          float: left; 
+          clear: left;   
+          border: none; 
+          z-index: 1; 
+          background: #212121;
+          margin-top: 0;
+          
+        }
+
+#viewer {
+  margin-top: 40px;
+  
+}  
+
+select  {
+          border: none; 
+          background: #212121; 
+          font-family: Helvetica, Arial, sans-serif; 
+          color: black; 
+          width: 100%; 
+          float: left; 
+          clear: left; 
+          font-size: 15px; 
+          color: black;
+        }
+
+select  {
+          background: gray;
+          padding: 1px;
+          line-height: 1;
+          border: 0;
+          border-radius: 0;
+          border-bottom: 1px solid black;
+          height: 34px;
+         -webkit-appearance: none;
+        }
+
+h1 {      
+          font-family: Helvetica, Arial, sans-serif; 
+          font-weight: normal; 
+          font-size: 22px; 
+          margin: 0 0 20px 0;
+        }
+
+#tabs-draw {
+           
+          float: left; 
+          clear: left;
+          width: auto; 
+
+          
+        }
+
+#tabs-overview {
+
+         
+          float: left;
+          width: calc(100% - 320px) !important;
+
+}
+#tabs-sparql {
+  float: left;
+  clear: left;
+  margin-top: 40px;
+}
+/*Felix | width, margin*/
+#tabs-connect {
+	float: left;
+	clear: left;
+	margin-top: 40px;
+	width: 100%;
+
+}
+
+#tabs-menu {
+  float: left;
+  clear: left;
+  margin-top: 40px;
+  width: 100%;
+}
+
+#sparqlsend {
+  float: left; 
+  clear: left;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#sparqlsend span {
+  letter-spacing: 1px;
+  font-family: Helvetica;
+  font-style: italic;
+}
+
+textarea {
+  float: left; 
+  border: 2px solid black;
+  font-family: Helvetica, Arial, sans-serif; 
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  padding: 3px 6px 6px 3px;
+  width: 300px;
+  height: auto;
+  min-height: 600px;
+  color: black;
+
+
+}
+
+#sparqlinput {float: right;}
+
+#toprow { 
+          height: 37px;  
+          width: 100%; 
+          margin: 0 auto; 
+          position: fixed; 
+          padding-top: 1px;
+          background: #212121;
+          z-index: 999;
+
+
+        }
+
+.ui-tabs-nav li {
+          float: left; 
+          margin-right: 25px; 
+          list-style: none; 
+          text-decoration: none;
+
+        }
+
+.ui-tabs-nav li a, .ui-tabs-nav li a span{
+          text-decoration: none;
+          color: gray;
+          padding: 3px 0px;
+        }
+
+.ui-tabs-nav {
+          float: left; 
+          z-index: 9999; 
+          height: 23px;
+          width: 900px; 
+          padding-top: 11px;
+          text-align: right; 
+          margin-top: 0px; 
+          font-family: Arial;
+          
+          font-size: 14px;
+         
+        }
+
+li.ui-tabs-active a span, .ui-tabs-nav li a span {
+  margin-left: 4px;
+  font-size: 11px !important;
+  letter-spacing: 1px;
+}      
+
+li.ui-tabs-active a, li.ui-tabs-active a span {
+          
+          color: white !important;          
+          
+        }
+
+li.ui-tabs-active a {
+  
+}
+
+#window {
+          float: left; 
+          clear: left; 
+          z-index: 1; 
+          width: 100%;
+        }
+
+#footerwrapper {
+          bottom: 0; 
+          position: fixed; 
+          background: #212121;
+          width: 100%; 
+          height: 20px; 
+          padding-top: 15px;
+          z-index: 99;
+
+         
+        }
+
+#footer {
+          width: 800px;
+          text-align: center; 
+          
+          font-size: 11px; 
+          font-family: Helvetica, Arial, sans-serif; 
+          color: white !important;
+        }
+#footer p {
+        font-weight: 18px;
+}
+
+#brand  {
+           
+          letter-spacing: 1px; 
+          float: left;
+        }
+#content {
+          width: 95%; 
+          height: 200px; 
+          margin: 0 auto; 
+          z-index: 100; 
+          float: left; 
+          clear: left;
+        }
+
+#toolbar {
+          font-family: 'gvicon' !important;
+          width: auto;
+          
+          position: fixed;
+          overflow: hidden;
+          top: 150px;
+         height: 300px;
+         
+          
+        }
+
+#toolbarbg {
+    background: none repeat scroll 0 0 #212121;
+    height: 350px;
+    opacity: 0.8;
+    position: fixed;
+    top: 40px;
+    width: 40px;
+}
+
+#toolbar a {
+          font-size: 50px; 
+          float: left; 
+          clear: left;
+          height: 37px;
+         
+         
+          
+          padding: 0;
+          
+          text-decoration: none; 
+          color: black;
+        }
+
+#toolbar a:hover {
+          color: yellow;
+        }
+
+#version {
+          float: left;
+         
+          font-size: 11px; 
+          text-transform: none; 
+          font-family: Helvetica, Arial, sans-serif;
+          letter-spacing: 0.1em;
+          color: gray;
+          margin-left: 178px;
+          
+        }
+
+#navigationmap {
+          float: left; 
+          width: 300px; 
+         height: 700px;
+          top: 23px; 
+          z-index: 100; 
+          margin-left: 5px; 
+          margin-top: 18px;
+          color: black;
+          position: fixed;
+          right: 10px;
+          font-weight: normal;
+        }
+
+.screenshot {
+          width: 156px; 
+          height: auto; 
+          float: left;
+        }
+
+.gvobject {
+          float: left; 
+          font-family: Helvetica, Arial, sans-serif !important; 
+          margin-right: 10px; 
+          margin-bottom: 30px; 
+          width: 248px; 
+          height: 163px;
+          overflow: hidden;
+        }
+.gvobject .label {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 9px;
+  margin-top: 4px;
+  margin-bottom: -1px;
+}
+
+
+
+#gvobjects {
+  
+  float: left;
+  margin-top: 40px;
+}   
+
+#gvobjects p, #gvobjects a {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  margin-left: 7px;
+}
+
+#gvobjects .label {
+  display: none;
+}     
+
+.geodesc {
+  float: left;
+  clear: left;
+}
+
+
+
+.gvobjectdesc, .infoDate, .infoCreator, .infoGeometry {
+          float: left; 
+          
+          
+          
+
+        }  
+
+#navigationmap .gvobjectdesc, .infoDate, .infoCreator {
+          float: left; 
+          
+          
+          font-size: 12px !important;
+          line-height: 14px;
+        }    
+
+#tabs-overview .infoDate {
+  font-size: 12px;
+  display: none;
+}
+
+
+
+
+#tabs-sparql .gvobject {
+  height: auto;
+  width: 150px;
+}  
+
+#tabs-sparql .gvobjectdesc {
+  font-size: 12px;
+}  
+#tabs-sparql .screenshot {
+  width: 60px;
+}  
+
+
+
+
+#info {
+          font-family: Helvetica, Arial, sans-serif; 
+          font-weight: normal; 
+          font-size: 12px; 
+          float: left; 
+          clear: left;  
+          line-height: 17px; 
+          
+          
+          margin-top: 1px;
+          
+          padding: 7px 0 14px 7px; 
+          height: auto; 
+          min-height: 71px;
+          width: 293px; 
+          color: black !important; 
+          letter-spacing: 0.1em;
+          background: white;
+        }
+
+#info .infoDate {
+  clear: left;
+}
+
+#info .infoGeometry {
+  clear: left;
+  float: left;
+}
+
+#info br {
+          float: left; 
+          margin-right: 15px;
+        }
+
+.markiert {
+          border: 2px solid yellow;
+        }
+
+.gvobjectselect {
+          clear: left; 
+          float: left;
+        }
+
+.gvobjecturl {
+          clear: left; 
+          float: left;
+        }
+
+#pano select {
+          width: 400px;
+        }
+
+
+/* selects */
+.projectselect {
+          
+          width: 95%;
+          height: 20px;
+          font-family: Helvetica, Arial, sans-serif; 
+          font-size: 12px;
+          
+          padding: 2px 0 3px 7px;
+          
+
+}
+
+.change {
+  background: url(img/dropdown.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.change2 {
+  background: url(img/dropdown2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.projectselect p, .projectselect li {
+  color: black;
+  letter-spacing: 0.1em;
+}
+.labelselect {
+
+          width: 100px;
+          float: left;
+          clear: both;
+          color: black !important;
+
+}
+
+.gvobject .infoCreator {
+  display: none;
+}
+
+
+.projectselect ul {
+    float: left;
+    line-height: 19px;
+    margin-left: 10px;
+    width: 204px;
+}
+
+#settings .projectselect ul {
+    float: left;
+    line-height: 19px;
+    margin-left: 0px !important;
+    width: 204px;
+}
+
+#filterbox .projectselect ul {
+    float: left;
+    line-height: 19px;
+    margin-left: 0px !important;
+    width: 204px;
+}
+
+.panoramaselect ul {
+
+          float: right;
+          width: 280px;  
+        }        
+
+
+.projectselect ul li ul {
+
+          display: none;
+          width:  300px;
+        }    
+
+.projectselect ul li:hover ul {
+
+          display: block;
+          position: absolute;
+          background: gray;
+          margin-left: -87px;
+          overflow: auto;
+          height: auto;
+          max-height: 200px;
+        }
+
+#settings .projectselect ul li:hover ul {
+
+          display: block;
+          position: absolute;
+          background: gray;
+          margin-left: 0px !important;
+          overflow: auto;
+          height: auto;
+          max-height: 200px;
+        }
+
+#filterbox .projectselect ul li:hover ul {
+
+          display: block;
+          position: absolute;
+          background: gray;
+          margin-left: 0px !important;
+          overflow: auto;
+          height: auto;
+          max-height: 200px;
+          z-index: 999;
+        }
+
+.projectselect ul li ul li {
+
+          width: 95%;
+          margin-left: 2%;
+          border-bottom: 1px solid black;
+          padding:  0;
+          list-style: none;
+        }  
+
+.projectselect ul li ul li a {
+
+          color: black;
+          width: 100%;
+          padding: 4px 0;
+          display: block;
+        }  
+
+.panoramaselect  ul li ul li a {
+          color: white !important;
+}  
+
+.panoramaselect ul li {
+  color: white !important;
+}
+
+.menuselect ul li {
+  color: white !important;
+}
+
+.menuselect ul {
+  clear: left;
+  float: left;
+  margin-top: 15px;
+}
+
+.menuselect ul li ul{
+  
+  margin-top: 0px;
+}
+
+.menuselect {
+  margin-top: 10px;
+  width: 300px;
+  float: left;
+  padding: 0 !important;
+  border-top: 1px solid gray;
+  padding-top: 4px !important;
+}
+
+.menuselect .labelselect {
+  color: white !important;
+}
+
+.panoramaselect {
+  clear: left; 
+  margin-top: -25px; 
+  width: 400px; 
+  float: left;
+  background: black;
+  color: white; 
+  position: relative;
+  
+}
+
+.panoramaselect p, .panoramaselect a {
+  color: white !important;
+}
+
+.panoramaselect ul li:hover ul {
+
+          display: block;
+          position: absolute;
+          background: black;
+          border: 0;
+          margin-top: -50px;
+          overflow: visible !important;
+          height: 50px;
+          margin-left: 0;
+          
+        }
+
+/* info */
+#info p {
+  float: left;
+}
+
+#info p.label {
+  clear: left;
+}
+
+#info p.content {
+  float: left;
+  margin-left: 10px;
+
+}
+
+#navigationmap p.label {
+  color: black;
+}
+
+#navigationmap p.content {
+  color: black;
+  line-height: 18px;
+}
+
+.infoFeature p {width: 200px; font-size: 11px;  margin-left: 0 !important;}
+
+#scale {
+  float: left; 
+  clear: left; 
+  height: 50px; 
+  width: 285px; 
+  padding: 5px 0px 0px 6px;
+  
+}
+
+#scale p {
+  font-size: 10px; 
+  font-family: Helvetica, Arial, sans-serif; 
+  color: black; 
+  width: 100%; 
+  text-align: center;
+}
+
+#scale img {
+  float: left;
+}
+
+#north {
+  float: right !important;
+}
+
+#leftend {
+  height: 6px; 
+  border-right: 1px solid black; 
+  float: left; 
+  margin-top: 13px; 
+  margin-left: 41px;
+
+}
+
+#rightend {
+  margin-top: 13px; height: 6px; border-left: 1px solid black; float: left
+
+}
+
+#scalewidth {
+
+  height: 15px; border-bottom: 1px solid black; float: left;
+
+}
+
+#scaleunit {
+
+
+}
+
+#shortcuts {
+  float: left;
+  margin-top: 1px;
+  background: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white !important;
+  padding: 7px 0 14px 7px;
+  width: 293px;
+}
+
+.shortcutaction {
+  
+  margin-right: 10px;
+}
+
+#shortcuts div {
+  float: left;
+ 
+
+
+}
+
+
+
+#shortcuts p {
+
+  float: left;
+  color: black;
+  letter-spacing: 0.1em;
+  line-height: 18px;
+}
+
+
+.shortcut {
+  margin-right: 10px;
+  width: 70px;
+  
+
+  /*
+  background: white;
+  
+  border: 1px solid white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+
+  -moz-box-shadow:    2px 2px 2px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+  box-shadow:         2px 2px 2px 2px black;
+  */
+}
+
+
+
+:focus {
+  outline: none !important;
+  }
+
+  #fullscreenbutton {
+    margin-right: 20px;
+    float: left;
+  }
+
+#gvobjects2 {
+    float: left;
+    margin-top: 300px;
+    width: 100%;
+}
+
+#gvobjects2 .gvobject {
+  margin-bottom: 18px;
+}
+
+#gvobjects2 p {
+  color: white !important;
+}
+
+#gvobjects2 .infoDate {
+  display: none;
+}
+
+#gvobjects2 .infoCreator {
+  display: none;
+}
+
+#gvobjects2 img {display: none;}
+#gvobjects2 .label {display: none;}
+
+.workspace {
+  float: left;
+  clear: left;
+  height: 88px;
+  width: 100%;
+  padding-bottom: 17px;
+  background: white;
+
+}
+
+.interaction {
+  background: #FFFB8F !important;
+
+}
+
+
+#filterbox {
+  background: none repeat scroll 0 0 #212121;
+    height: 250px;
+    left: 2px;
+    margin-top: -2px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#filterinput {
+    background: none repeat scroll 0 0 gray;
+    height: auto;
+    left: 234px;
+    position: fixed;
+    top: 42px;
+    width: 540px;
+    z-index: 2;
+}
+
+
+
+#activefilters {
+  float: left;
+}
+
+#activefilters li {
+    background: none repeat scroll 0 0 gray;
+    float: left;
+    margin-left: 7px;
+    margin-top: 3px;
+    padding: 3px;
+    width: 120px;
+    clear: left;
+}
+
+#accordion {
+  width: 1000px;
+  float: left;
+  margin-top: 50px;
+}
+
+#filterbox ul li ul {
+  display: none;
+}
+
+#filterbox ul li:hover ul{
+
+  display: block;
+} 
+
+
+
+/* -----------Menu------------- */
+
+#logimg {
+  width: 50px;
+  height: auto;
+}
+
+#userdiv span {
+    clear: left;
+    float: left;
+    line-height: 21px;
+}
+
+#userdiv a {
+    float: left;
+}
+
+#menu-nav {
+    overflow: hidden;
+    position: fixed;
+    width: 260px;
+}
+
+#menu-nav li {
+    border-bottom: 1px solid gray;
+    padding-left: 21px;
+    width: 260px;
+}
+
+#menu-nav li a{
+  padding: 6px 0;
+  width: 180px;
+  display: block;
+}
+
+.alignleft {
+    padding-left: 0 !important;
+}
+
+#form-div {
+  float: left;
+  clear: left;
+  margin-top: 50px;
+}
+
+#menu-nav a {
+  font-size: 14px;
+}
+
+#settings form {
+  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: 16px;
+  float: left;
+  width: 360px;
+  margin: 30px 0;
+
+}
+
+.form-name {
+  margin-bottom: 15px;
+  border-top: 1px solid gray;
+  width: 300px;
+  padding-top: 4px;
+}
+
+#settings form input {
+  padding: 3px 3px 3px 0;
+  margin-right: 6px;
+}
+
+#settings {
+    margin-left: 300px;
+    position: relative;
+    width: calc(100% - 300px);
+}
+
+
+#documentation {
+    clear: left;
+    color: black;
+    float: left;
+    margin-left: 300px;
+    padding: 15% 0;
+    width: 50%;
+}
+
+#documentation p {
+    color: white;
+    font-family: Arial,Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+#documentation img {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+#documentation li {
+  list-style: disc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-left: 13px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#documentation ul {
+  margin: 9px 0 70px 0;
+}
+
+#documentation code {
+  
+  letter-spacing: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#documentation h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#documentation h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 22px;
+  line-height: 19px;
+  margin-top: 80px;
+  margin-bottom: 22px;
+}
+
+#documentation h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 22px;
+  line-height: 19px;
+  margin-top: 80px;
+  margin-bottom: 22px;
+}
+
+#documentation h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 22px;
+  line-height: 19px;
+  margin-top: 80px;
+  margin-bottom: 22px;
+}
+
+#userdiv {
+  clear: left;
+  float: left;
+  width: 360px;
+}
+
+em {
+    color: white;
+    font-size: 14px;
+    font-style: normal !important;
+    line-height: 17px;
+}
+
+
+
+/* -----------Filter------------- */
+
+#filter_viewpoint {
+   -webkit-column-count: 3; 
+    -moz-column-count: 3; 
+    column-count: 3;
+
+    -webkit-column-gap: 20px; 
+    -moz-column-gap: 20px;2
+    column-gap: 20px;
+}
+
+#filterinput .labelselect {
+  color: white !important;
+}
+
+#filter_geom ul {
+  clear: left;
+  margin-top: 30px;
+  float: left;
+}
+
+#filter_creator {
+  padding: 10px;
+}
+
+#filter_geom {
+  padding: 10px;
+}
+
+#filter_date {
+  padding: 10px;
+}
+
+#filter_default {
+  padding: 10px;
+}
+
+#filter_default ul {
+  clear: left;
+  float: left;
+  margin-top: 30px;
+}
+
+table {
+    width: 240px;
+}
+
+.ui-state-active {
+  color: black !important;
+}
+
+.ui-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#filterDateTo {
+  position: relative;
+  margin-top: 30px;
+}
+
+
+
+.filterdatebutton {
+
+  margin-top: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+#filter_viewpoint {
+  padding: 10px;
+}
+
+#saved_queries {
+  float: right;
+}
+
+#saved_queries a {
+  float: left;
+  clear: left;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  list-style: disc;
+}
+
+#filterButton {
+  clear: both;
+  float: left;
+  margin-top: 30px;
+}
+
+
+
+/* -------- dropdown ----------*/
+
+#viewpoint {
+    height: 300px !important;
+    margin-top: -300px;
+    max-height: 500px !important;
+}

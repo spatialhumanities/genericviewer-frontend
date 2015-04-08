@@ -1,0 +1,858 @@
+﻿    _PUNDIT.vocab.initJsonpVocab({
+        "identifier": "value",
+        "label": "label",
+        "name": "ibr_vocab",
+        "tab_name": "IBR taxonomy",
+        "description": "A taxonomy of church interior objects for historical research from the IBR project",
+        "type": "taxonomy",
+        "items": [
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "label": "TeilVonBauwerk",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : "An integral part of a building, as opposed to furnishings",
+        "children": [
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Sakristei"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Chor"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Chornebenkapelle"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Familienkapelle"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Masswerk"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Fussboden"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Langhaus"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Pfeiler"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Glasfenster"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Turm"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbe"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Eingangsportal"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Seitenschiff"
+    				},
+    	            {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Gewoelberippen"
+    				}
+    		]
+        },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "label": "Ausstattung",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : "Furnishings of a building, which are not part of the building itself",
+        "children": [
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Triptychon"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Orgel"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Wandgrabmal"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Seitenaltar"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Wandelaltar"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Wandmalerei"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Glocke"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Hauptaltar"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Lettneraltar"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Lettnerpult"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Grabplatte"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Tumba"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Inschriftentraeger"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Epitaph"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Grabmal"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Chorgestuehl"
+    				},
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Bruderschaftsaltar"
+    				}
+    		]
+    	},
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#StrukturInBauwerk",
+        "label": "StrukturInBauwerk",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : "A non-moveable structure inside a building, as opposed to furnishings and parts of the building",
+        "children": [
+                    {
+    					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Lettner"
+    				}
+    		]
+        },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "label": "Person",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : "" },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#ZeichenStilmerkmal",
+        "label": "ZeichenStilmerkmal",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : "" },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Concept",
+        "label": "Inhalt",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : "An immaterial Concept, not equitable with a physical object"
+    	},
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+        "label": "Zeit",
+        "nodetype": ["http://purl.org/pundit/vocab/category"],
+        "rdftype": ["http://purl.org/pundit/vocab/category"],
+        "description" : ""
+        },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Chornebenkapelle",
+        "label": "Chornebenkapelle",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Tryptichon",
+        "label": "Tryptichon",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "A Tryptichon" },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Sakristei",
+        "label": "Sakristei",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Familie",
+        "label": "Familie",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Kanoniker",
+        "label": "Kanoniker",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Familienkapelle",
+        "label": "Familienkapelle",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Portal",
+        "label": "Portal",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Inschrift",
+        "label": "Inschrift",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Inschrifentext",
+        "label": "Inschrifentext",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Inhalt",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "label": "Tafelbild",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Masswerk",
+        "label": "Masswerk",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Chor",
+        "label": "Chor",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Fussboden",
+        "label": "Fussboden",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Chorhauptkapelle",
+        "label": "Chorhauptkapelle",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Langhaus",
+        "label": "Langhaus",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Orgel",
+        "label": "Orgel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Frau",
+        "label": "Frau",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Wandgrabmal",
+        "label": "Wandgrabmal",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Lettner",
+        "label": "Lettner",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#StrukturInBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Pfarrer",
+        "label": "Pfarrer",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Buerger",
+        "label": "Buerger",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Seitenaltar",
+        "label": "Seitenaltar",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Pfeiler",
+        "label": "Pfeiler",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Wandelaltar",
+        "label": "Wandelaltar",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Buchstabe",
+        "label": "Buchstabe",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#ZeichenStilmerkmal",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Glasfenster",
+        "label": "Glasfenster",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Wandmalerei",
+        "label": "Wandmalerei",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Wappen",
+        "label": "Wappen",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#ZeichenStilmerkmal",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Laie",
+        "label": "Laie",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Glocke",
+        "label": "Glocke",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Hauptaltar",
+        "label": "Hauptaltar",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Turm",
+        "label": "Turm",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Lettnerpult",
+        "label": "Lettnerpult",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Lettneraltar",
+        "label": "Lettneraltar",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#ZeitlicheEinordnung",
+        "label": "ZeitlicheEinordnung",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbe",
+        "label": "Gewoelbe",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Grabplatte",
+        "label": "Grabplatte",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Tumba",
+        "label": "Tumba",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Bischof",
+        "label": "Bischof",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Glasmalerei",
+        "label": "Glasmalerei",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Inschriftentraeger",
+        "label": "Inschriftentraeger",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Eingangsportal",
+        "label": "Eingangsportal",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Datum",
+        "label": "Datum",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Ritter",
+        "label": "Ritter",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Epitaph",
+        "label": "Epitaph",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Grabmal",
+        "label": "Grabmal",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Chorgestuehl",
+        "label": "Chorgestuehl",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Bruderschaftsaltar",
+        "label": "Bruderschaftsaltar",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Heiliger",
+        "label": "Heiliger",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Seitenschiff",
+        "label": "Seitenschiff",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Gewoelberippen",
+        "label": "Gewoelberippen",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Diakon",
+        "label": "Diakon",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Westempore",
+        "label": "Westempore",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Kreuzgang",
+        "label": "Kreuzgang",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Stifter",
+        "label": "Stifter",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Renovierungsinschrift",
+        "label": "Renovierungsinschrift",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Fuerbittinschrift",
+        "label": "Fuerbittinschrift",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Retabel",
+        "label": "Retabel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Sakristeibuch",
+        "label": "Sakristeibuch",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Kanzel",
+        "label": "Kanzel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#StrukturInBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbeschlussstein",
+        "label": "Gewoelbeschlussstein",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/classes#ChorDerKanoniker",
+        "label": "Chor der Kanoniker",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+        "description" : "" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Martha-AltarretabelOberwesel",
+        "label": "Retabel des Martha-Altars",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Altarretabel",
+        "description" : "Retabel des Martha-Altars in der Liebfrauenkirche Oberwesel, s. DI 60/151" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Nikolaus-AltarretabelOberwesel",
+        "label": "Retabel des Nikolausaltars",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Altarretabel",
+        "description" : "Retabel des Nikolausaltars in der Liebfrauenkirche Oberwesel, s. DI 60/153" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#TafelDerLetzten15ZeichenOberwesel",
+        "label": "Tafel der letzten 15 Zeichen",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "description" : "Tafel der letzten 15 Zeichen in der Liebfrauenkirche Oberwesel, s. DI 60/157" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#RenovierungsinschriftMitMadonnaUndStifterOberwesel",
+        "label": "Renovierungsinschrift mit Madonna und Stifter",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Wandmalerei",
+        "description" : "Wandmalerei mit Renovierungsinschrift, Madonna und Stifter Petrus Lutern an der Westempore, DI 60/158" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#InschriftLuternEpitaphOberwesel",
+        "label": "Inschrift des Epitaphs Petrus Luterns",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Inschrift",
+        "description" : "Inschrift des Epitaphs fuer Petrus Lutern in der Liebfrauenkirche Oberwesel, s. DI 60/159" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#GoldaltarOberwesel",
+        "label": "Goldaltar",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Hauptaltar",
+        "description" : "Hauptaltar in der Liebfrauenkirche Oberwesel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#PetrusLutern",
+        "label": "Petrus Lutern",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "Petrus Lutern war von 1475 bis 1515 Kanoniker der Liebfrauenkirche Oberwesel, S. DI 60/185" },
+
+
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#KircheStMartinOberwesel",
+        "label": "Pfarrkirche St. Martin Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Kirche",
+        "description" : "Pfarrkirche St. Martin in Oberwesel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#SakristeiLiebfrauenkircheOberwesel",
+        "label": "Sakristei",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Sakristei",
+        "description" : "Sakristei der Liebfrauenkirche Oberwesel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#GewoelbeschlusssteinLiebfrauenkircheOberwesel",
+        "label": "Gewoelbeschlusstein",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbeschlusstein",
+        "description" : "Gewoelbeschlusstein im Kreuzgang der Liebfrauenkirche Oberwesel" },
+
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#KanzelLiebfrauenkircheObwesel",
+        "label": "Kanzel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Sakristeibuch",
+        "description" : "Ehemalige Kanzel der Liebfrauenkirche Oberwesel, vor 1844 zugunsten einer neuen Kanzel abgebaut. S. DI 60/277" },
+
+
+           {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#PetrusLuternEpitaphOberwesel",
+        "label": "Epitaph Petrus Luterns, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Epitaph",
+        "description" : "Epitaph fuer Petrus Lutern in der Liebfrauenkirche Oberwesel, s. DI 60/159." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#WandmalereimitRenovierungsinschriftUndFuerbitteOberwesel",
+        "label": "Wandmalerei mit Renovierungsinschrift und Fürbitte, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Wandmalerei",
+        "description" : "Wandmalerei mit Renovierungsinschrift, Madonna und Stifter Petrus Lutern an der Westempore, DI 60/158." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Martha-KapelleOberwesel",
+        "label": "Martha-Kapelle, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Kapelle",
+        "description" : "Kapelle der Martha von Bethanien in der Liebfrauenkirche Oberwesel." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#HauptaltarOberwesel",
+        "label": "Hauptaltar, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Hauptaltar",
+        "description" : "Hauptaltar in der Liebfrauenkirche Oberwesel." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#HillaLuternEpitaphOberwesel",
+        "label": "Epitaph Hilla Luterns, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Epitaph",
+        "description" : "Epitaph fuer Hilla (Hildegard)) Lutern, Mutter Petrus Luterns, in der Liebfrauenkirche Oberwesel. S. DI 60/185."},
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#HillaLutern",
+        "label": "Hilla (Hildegard) Lutern",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+        "description" : "Hilla Lutern war die Mutter des Kanonikers Petrus Lutern." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Gewoelbeschlussstein1LiebfrauenkircheOberwesel",
+        "label": "Gewoelbeschlusstein 1, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbeschlusstein",
+        "description" : "Gewoelbeschlusstein im Kreuzgang der Liebfrauenkirche Oberwesel." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Gewoelbeschlussstein2LiebfrauenkircheOberwesel",
+        "label": "Gewoelbeschlusstein 2, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbeschlusstein",
+        "description" : "Gewoelbeschlusstein im Kreuzgang der Liebfrauenkirche Oberwesel." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#SakristeibuchLiebfrauenkircheOberwesel",
+        "label": "Sakristeibuch, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Sakristeibuch",
+        "description" : "Sakristeibuch in der Sakristei der Liebfrauenkirche Oberwesel." },
+
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#LanghausLiebfrauenkircheOberwesel",
+        "label": "Langhaus, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Langhaus",
+        "description" : "Langhaus der Liebfrauenkirche Oberwesel." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#TodestagPetrusLuterns",
+        "label": "Todestag Petrus Luterns",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+        "description" : "Pertrus Lutern verstarb am 7. Maerz 1515." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#TodestagHillaLuterns",
+        "label": "Todestag Hilla (Hildegard) Luterns",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+        "description" : "Hilla (Hildegard) Luterns verstarb am 25. April 1492." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#PetrusLuternWappen",
+        "label": "Wappen Petrus Luterns, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Wappen",
+        "description" : "Pertrus Lutern verstarb am 7. Maerz 1515." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#ChorDerKanonikerOberwesel",
+        "label": "Chor der Kanoniker, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Wappen",
+        "description" : "Chor der Kanoniker in der Liebfrauenkirche Oberwesel." },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#LuternFigurInWandmalerei",
+        "label": "Lutern-Figur in Wandmalerei, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Wappen",
+        "description" : "Bildliche Darstellung Luterns in der Wandmalerei" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#VisualItem",
+        "label": "Bildliches",
+        "type": ["subject","object"],
+        "rdftype": "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item",
+        "description" : "This class comprises the intellectual or conceptual aspects of recognisable marks and images" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Image",
+        "label": "Bild",
+        "type": ["subject","object"],
+        "rdftype": "http://www.cidoc-crm.org/cidoc-crm/E38_Image",
+        "description" : "This class comprises distributions of form, tone and colour that may be found on surfaces such as photos, paintings, prints and sculptures or directly on electronic media" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Date",
+        "label": "Datum",
+        "type": ["subject","object"],
+        "rdftype": "http://www.cidoc-crm.org/cidoc-crm/E50_Date",
+        "description" : "This class comprises specific forms of a Time Appellation" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#EpitaphStatuePetrusLuterns",
+        "label": "Lutern-Statue, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Statue",
+        "description" : "Statue des Petrus Lutern im Epitaph Luterns, Liebfrauenkirche Oberwesel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#LuternFigurInMarthaRetabel",
+        "label": "Lutern-Figur in Martha-Retabel, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "description" : "Bildliche Darstellung Petrus Luterns in der Martha-Altarretabel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#LuternFigurInNikolausRetabel",
+        "label": "Lutern-Figur in Nikolaus-Retabel, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "description" : "Bildliche Darstellung Petrus Luterns in der Nikolaus-Altarretabel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Lutern-FigurInTafelDerLetzten15Zeichen",
+        "label": "Lutern-Figur in Tafel der letzten 15 Zeichen, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "description" : "Bildliche Darstellung Petrus Luterns in der Tafel der letzten 15 Zeichen" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Maria-FigurInMartha-Retabel",
+        "label": "Maria-Figur in Martha-Retabel, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "description" : "Bildliche Darstellung Maria von Bethaniens in der Martha-Altarretabel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#Martha-FigurInMartha-Retabel",
+        "label": "Martha-Figur in Martha-Retabel, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+        "description" : "Bildliche Darstellung Marthas in der Martha-Altarretabel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#MarthaStatuePetrusLuterns",
+        "label": "Martha-Statue, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Statue",
+        "description" : "Statue der Martha von Bethanien im Epitaph Luterns, Liebfrauenkirche Oberwesel" },
+
+        {
+        "value": "http://voc.spatialhumanities.de/ibr/objects#MariaStatuePetrusLuterns",
+        "label": "Maria-Statue, Oberwesel",
+        "type": ["subject","object"],
+        "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Statue",
+        "description" : "Statue der Maria von Bethanien im Epitaph Luterns, Liebfrauenkirche Oberwesel" }
+
+       ]
+      }
+     );

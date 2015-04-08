@@ -1,0 +1,525 @@
+﻿﻿﻿_PUNDIT.vocab.initJsonpVocab({
+    "identifier": "value",
+    "label": "label",
+    "name": "ibr_vocab",
+    "tab_name": "IBR taxonomy",
+    "description": "A taxonomy of church interior objects for historical research from the IBR project",
+    "type": "taxonomy",
+    "items": [
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "label": "TeilVonBauwerk",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"], 
+    "description" : "An integral part of a building, as opposed to furnishings",
+    "children": [
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Sakristei"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Chor"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Chornebenkapelle"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Familienkapelle"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Masswerk"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Fussboden"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Langhaus"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Pfeiler"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Glasfenster"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Turm"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbe"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Eingangsportal"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Seitenschiff"
+				},
+	            {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Gewoelberippen"
+				}
+		]
+    },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "label": "Ausstattung",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"], 
+    "description" : "Furnishings of a building, which are not part of the building itself",
+    "children": [
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Tryptichon"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Orgel"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Wandgrabmal"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Seitenaltar"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Wandelaltar"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Wandmalerei"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Glocke"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Hauptaltar"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Lettneraltar"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Lettnerpult"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Grabplatte"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Tumba"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Inschriftentraeger"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Epitaph"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Grabmal"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Chorgestuehl"
+				},
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Bruderschaftsaltar"
+				}
+		]
+	},
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#StrukturInBauwerk",
+    "label": "StrukturInBauwerk",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"],
+    "description" : "A non-moveable structure inside a building, as opposed to furnishings and parts of the building",
+    "children": [
+                {
+					"_reference": "http://voc.spatialhumanities.de/ibr/classes#Lettner"
+				}
+		]
+    },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "label": "Person",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"],
+    "description" : "" },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#ZeichenStilmerkmal",
+    "label": "ZeichenStilmerkmal",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"],
+    "description" : "" },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Concept",
+    "label": "Inhalt",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"],
+    "description" : "An immaterial Concept, not equitable with a physical object"
+	},
+
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+    "label": "Zeit",
+    "nodetype": ["http://purl.org/pundit/vocab/category"],
+    "rdftype": ["http://purl.org/pundit/vocab/category"],
+    "description" : ""
+    },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Chornebenkapelle",
+    "label": "Chornebenkapelle",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Tryptichon",
+    "label": "Tryptichon",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "A Tryptichon" },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Sakristei",
+    "label": "Sakristei",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Familie",
+    "label": "Familie",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Kanoniker",
+    "label": "Kanoniker",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Familienkapelle",
+    "label": "Familienkapelle",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Portal",
+    "label": "Portal",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Inschrift",
+    "label": "Inschrift",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Inschrifentext",
+    "label": "Inschrifentext",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Inhalt",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Tafelbild",
+    "label": "Tafelbild",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Masswerk",
+    "label": "Masswerk",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Chor",
+    "label": "Chor",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Fussboden",
+    "label": "Fussboden",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Chorhauptkapelle",
+    "label": "Chorhauptkapelle",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Langhaus",
+    "label": "Langhaus",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Orgel",
+    "label": "Orgel",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Frau",
+    "label": "Frau",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Wandgrabmal",
+    "label": "Wandgrabmal",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Lettner",
+    "label": "Lettner",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#StrukturInBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Pfarrer",
+    "label": "Pfarrer",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Buerger",
+    "label": "Buerger",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Seitenaltar",
+    "label": "Seitenaltar",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Pfeiler",
+    "label": "Pfeiler",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Wandelaltar",
+    "label": "Wandelaltar",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Buchstabe",
+    "label": "Buchstabe",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#ZeichenStilmerkmal",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Glasfenster",
+    "label": "Glasfenster",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Wandmalerei",
+    "label": "Wandmalerei",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Wappen",
+    "label": "Wappen",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#ZeichenStilmerkmal",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Laie",
+    "label": "Laie",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Glocke",
+    "label": "Glocke",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Hauptaltar",
+    "label": "Hauptaltar",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Turm",
+    "label": "Turm",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Lettnerpult",
+    "label": "Lettnerpult",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Lettneraltar",
+    "label": "Lettneraltar",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#ZeitlicheEinordnung",
+    "label": "ZeitlicheEinordnung",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Gewoelbe",
+    "label": "Gewoelbe",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Grabplatte",
+    "label": "Grabplatte",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Tumba",
+    "label": "Tumba",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Bischof",
+    "label": "Bischof",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Glasmalerei",
+    "label": "Glasmalerei",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Inschriftentraeger",
+    "label": "Inschriftentraeger",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Eingangsportal",
+    "label": "Eingangsportal",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Datum",
+    "label": "Datum",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Zeit",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Ritter",
+    "label": "Ritter",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Epitaph",
+    "label": "Epitaph",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Grabmal",
+    "label": "Grabmal",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Chorgestuehl",
+    "label": "Chorgestuehl",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Bruderschaftsaltar",
+    "label": "Bruderschaftsaltar",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Ausstattung",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Heiliger",
+    "label": "Heiliger",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Seitenschiff",
+    "label": "Seitenschiff",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Gewoelberippen",
+    "label": "Gewoelberippen",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#TeilVonBauwerk",
+    "description" : "" },
+    
+    {
+    "value": "http://voc.spatialhumanities.de/ibr/classes#Diakon",
+    "label": "Diakon",
+    "type": ["subject","object"],
+    "rdftype": "http://voc.spatialhumanities.de/ibr/classes#Person",
+    "description" : "" }
+   ]
+  }
+ );

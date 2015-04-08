@@ -1,0 +1,72 @@
+.claro .dojoxGridFBarInfoTD {
+	background: url("../../../resources/images/header_shadow.png") #f2f9ff repeat-x bottom;
+	background: -moz-linear-gradient(top, #f2f9ff, #eaf5ff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f9ff), to(#eaf5ff));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F9FF, endColorstr=#FFEAF5FF);
+}
+
+.claro .dojoxGridFBarHover .dojoxGridFBarInfoTD {
+	background: url("../../../resources/images/header_shadow.png") #f2f9ff repeat-x bottom;
+	background: -moz-linear-gradient(top, #ecf6ff 2px, #f2f9ff, #eaf5ff 6px);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #ecf6ff), color-stop(0.6, #f2f9ff), color-stop(0.8, #eaf5ff));
+}
+
+.dj_gecko .claro .dojoxGridFBarInfoTD,
+.dj_webkit .claro .dojoxGridFBarInfoTD {
+	border-top: 1px solid #bfd6eb;
+	border-bottom: 1px solid #bfd6eb;
+}
+
+.dj_ie .claro .dojoxGridFBarInner {
+	border-top: 1px solid #bfd6eb;
+	border-bottom: 1px solid #bfd6eb;
+	display: inline-block;
+	width: 100%;
+}
+
+.claro .dojoxGridFBarClearFilterBtn {
+	color: #5b83b6;
+}
+
+.claro .dojoxGridFBarInfoTD .dojoxGridFBarClearFilterBtn.dijitButtonHover .dijitButtonText {
+	text-decoration: underline;
+}
+
+.claro .dojoxGridFBar {
+	border-left: 1px solid white;
+}
+
+.claro .dojoxGridFStatusTip table {
+	border: 1px solid #bcbcbc;
+}
+
+.claro .dojoxGridFStatusTip th {
+	background-color: #e8eff4;
+	border-bottom: 1px solid #bcbcbc;
+}
+
+.claro .dojoxGridFStatusTip th div {
+	background-color: #e8eff4;
+	border-left: 1px solid white;
+	border-right: 1px solid #bcbcbc;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.claro .dojoxGridFStatusTip th.lastColumn div {
+	border-right: 1px solid white;
+}
+
+.claro .dojoxGridFStatusTip td {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.claro .dojoxGridFStatusTipRel,
+.claro .dojoxGridFStatusTipCondition {
+	font-style: italic;
+}
+
+.claro .dojoxGridFStatusTipOddRow {
+	background-color: #f1f8ff;
+}

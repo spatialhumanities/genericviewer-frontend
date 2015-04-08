@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="communicator.js"></script>
+	<script type="text/javascript" src="jquery_191.js"></script>
+	<script type="text/javascript">
+
+		var payload = new XMLHttpRequest();
+		var post = new XMLHttpRequest();
+		payload.open("get", "http://localhost:8888/viewer_text_annotation/data/testplayload.json", false);
+		payload.send();
+		var payLoad = payload.responseText;
+		payload.abort();
+		//		alert(post.status);
+		//alert(post.readyState);
+		post.open("POST", "http://t.spatialhumanities.de/openrdf-sesame/repositories/ibr/statements", false);
+		//alert(post.readyState);
+		post.setRequestHeader('Content-Type', 'application/rdf+json');
+		//payLoad="{\"http://www.economist.com/news/special-report/21589230-britain-no-longer-has-serious-race-problem-trouble-isolation-new-kind#xpointer(start-point(string-range(//BODY/DIV[3]/DIV[9]/DIV[1]/ARTICLE[1]/DIV[2]/P[9]/text()[1],'',350))/range-to(string-range(//BODY/DIV[3]/DIV[9]/DIV[1]/ARTICLE[1]/DIV[2]/P[9]/text()[1],'',357)))\":{\"http://purl.org/pundit/ont/ao#hasTag\":[{\"value\":\"http://dbpedia.org/resource/Great_Britain\",\"type\":\"uri\"}]}}";
+		post.send(payLoad);
+		post.onerror = function () {
+			alert("Fehler: ".post.getResponseHeader());
+		}
+		alert(post.responseText);
+		/*		$.ajax({
+		 type: "POST",
+		 url: 'http://localhost:8888/viewer_text_annotation/data/testplayload.json',
+		 //data: data,
+		 //success: success,
+		 dataType: 'application/rdf+json'
+		 });*/
+
+	</script>
+	<title>Example REST POST</title>
+</head>
+<body>
+
+</body>
+</html>

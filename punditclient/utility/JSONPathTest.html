@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSONPath Test</title>
+	<script type="application/javascript" src="jsonpath-0.8.0.js"></script>
+	<script type="application/javascript">
+		var daa = { "store": {
+			"book": [
+				{ "category": "reference",
+					"author": "Nigel Rees",
+					"title": "Sayings of the Century",
+					"price": 8.95
+				},
+				{ "category": "fiction",
+					"author": "Evelyn Waugh",
+					"title": "Sword of Honour",
+					"price": 12.99
+				},
+				{ "category": "fiction",
+					"author": "Herman Melville",
+					"title": "Moby Dick",
+					"isbn": "0-553-21311-3",
+					"price": 8.99
+				},
+				{ "category": "fiction",
+					"author": "J. R. R. Tolkien",
+					"title": "The Lord of the Rings",
+					"isbn": "0-395-19395-8",
+					"price": 22.99
+				}
+			],
+			"bicycle": {
+				"color": "red",
+				"price": 19.95
+			}
+		}
+		}
+		jsonPath(daa, "$..book[?(@.price<10)].title")
+	</script>
+	<script type="application/javascript">
+		var geoAnnos = new XMLHttpRequest();
+		geoAnnos.withCredentials = true;
+		geoAnnos.onreadystatechange = function () {
+			if (geoAnnos.readyState == 4) {
+				resp = old.responseText;
+				//favs = JSON.parse(resp, null);
+				var expr = "";
+				var jsondata = jsonPath(resp, expr);
+			}
+		}
+		geoAnnos.open("get", "http://adwserv58.adwudlit.uni-mainz.de:8080/annotationserver/api/services/favorites");
+		geoAnnos.send(null);
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

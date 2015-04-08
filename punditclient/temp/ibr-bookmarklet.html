@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pundit - Bookmarklet</title> 
+        <!-- Get Pundit + Dojo + conf, Init! -->
+        <link rel="stylesheet" href="../css/pundit.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="http://thepund.it/assets/css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            span.easy_RDFa_bookmarklet a {
+                font-size: 14px;
+                font-family: "Candara", "Lucida Grande", "Trebuchet MS", sans-serif;
+                background: #BFB1B1 url(http://metasound.dibet.univpm.it/swnweb/images/Annotate-icon.png) no-repeat 0px 50%;
+                color: #2E2C2C;
+                padding: 2px 10px 2px 30px;
+                text-align:right;
+                border: 1px #ccc solid;
+                text-decoration: none;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id = "pundit-main-content" style="margin-left:5px">
+            <img src="http://thepund.it/assets/img/pundit.png" style="height:30px;"></img>
+            <br/><br/>
+            <p>Ziehen Sie dieses Bookmarklet auf ihre Lesezeichen-Leiste. Nachdem Sie eine beliebige Seite aufgerufen haben, aktivieren
+            Sie den Annotator durch Klick auf das Bookmarklet.</p>
+            <span class="easy_RDFa_bookmarklet">
+		<link rel="shortcut icon" href="http://www.spatialhumanities.de/fileadmin/templates/images/favicon.ico" />
+                <a title="Bookmark this link" href="javascript:(function(){
+						var baseURL='http://www.spatialhumanities.de/fileadmin/bookmarklet/';
+						var h=document.getElementsByTagName('head')[0];
+						var i=document.createElement('script');
+						i.type='text/javascript';
+						i.src=baseURL+'jquery_191.js';
+						i.async=false;
+						h.appendChild(i);
+
+						var j =document.createElement('script');
+						j.type='text/javascript';
+						j.src=baseURL+'communicator.js';
+						j.async=false;
+						h.appendChild(j);
+
+						var k=document.createElement('script');
+						k.type='text/javascript';
+						k.src=baseURL+'InitBookmarklet.js?'+Math.random()*4;
+						k.async=false;
+						h.appendChild(k);
+                    })()">
+	                <link rel="shortcut icon" href="http://www.spatialhumanities.de/fileadmin/templates/images/favicon.ico" />
+                    <span>IBR - Semantic Annotation Bookmarklet</span>
+                </a>
+            </span>
+        </div>
+    </body>
+</html>
