@@ -22,6 +22,7 @@
  * @extends pundit.baseComponent
  * @description TODO
  */
+/*edit IBR: deactivated*/
 dojo.provide("pundit.AnalyticsHelper");
 dojo.declare("pundit.AnalyticsHelper", pundit.BaseComponent, {
 
@@ -33,7 +34,7 @@ dojo.declare("pundit.AnalyticsHelper", pundit.BaseComponent, {
 	},
 
 	constructor: function (options) {
-		var self = this;
+		/*var self = this;
 
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -54,12 +55,12 @@ dojo.declare("pundit.AnalyticsHelper", pundit.BaseComponent, {
 			'cookieName': 'thepunditEventTracking',
 			'cookieExpires': 20000
 		});
-		ga('send', 'pageview');
+		ga('send', 'pageview');*/
 	},
 
 	track: function (category, action, label, value) {
-		if (this.opts.doTracking)
-			ga('send', 'event', category, action, label, value);
+/*		if (this.opts.doTracking)
+			ga('send', 'event', category, action, label, value);*/
 	}
 
 });

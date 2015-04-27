@@ -96,12 +96,12 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 				label: 'Filtered Geometries',
 				expanded: true
 			},
-			geometries: {//edit Felix: hinzugefügt
-				label: 'Geometries',
+			geometries: {//edit IBR: hinzugefügt
+				label: 'All Geometries',
 				expanded: true
 			},
 			textrepository: {
-				label: 'Repository Texts',//edit Felix: hinzugefügt
+				label: 'Repository Texts',//edit IBR: hinzugefügt
 				expanded: true
 			},
 			myitems: {
@@ -151,13 +151,13 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 
 				self.initHTML();
 				self.initDnD();
-				self.initContextMenu();
+
 				self.initBehaviors();
 			});
 		} else {
 			self.initHTML();
 			self.initDnD();
-			self.initContextMenu();
+
 			self.initBehaviors();
 		}
 
@@ -219,7 +219,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 		for (var i in self.suggestionPanels) {
 			self.expandedClass = '';
 			if (self.suggestionPanels[i].expanded)
-				self.expandedClass = 'pundit-expanded';  //edit Felix: geänderte Anzeige und Sortierung in den SuggestionPanels: Geometrien zuoberst
+				self.expandedClass = 'pundit-expanded';  //edit IBR: geänderte Anzeige und Sortierung in den SuggestionPanels: Geometrien zuoberst
 			c = '          <div id="' + self._id + '-container-suggestions-' + i + '" class="pundit-rp-container-suggestions pundit-suggestions fillheight ' + self.expandedClass + '">';
 			c += '              <div><span class="pundit-icon-collapse pundit-fp-collapsed"></span><span class="pundit-fp-source-name">' + self.suggestionPanels[i].label + '</span><span class="pundit-items-number">(0)</span></div>';
 			c += '              <ul id="' + self._id + '-suggestions-list-' + i + '" class="pundit-rp-suggestions-list pundit-view-list pundit-items list pundit-item-add-button"></ul>';//Felix: pundit-stop-wheel-propagation weg
@@ -268,7 +268,6 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 	performSearch: function (keyword) {
 		var self = this;
 		// TODO Consider to include minimum length for the word?
-		_PUNDIT.ga.track('search', 'resources-panel-search', 'term=' + keyword);
 
 		if (keyword !== self._lastKeyword) {
 			// TODO should I pass the search function as parameter?
@@ -299,7 +298,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 		}
 
 		//TODO Do I need a callback to better handle this?
-		dojo.connect(dojo.query('body')[0], (!dojo.isMozilla ? "onmousewheel" : "DOMMouseScroll"), function (e) {//edit Felix: Hier wurde das SCrolling für die Pundit-Gui deaktiviert (?)
+		dojo.connect(dojo.query('body')[0], (!dojo.isMozilla ? "onmousewheel" : "DOMMouseScroll"), function (e) {//edit IBR: Hier wurde das SCrolling für die Pundit-Gui deaktiviert (?)
 			if (e.target.id === 'pundit-tc-triples-container' && self.inShowing) {
 				self.hide();
 				dojo.stopEvent(e);
@@ -316,12 +315,10 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 		});
 
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-add-literal')[0], 'onclick', function (e) {
-			_PUNDIT.ga.track('gui-button', 'click', 'resources-panel-add-literal');
 			self.showLiteralPanel(true, false);
 		});
 
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-add-date')[0], 'onclick', function (e) {
-			_PUNDIT.ga.track('gui-button', 'click', 'resources-panel-add-date');
 			self.showDatePanel(true, false);
 		});
 
@@ -337,22 +334,18 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 		});
 
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-panel-close')[0], 'onclick', function () {
-			_PUNDIT.ga.track('gui-button', 'click', 'resources-panel-close-literal-panel');
 			self.showLiteralPanel(false, false);
 		});
 		// TODO: [0] [1] ?? connect better .. ? behavior ? on() ?
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-panel-close')[1], 'onclick', function () {
-			_PUNDIT.ga.track('gui-button', 'click', 'resources-panel-close-literal-panel');
 			self.showLiteralPanel(false, false);
 		});
 
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-literal-panel-done')[0], 'onclick', function () {
-			_PUNDIT.ga.track('gui-button', 'click', 'resources-panel-done-literal-panel');
 			self.createLiteralItem();
 		});
 
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-date-panel-done')[0], 'onclick', function () {
-			_PUNDIT.ga.track('gui-button', 'click', 'resources-panel-done-literal-panel');
 			self.createDateItem();
 		});
 
@@ -366,8 +359,8 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 						var parent = dojo.query(e.target).parent().parent()[0];
 						if (dojo.hasClass(parent, 'pundit-expanded')) {
 							dojo.removeClass(parent, 'pundit-expanded');
-							//dojo.style(dojo.query(parent).children('ul')[0], 'height', '0px');//edit Felix
-							//self.adjustPreviewHeight();//edit Felix
+							//dojo.style(dojo.query(parent).children('ul')[0], 'height', '0px');//edit IBR
+							//self.adjustPreviewHeight();//edit IBR
 						} else {
 							dojo.addClass(parent, 'pundit-expanded');
 							//self.adjustPanelsHeight();
@@ -406,7 +399,6 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 				beh['#' + self._id + '-suggestions-list-' + _sp + ' li.dojoDndItem'] = {
 					'onclick': function (e) {
 
-						_PUNDIT.ga.track('items', 'add', 'resources-panel-add-from-label');
 						var item, node;
 
 						if (e.target.nodeName === 'LI') {
@@ -421,10 +413,9 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 					}
 				};
 				//TODO: merge this code with the previous one...
-				beh['#' + self._id + '-suggestions-list-' + _sp + ' li.dojoDndItem'] = {//edit Felix: "span.pundit-item-add-button" weg
+				beh['#' + self._id + '-suggestions-list-' + _sp + ' li.dojoDndItem'] = {//edit IBR: "span.pundit-item-add-button" weg
 					'onclick': function (e) {
 
-						_PUNDIT.ga.track('items', 'add', 'resources-panel-add-from-button');
 						var item, node;
 
 						if (e.target.nodeName === 'LI') {
@@ -436,7 +427,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 						item = self['itemsDnD' + _sp].getItem(node[0].id);
 
 						self.fireOnItemAdded(item.data);
-						//edit Felix: Prüfe auf Konsistenz der Statusvariablen für Kollektionen im Triple Composer.todo: in eigene Funktion auslagern */
+						//edit IBR: Prüfe auf Konsistenz der Statusvariablen für Kollektionen im Triple Composer.todo: in eigene Funktion auslagern */
 						var singularSubj = true;//nur eine von diesen beiden variablen false ist, dürfen die Statusvariablen für Kollektionen gesetzt bleiben.
 						var singularObj = true;
 						for (var row in tripleComposer.tripleDnD) {
@@ -462,7 +453,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 						if (singularSubj && singularObj) {//nur wenn auf einem Slot kein Singular-Objekt ist, werden die Werte nicht null gesetzt.
 							tripleComposer.collectiveGeoObj = false;
 							tripleComposer.collectiveObjIDs = [];
-						}//edit Felix
+						}//edit IBR
 					}
 				};
 				beh['#' + self._id + '-suggestions-list-' + _sp + ' li.dojoDndItem span.pundit-icon-context-button'] = { //todo: Context-Button, wozu?
@@ -470,7 +461,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 						var node = dojo.query(dojo.query(e.target).parent()[0]),
 								uri = self['itemsDnD' + _sp].getItem(node[0].id).data.value;
 
-						cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, uri, 'resourceItem');
+						//cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, uri, 'resourceItem');
 					}
 				};
 
@@ -493,7 +484,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 		//self.adjustPanelsHeight();
 	},
 
-	initContextMenu: function () {
+	/*initContextMenu: function () {
 		var self = this;
 
 		cMenu.addAction({
@@ -518,7 +509,6 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 
 			},
 			onclick: function (uri) {
-				_PUNDIT.ga.track('cmenu', 'click', 'resources-panel-open-web-page');
 				window.open(uri, 'SemLibOpenedWebPage');
 				return true;
 			}
@@ -533,14 +523,14 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 				var item = _PUNDIT.items.getItemByUri(xp);
 
 				if ((typeof item !== 'undefined')
-						&& (typeof tooltip_viewer.xpointersAnnotationsId[xp] === 'undefined')
-						&& ((dojo.indexOf(item.rdftype, ns.fragments.text) !== -1) || (dojo.indexOf(item.rdftype, ns.image) !== -1))) {
-					return !tooltip_viewer.xpointersClasses[xp];
+						//&& (typeof tooltip_viewer.xpointersAnnotationsId[xp] === 'undefined')
+						&& ((dojo.indexOf(item.rdftype, ns.fragments.text) !== -1) || (dojo.indexOf(item.rdftype, ns.image) !== -1)))
+				{
+					return false;//ibr !tooltip_viewer.xpointersClasses[xp];
 				}
 				return false;
 			},
 			onclick: function (xp) {
-				_PUNDIT.ga.track('cmenu', 'click', 'resources-panel-show-in-origin-page');
 				var item = _PUNDIT.items.getItemByUri(xp),
 						fragment = xp.split('#')[1],
 						uri = item.pageContext + '#' + fragment;
@@ -549,7 +539,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 				return true;
 			}
 		});
-	}, // initContextMenu
+	}, // initContextMenu*/
 
 	clearPanel: function () {
 		var self = this;
@@ -634,7 +624,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 		this.inherited(arguments);
 		var self = this;
 		self._lastKeyword = "";
-		//edit Felix dojo.style(self._id, 'top', y + 15 + 'px');
+		//edit IBR dojo.style(self._id, 'top', y + 15 + 'px');
 		//dojo.style(self._id, 'left', x + 'px');
 
 		dijit.focus(dojo.query('#' + self._id + ' .pundit-rp-search-input')[0]);
@@ -879,7 +869,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 	 panel,
 	 itemNumber = 0;
 	 //TODO Create a common function
-	 for (var i in self.suggestionPanels) {  //edit Felix: dynamische Höhen in SuggestionPanel deaktiviert
+	 for (var i in self.suggestionPanels) {  //edit IBR: dynamische Höhen in SuggestionPanel deaktiviert
 	 panel = dojo.query('#' + self._id + '-container-suggestions-' + i)[0];
 	 if (dojo.hasClass(panel, 'pundit-expanded')) {
 	 itemNumber = self.getShownItemsNumber(self['itemsDnD' + i]);
@@ -941,7 +931,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 									self.setLoading(self._id + '-container-suggestions-' + _i, false);
 									dojo.behavior.apply();
 								}
-								//self.adjustPanelsHeight();//edit Felix
+								//self.adjustPanelsHeight();//edit IBR
 
 							}
 						}

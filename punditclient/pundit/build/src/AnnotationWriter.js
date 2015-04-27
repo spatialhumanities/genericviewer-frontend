@@ -27,7 +27,7 @@ dojo.declare("pundit.AnnotationWriter", pundit.BaseComponent, {
 	writeAnnotationContent: function (bucket, targets, pageContext) {
 		var self = this,
 				reader = new pundit.AnnotationReader({debug: self.opts.debug}),
-		jobId = _PUNDIT.loadingBox.addJob('Creating a new annotation'),//edit Felix: FE-Statusanzeige. Bei auskommentieren kommt Fehlermeldung.
+		jobId = _PUNDIT.loadingBox.addJob('Creating a new annotation'),//edit IBR: FE-Statusanzeige. Bei auskommentieren kommt Fehlermeldung.
 				context = encodeURIComponent(dojo.toJson({
 					targets: targets,
 					pageContext: pageContext
@@ -144,8 +144,8 @@ dojo.declare("pundit.AnnotationWriter", pundit.BaseComponent, {
 
 	// TODO: this will be replaced by new ACL system, and obsoleted,
 	// see RemoteStorageHandler.js
-	postRemoteStorage: function (key, payload, removedGeoURIs) {//edit felix: funktionsparameter removed
-		//edit Felix: QueryParameter, indicating that this is actually a delete operation
+	postRemoteStorage: function (key, payload, removedGeoURIs) {//edit IBR: funktionsparameter removed
+		//edit IBR: QueryParameter, indicating that this is actually a delete operation
 		var rmg=removedGeoURIs == undefined ? []: removedGeoURIs;
 		var args = {
 			url: ns.annotationServerStorage + key + "?geometry_ids="+encodeURIComponent(rmg.toString()),
@@ -154,7 +154,7 @@ dojo.declare("pundit.AnnotationWriter", pundit.BaseComponent, {
 			handleAs: "text",
 			load: function (data) {
 				// TODO x Marco: nothing to do here?!
-				console.log('saving remote storage:'+ key);//edit felix
+				console.log('saving remote storage:'+ key);//edit IBR
 			},
 			error: function (error) {
 				console.log('TODO: ERROR saving remote storage');

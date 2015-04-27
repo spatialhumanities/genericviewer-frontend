@@ -29,7 +29,8 @@ dojo.declare("pundit.ItemContainerManager", pundit.BaseComponent, {
 
 	opts: {
 		// Number of types shown in the DND items
-		itemTypesNumber: 4//edit Felix: von 3 auf 4 . ändern?
+		itemTypesNumber: 4//edit IBR: was 3
+
 	},
 
 	// TODO: move this comment to some @property and some into the class declaration
@@ -51,7 +52,6 @@ dojo.declare("pundit.ItemContainerManager", pundit.BaseComponent, {
 		var self = this;
 		//Do we need a function to create instances with also the callbacks?
 		dojo.require("pundit.MyItems");
-		// TODO -> myItems
 		semlibMyItems = new pundit.MyItems();
 		_PUNDIT.myItems = semlibMyItems;
 

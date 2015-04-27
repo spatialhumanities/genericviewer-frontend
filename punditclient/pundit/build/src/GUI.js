@@ -84,8 +84,7 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 	initWindow: function () {
 
 		var self = this, sw, aw;
-//pundit-gui-topbar wird nicht ausgefahren.
-		//sw = '';//edit Felix: Neue Initialisierung
+
 		sw = '<div id="pundit-gui-topbar" class="pundit-base pundit-logged-off pundit-disable-annotation">';//todo: Sofort logged-on einschalten?
 		sw += '<span id="pundit-gui-topbar-title">Pundit</span>';
 		sw += '<span class="pundit-gui-button" id="pundit-aw-expander"><span class="pundit-annotations-expand-icon"></span></span>';
@@ -115,7 +114,7 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 		sw += '</ul>'; // pundit-gui-footer
 
 		sw += '</div>'; // pundit-gui
-//edit Felix: Einsetzen der Pundit-GUI innerhalb des Seiten-Content-Bereiches, in dediziertem DIV. War 'body' s.a. andere unten
+//edit IBR: Einsetzen der Pundit-GUI innerhalb des Seiten-Content-Bereiches, in dediziertem DIV. War 'body' s.a. andere unten
 		dojo.query('#genv_pundit_container').append(sw);
 
 		aw = '<div id="pundit-aw" class="pundit-base startup pundit-disable-annotation" >';
@@ -173,9 +172,9 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 		// On consolidate, reposition panels. Set this behavior after
 		// the whole pundit has been initialized
 		_PUNDIT.init.onInitDone(function () {
-			tooltip_viewer.onConsolidate(function () {
+/*			tooltip_viewer.onConsolidate(function () {
 				self.positionPanels();
-			});
+			});*/
 
 			dojo.connect(dojo.byId('pundit-mypundit-myitems-button'), 'onclick', function () {
 				//DEBUG self.show_pundittabmyitems() doesn't work
@@ -308,7 +307,7 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 					dojo.destroy('pundit-zoomed-fragment');
 					clearTimeout(self.positionPanelsTimer);
 					self.positionPanelsTimer = setTimeout(function () {
-						tooltip_viewer.zoomOnXpointer(tooltip_viewer.zoomedXp);
+						//tooltip_viewer.zoomOnXpointer(tooltip_viewer.zoomedXp);
 					}, 1100);
 				}
 			}
@@ -389,7 +388,7 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 
 			//semlibResourcesPanel.hide();
 //todo: Unklar, ob die Styleinformationen hier geändert werden müssen.=> Änderungen der Margins bei "body"???
-/*Felix			dojo.style('pundit-gui', {
+/*edit IBR			dojo.style('pundit-gui', {
 				'height': self.opts.collapsedWindowHeight + 'px'
 			});*/
 			dojo.query('#genv_pundit_container').style({
@@ -416,9 +415,11 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 		if (dojo.exists('pundit-zoomed-fragment')) {
 			dojo.destroy('pundit-zoomed-fragment');
 			clearTimeout(self.positionPanelsTimer);
+/*
 			self.positionPanelsTimer = setTimeout(function () {
 				tooltip_viewer.zoomOnXpointer(tooltip_viewer.zoomedXp);
 			}, 1500);
+*/
 		}
 
 		dojo.query('#pundit-gui').toggleClass('pundit-hidden');
@@ -442,10 +443,10 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 
 		if (dojo.exists('pundit-zoomed-fragment')) {
 			dojo.destroy('pundit-zoomed-fragment');
-			clearTimeout(self.positionPanelsTimer);
+			/*clearTimeout(self.positionPanelsTimer);
 			self.positionPanelsTimer = setTimeout(function () {
 				tooltip_viewer.zoomOnXpointer(tooltip_viewer.zoomedXp);
-			}, 1500);
+			}, 1500);*/
 		}
 		self.resizeAnnotationWindow();
 	},
@@ -640,8 +641,8 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 		// top (using positioningXpointer). Gather some info on the focused
 		// panel, there must be only one.
 		for (var id in self.panels) {
-			var p = self.panels[id],
-					cl = tooltip_viewer.xpointersClasses[p.positioningXpointer];
+			//var p = self.panels[id],
+					//cl = tooltip_viewer.xpointersClasses[p.positioningXpointer];
 
 			if (typeof cl !== 'undefined') {
 				if (dojo.byId('icon_' + cl) === null)
@@ -717,7 +718,7 @@ dojo.declare("pundit.GUI", pundit.BaseComponent, {
 
 
 		for (var i = o.xpointers.length; i--;) {
-			var color = tooltip_viewer.xpointersColors[o.xpointers[i]];
+			//var color = tooltip_viewer.xpointersColors[o.xpointers[i]];
 			colorButtons += '<span id="pundit-aw-button-color-' + color + '-' + o.id + '" class="pundit-button-color ' + color + '">' + color + '</span>';
 		}
 

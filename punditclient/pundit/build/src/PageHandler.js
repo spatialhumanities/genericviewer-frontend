@@ -30,7 +30,7 @@ dojo.declare("pundit.PageHandler", pundit.BaseComponent, {
 
 	constructor: function (options) {
 		var self = this;
-		//TODO If use it put on onother place
+		//TODO If use it put on another place
 		(function () {
 			var h = document.getElementsByTagName('head')[0],
 					d = document.createElement('script');
@@ -100,9 +100,9 @@ dojo.declare("pundit.PageHandler", pundit.BaseComponent, {
 				if (typeof(item) === 'undefined')
 					item = _PUNDIT['pageHandler'].createItemFromPage();
 
-				_PUNDIT['commentTag'].initPanel(item, "Comment and tags");
+				//_PUNDIT['commentTag'].initPanel(item, "Comment and tags");
 				// DEBUG: This is temporally set to false when the panel is used as an Entity Extraction tool :)
-				_PUNDIT['commentTag'].saveComment = true;
+				//_PUNDIT['commentTag'].saveComment = true;
 				return true;
 			}
 		});

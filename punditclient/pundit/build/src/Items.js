@@ -121,11 +121,11 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 			'onclick': function (e) {
 				var id = dojo.query(e.target).parent()[0].id;
 				var item = self.itemsDnD.getItem(id);
-				if (item.data.rdftype.length === 0) {
+/*				if (item.data.rdftype.length === 0) {
 					cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, item.data, 'semlibLiteral' + self.name);
 				} else {
 					cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, item.data, 'pundit-' + self.name);
-				}
+				}*/
 			}
 		};
 
@@ -136,14 +136,14 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 
 				previewer.show(item.data.value);
 
-				if (tooltip_viewer.isAnnXpointer(item.data.value) || tooltip_viewer.isTempXpointer(item.data.value))
-					tooltip_viewer.highlightByXpointer(item.data.value);
+				/*if (tooltip_viewer.isAnnXpointer(item.data.value) || tooltip_viewer.isTempXpointer(item.data.value))
+					tooltip_viewer.highlightByXpointer(item.data.value);*/
 			},
 			'onmouseout': function (e) {
 				var id = (dojo.hasClass(e.target, 'pundit-icon-context-button') || dojo.hasClass(e.target, 'pundit-trim')) ? dojo.query(e.target).parent()[0].id : e.target.id;
 				var item = self.itemsDnD.getItem(id);
-				if (tooltip_viewer.isAnnXpointer(item.data.value) || tooltip_viewer.isTempXpointer(item.data.value))
-					tooltip_viewer.removeHighlightByXpointer(item.data.value);
+				/*if (tooltip_viewer.isAnnXpointer(item.data.value) || tooltip_viewer.isTempXpointer(item.data.value))
+					tooltip_viewer.removeHighlightByXpointer(item.data.value);*/
 			},
 			'onclick': function (e) {
 				var target = e.target;
@@ -228,7 +228,7 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 				rdftype += ', ...';
 		}
 
-		if (hint !== "avatar") {//edit Felix: Tooltip-Bild zum Listenelement Geometrie für das SuggestionPanel hinzugefügt.
+		if (hint !== "avatar") {//edit IBR: Tooltip-Bild zum Listenelement Geometrie für das SuggestionPanel hinzugefügt.
 			node = document.createElement('li');
 			dojo.addClass(node, 'pundit-' + item.type);
 			dojo.addClass(node, 'pundit-shown');
@@ -468,14 +468,13 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 		self.log('ERROR: getItemIdFromUri with wrong uri? ' + uri);
 		return null;
 	},
-//var myitems = semlibMyItems.getItemsFromTerm('', acceptedTypes, [], ns.geometric_object_class); bei Aufruf durch Objekt
 	getItemsFromTerm: function (term, rdftypes, rejectedTypes , rejectedTerm) {
 		var self = this,
 				items = self.getItemsWhereFieldTest('description', function (c) {
 					// No content? no match
 					if (typeof(c) === 'undefined') return false;
 
-					//edit Felix
+					//edit IBR
 						if (c.indexOf(rejectedTerm) != -1) return false;
 
 					//Should i consider also range and domain parameters to reuse
@@ -496,7 +495,7 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 		return self.filterItemsByRdftype(items, rdftypes, rejectedTypes);
 
 	},
-	getItemsfromUris: function (uris, rdftypes) { //edit Felix: Methode zur Wiedergabe der gerade angezeigten Geometrien. Filterung nach URIs und RDF-Typ
+	getItemsfromUris: function (uris, rdftypes) { //edit IBR: Methode zur Wiedergabe der gerade angezeigten Geometrien. Filterung nach URIs und RDF-Typ
 		var self = this;
 		//var uris=uris;//Bugfix...
 		var items=[];
@@ -652,7 +651,7 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 
 		} else {
 			var itemIDs=new Array();
-			for (var i=0; i<uris.length;i++){//edit felix: löschen mehrerer geometrien auf einmal. alter aufruf bleibt möglich
+			for (var i=0; i<uris.length;i++){//edit IBR: löschen mehrerer geometrien auf einmal. alter aufruf bleibt möglich
 				var curr=uris[i];
 
 					if (!self.uriInItems(curr)){//für alle geometrien. aber nicht return, wen eine nicht da ist.

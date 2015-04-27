@@ -86,7 +86,7 @@ dojo.declare("pundit.RecognizerPanel", pundit.ResourcesPanel, {
 			self.saved = true;
 			// On close, remove the highlight, and avoid an opening highlight
 			self.hide();
-			tooltip_viewer.refreshAnnotations();
+			//tooltip_viewer.refreshAnnotations();
 		});
 		self.saver.onSave(function (m) {
 			self.log('onSave: Saver answered with ' + m);
@@ -140,7 +140,6 @@ dojo.declare("pundit.RecognizerPanel", pundit.ResourcesPanel, {
 		var self = this;
 
 		dojo.connect(dojo.query('#' + self._id + ' .pundit-rp-save-button')[0], 'onclick', function (e) {
-			_PUNDIT.ga.track('gui-button', 'click', self._id + '-pundit-rp-save-button');
 			if (!dojo.hasClass(dojo.query('#' + self._id + ' .pundit-rp-save-button')[0], 'pundit-button-disabled')) {
 				self.saveTriples();
 			} else
@@ -263,15 +262,15 @@ dojo.declare("pundit.RecognizerPanel", pundit.ResourcesPanel, {
 			previewer.buildPreviewForItem(item);
 		}
 
-		if (!tooltip_viewer.isTempXpointer(self.target)) {
+/*		if (!tooltip_viewer.isTempXpointer(self.target)) {
 			if (self.target !== _PUNDIT.tripleComposer.getSafePageContext())
 				tooltip_viewer.tempXpointers.push(self.target);
 			//tooltip_viewer.refreshAnnotations();
 			// DEBUG: not sure we can avoid the refreshAnnotations() process
 			tooltip_viewer.consolidate();
-		}
+		}*/
 
-		tooltip_viewer.highlightByXpointer(self.target);
+		//tooltip_viewer.highlightByXpointer(self.target);
 	},
 	hide: function () {
 		this.inherited(arguments);
@@ -281,13 +280,13 @@ dojo.declare("pundit.RecognizerPanel", pundit.ResourcesPanel, {
 		self.tagsDnD.deleteSelectedNodes();
 		self.tagsDnD.sync();
 		// on next consolidate
-		tooltip_viewer.removeHighlightByXpointer(self.target);
+		//tooltip_viewer.removeHighlightByXpointer(self.target);
 		//Remove the xpointer from the tempXpointers
-		tooltip_viewer.removeTempXpointer(self.target);
+		//tooltip_viewer.removeTempXpointer(self.target);
 
 		if (!self.saved) {
 			semlibItems.removeItemFromUri(self.target);
-			tooltip_viewer.consolidate();
+			//tooltip_viewer.consolidate();
 			//tooltip_viewer.refreshAnnotations();
 		}
 	},

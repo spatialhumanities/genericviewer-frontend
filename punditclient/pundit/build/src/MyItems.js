@@ -41,28 +41,27 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 		// TODO: this will be replaced when my items will be just another
 		// korbo vocabulary, after korbo ACL + auth + sso
 		self.store = new pundit.RemoteStorageHandler({debug: self.opts.debug});
-		self.store.onStoreRead(function (favoriteItems) {//Felix: wird bei akt. von items aufgerufen.
-
+		self.store.onStoreRead(function (favoriteItems) {
 			if (favoriteItems.length === 0) {
 				self.log('Perfectly virgin favorites: initializing');
 				self.resetFavoriteItems();
 				favoriteItems = {value: []};
 			}
 
-			tooltip_viewer.tempXpointers = [];
+			//tooltip_viewer.tempXpointers = [];
 
 			for (var i = favoriteItems.value.length; i--;) {
 				var item = favoriteItems.value[i];
 
 				// Check if item is a fragment that can be resolved in the current page
 				// TODO DEBUG: x marco type ns.image???!!
-				if (!tooltip_viewer.isTempXpointer(item.value) &&
+/*				if (!tooltip_viewer.isTempXpointer(item.value) &&
 						(item.rdftype.indexOf(ns.fragments.text) !== -1 || item.rdftype[0] === ns.image) &&
 						(tooltip_viewer.contentURIs.indexOf(item.isPartOf) !== -1))
-					tooltip_viewer.tempXpointers.push(item.value);
+					tooltip_viewer.tempXpointers.push(item.value);*/
 
 				// Add the item
-				if (!self.uriInItems(item.value)) { /*Felix: Dies sin die Schritte bei der Hinzufügung eines einzelnen Items. Wenn item noch nicht vorhanden, füge zum html-gerüst hinzu*/
+				if (!self.uriInItems(item.value)) { /*Felix: Dies sind die Schritte bei der Hinzufügung eines einzelnen Items. Wenn item noch nicht vorhanden, füge zum html-gerüst hinzu*/
 					previewer.buildPreviewForItem(item);
 
 					//item.geometry = true;//das muss weg. unnötig, da geschriebene items immer schon dieses attribut gesetzt haben
@@ -96,17 +95,17 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 
 		// DEBUG TODO: marco wtf is this?!!
 		_PUNDIT.init.onInitDone(function () {
-			tooltip_viewer.onConsolidate(function () {
+/*			tooltip_viewer.onConsolidate(function () {
 				//Remove this timeout using an on consolidation complete event
 				setTimeout(function () {
 					self.zoomURLXPointer();
 				}, 500);
 
-			});
+			});*/
 
 			// On pundit item remove, save the favorite items: a fav item
 			// could have been removed.
-			self.onItemRemoved(function (removedGeoURIs) {//edit felix: funktionsparameter geometryURI, die für die Löschung entsprechender Annotationen im TripleStore übergeben wird.
+			self.onItemRemoved(function (removedGeoURIs) {//edit IBR: funktionsparameter geometryURI, die für die Löschung entsprechender Annotationen im TripleStore übergeben wird.
 				self.saveFavoriteItems(removedGeoURIs);
 			});
 			self.onAllItemsRemoved(function () {
@@ -119,7 +118,7 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 
 	},
 
-	addItem: function (item, userAdded) {//edit Felix: Sonderfall GeoItem //ASSERT: Ist Geometrie. Nur Geometrien können im Genericviewer gespeichert werden.
+	addItem: function (item, userAdded) {//edit IBR: Sonderfall GeoItem //ASSERT: Ist Geometrie. Nur Geometrien können im Genericviewer gespeichert werden.
 		this.inherited(arguments);
 
 		if (userAdded && !this.isMyItemTabVisible()) {
@@ -151,13 +150,13 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 
 	// TODO: this will be replaced when my items will be just another
 	// korbo vocabulary, after korbo ACL + auth + sso
-	saveFavoriteItems: function (removedGeoURIs) {//edit Felix ASSERT: Nur Geometrien werden im GenericViewer gespeichert. removedGEoURIs für den Fall, dass Geom gelöscht wurden
+	saveFavoriteItems: function (removedGeoURIs) {//edit IBR ASSERT: Nur Geometrien werden im GenericViewer gespeichert. removedGEoURIs für den Fall, dass Geom gelöscht wurden
 
 		var self = this,
 				favoriteItems = [];
 
 		self.itemsDnD.forInItems(function (item) {
-//edit Felix: Nur Geometrien werden hier gespeichert.
+//edit IBR: Nur Geometrien werden hier gespeichert.
 
 			if (item.data.geometry == true) {
 
@@ -182,14 +181,14 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 
 		self.readJobId = _PUNDIT.loadingBox.addJob('Reading your items');
 		self.store.read('favorites');
-		self.store.read('geometries');//edit Felix//todo: lädt er beide Items, und Geometrien?
+		self.store.read('geometries');//edit IBR//todo: lädt er beide Items, und Geometrien?
 	},
 
 	initContextualMenu: function () {
 		var self = this;
 		this.inherited(arguments);
 
-		cMenu.addAction({
+/*		cMenu.addAction({
 			type: ['pundit-' + self.name],
 			name: 'removeSemlib' + self.name + 'Item',
 			label: 'Remove this item',
@@ -198,14 +197,13 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 			},
 			onclick: function (item) {
 				self.removeItemFromUri(item.value);
-				tooltip_viewer.removeTempXpointer(item.value);
-				tooltip_viewer.consolidate();
-				_PUNDIT.ga.track('cmenu', 'click', 'myitems-remove-from-myitems');
+*//*				tooltip_viewer.removeTempXpointer(item.value);
+				tooltip_viewer.consolidate();*//*
 				return true;
 			}
-		});
+		});*/
 
-		cMenu.addAction({
+/*		cMenu.addAction({
 			type: ['pundit-' + self.name],
 			name: 'openSemlib' + self.name + 'WebPage',
 			label: 'Show in origin page',
@@ -216,9 +214,9 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 					pCont = pCont.substring(0, pCont.indexOf('#'));
 
 				if ((typeof item !== 'undefined')
-						&& (typeof tooltip_viewer.xpointersAnnotationsId[item.value] === 'undefined')
+						//&& (typeof tooltip_viewer.xpointersAnnotationsId[item.value] === 'undefined')
 						&& ((dojo.indexOf(item.rdftype, ns.fragments.text) !== -1) || (dojo.indexOf(item.rdftype, ns.image) !== -1))) {
-					return !tooltip_viewer.xpointersClasses[item.value];
+					return false;//ibr !tooltip_viewer.xpointersClasses[item.value];
 				}
 				return false;
 			},
@@ -227,12 +225,11 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 						uri = item.pageContext + '#' + fragment;
 				window.open(uri, 'SemLibOpenedWebPage');
 				self.log('Opened a new window to URL ' + uri);
-				_PUNDIT.ga.track('cmenu', 'click', 'myitems-show-in-origin-page');
 				return true;
 			}
-		});
+		});*/
 
-		cMenu.addAction({
+/*		cMenu.addAction({
 			type: ['pundit-' + self.name],
 			name: 'open' + self.name + 'ResourceItemWebPage',
 			label: 'Open Web page',
@@ -244,11 +241,10 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 			},
 			onclick: function (item) {
 				window.open(item.value, 'SemLibOpenedWebPage');
-				_PUNDIT.ga.track('cmenu', 'click', 'myitems-open-web-page');
 				return true;
 			}
-		});
-		cMenu.addAction({
+		});*/
+/*		cMenu.addAction({
 			type: ['pundit-' + self.name],
 			name: 'removeSemlibAllItems',
 			label: 'Empty MyItems',
@@ -257,12 +253,11 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 			},
 			onclick: function (item) {
 				self.removeAllItems();
-				tooltip_viewer.resetTempXpointers();
-				tooltip_viewer.refreshAnnotations();
-				_PUNDIT.ga.track('cmenu', 'click', 'myitems-empty-myitems');
+*//*				tooltip_viewer.resetTempXpointers();
+				tooltip_viewer.refreshAnnotations();*//*
 				return true;
 			}
-		});
+		});*/
 	},
 
 	zoomURLXPointer: function () {
@@ -301,13 +296,13 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 
 		// If exist zoom it
 		if (typeof(thcUri) !== 'undefined') {
-			tooltip_viewer.zoomOnXpointer(thcUri);
+			//tooltip_viewer.zoomOnXpointer(thcUri);
 			self.loaded = true;
 		} else {
 			var path = new RegExp("@about='.+?'");
 			//Otherwise create the fragment and zoom it
 			if (path.test(fragment)) {
-				tooltip_viewer.zoomOnXpointer(thcUri);
+				//tooltip_viewer.zoomOnXpointer(thcUri);
 			}
 			self.loaded = true;
 		}

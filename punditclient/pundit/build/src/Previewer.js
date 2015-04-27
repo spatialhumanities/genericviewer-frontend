@@ -80,7 +80,7 @@ dojo.declare('pundit.Previewer', pundit.BaseComponent, {
 				b = new pundit.TriplesBucket({bucket: item.rdfData}),
 				label = b.getObject(item.value, ns.items.label)[0] || item.label,
 				prefLabel = b.getObject(item.value, ns.items.label)[0] || '',
-				image = showCollectiveGeoObject ? null : b.getObject(item.value, ns.items.image)[0] || '', //edit Felix
+				image = showCollectiveGeoObject ? null : b.getObject(item.value, ns.items.image)[0] || '', //edit IBR
 				selector = b.getObject(item.value, ns.items.selector)[0] || '',
 				altLabel = b.getObject(item.value, ns.items.altLabel).join(', ') || '',
 				description = b.getObject(item.value, ns.items.description)[0] || 'No description available',
@@ -155,14 +155,14 @@ dojo.declare('pundit.Previewer', pundit.BaseComponent, {
 	 * @description Shows the preview for a given resource in the preview area.
 	 * @param uri {string} Uri of the resource
 	 */
-	show: function (uri, containerSelector, showCollectiveGeoObject) { //edit Felix: für die anzeige von mehreren geo-objekten
+	show: function (uri, containerSelector, showCollectiveGeoObject) { //edit IBR: für die anzeige von mehreren geo-objekten
 		var self = this;
 
 		// Already showing this preview
 		if (self.currentPreviewURI === uri)
 			return;
 
-		if (showCollectiveGeoObject){//edit Felix
+		if (showCollectiveGeoObject){//edit IBR
 			containerSelector = '#pundit-gui-preview';
 			self.currentPreviewURI = uri;
 			dojo.query(containerSelector).removeClass('pundit-panel-loading');

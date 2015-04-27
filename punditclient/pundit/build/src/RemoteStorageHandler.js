@@ -74,7 +74,7 @@ dojo.declare("pundit.RemoteStorageHandler", pundit.BaseComponent, {
 		//Currently is not useful
 	},
 
-	save: function (key, val, removedGeoURIs) {//edit felix. assert: hier werden geometrien und annotationen gespeichert.
+	save: function (key, val, removedGeoURIs) {//edit IBR. assert: hier werden geometrien und annotationen gespeichert.
 		var currentTime = new Date(),
 				payload = dojo.toJson({value : val, created: currentTime.getTime()}),
 				rmg=removedGeoURIs == undefined ? []: removedGeoURIs;

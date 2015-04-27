@@ -105,7 +105,7 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
 		var self = this;
 		self.annotationVisibility = scope;
 		self.store.save('mode', scope);
-		tooltip_viewer.refreshAnnotations();
+		//tooltip_viewer.refreshAnnotations();
 	},
 
 	setLogged: function (flag, data) {
@@ -135,10 +135,7 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
 
 			self.user = {};
 
-			//TODO Send a message?
-			//mySemlibInfoContainer doesn't exist anymore'
-			//if (typeof(data.msg) !== 'undefined')
-			//    dojo.query('#mySemlibInfoContainer').html(data.msg);
+
 		}
 	},
 
@@ -147,7 +144,6 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
 		
 		self.loginFunction = function() {
 			if (!self.logged) {
-				_PUNDIT.ga.track('gui-button', 'click', '#pundit-mypundit-login-button');
 				requester.showLoginForm(self.opts.loginServer);
 			}
 		};
@@ -156,7 +152,6 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
 			requester.logout(function (msg) {
 				self.setLogged(false, msg);
 			});
-			_PUNDIT.ga.track('cmenu', 'click', 'sign-out');
 			dojo.removeClass(dojo.byId('pundit-gui-topbar'), 'pundit-loggedin');
 			return true;
 		};
@@ -165,15 +160,14 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
 			var pos = dojo.position(e.target).x - 20;
 			// TODO: this call to getAnnotationVisibility ensures that the
 			// self.annotationVisibility is bound when shwing the action menu. IT SUCKS but works!
-			self.getAnnotationVisibility(function (mode) {
-				cMenu.show(pos, 20, '', 'semlibUserMenu', 'pundit-cm-bottom');
-			});
+/*			self.getAnnotationVisibility(function (mode) {
+				//cMenu.show(pos, 20, '', 'semlibUserMenu', 'pundit-cm-bottom');
+			});*/
 
 		});
 
 		dojo.connect(dojo.byId('pundit-mypundit-login-button'), 'onclick', function (e) {
 			if (!self.logged) {
-				_PUNDIT.ga.track('gui-button', 'click', '#pundit-mypundit-login-button');
 				requester.showLoginForm(self.opts.loginServer);
 				requester.openLoginPopUp();
 			}
@@ -181,132 +175,9 @@ dojo.declare("pundit.MyPundit", pundit.BaseComponent, {
 
 		dojo.connect(dojo.byId('pundit-mypundit-this-page-button'), 'onclick', function (e) {
 			var pos = dojo.position(e.target).x - 20;
-			cMenu.show(pos, 20, '', 'punditThisPageMenu', 'pundit-cm-bottom');
+			//cMenu.show(pos, 20, '', 'punditThisPageMenu', 'pundit-cm-bottom');
 		});
 
-		cMenu.addAction({
-			type: ['semlibUserMenu'],
-			name: 'semlibLogout',
-			label: 'Sign out',
-			showIf: function (xp) {
-				return true;
-			},
-			onclick: function (xp) {
-				requester.logout(function (msg) {
-					self.setLogged(false, msg);
-				});
-				_PUNDIT.ga.track('cmenu', 'click', 'sign-out');
-				dojo.removeClass(dojo.byId('pundit-gui-topbar'), 'pundit-loggedin');
-				return true;
-			}
-		});
-
-		if (_PUNDIT.config.modules['pundit.NotebookManager'].active === true) {
-
-			self.notebookManager = new pundit.NotebookManager({
-				name: "NotebookManager",
-				title: "Notebook Manager",
-				drag: true,
-				width: 500
-			});
-
-			cMenu.addAction({
-				type: ['semlibUserMenu'],
-				name: 'punditManageNotebooks',
-				label: 'Manage Notebooks',
-				showIf: function () {
-					return true;
-				},
-				onclick: function () {
-					_PUNDIT.ga.track('cmenu', 'click', 'notebook-manager');
-					self.notebookManager.show(150, 150, {
-						title: "Notebook Manager"
-					});
-				}
-			});
-
-		}
-
-		if (_PUNDIT.config.isModuleActive('pundit.NotebookManager') && _PUNDIT.config.modules['pundit.NotebookManager'].showFilteringOptions === true) {
-
-			cMenu.addAction({
-				type: ['semlibUserMenu'],
-				name: 'punditAnnotationsVisibilityShowAll',
-				label: 'View all notebooks',
-				showIf: function () {
-					return myPundit.annotationVisibility != 'all';
-				},
-				onclick: function () {
-					_PUNDIT.ga.track('cmenu', 'click', 'view-all-notebooks');
-					semlibWindow.closeAllPanels();
-					self.setAnnotationVisibility('all');
-					return true;
-				}
-			});
-
-			cMenu.addAction({
-				type: ['semlibUserMenu'],
-				name: 'punditAnnotationsVisibilityShowActive',
-				label: 'View active notebooks only',
-				showIf: function () {
-					return self.annotationVisibility != 'active';
-				},
-				onclick: function () {
-					_PUNDIT.ga.track('cmenu', 'click', 'view-active-notebooks-only');
-					semlibWindow.closeAllPanels();
-					self.setAnnotationVisibility('active');
-					return true;
-				}
-			});
-
-		}
-
-		// TODO: move me to some other button somewhere else?
-		cMenu.addAction({
-			type: ['punditThisPageMenu'],
-			name: 'showAllAnnotations',
-			label: 'Show all annotations',
-			showIf: function () {
-				// Dont show the button if we are refresing annotations
-				return !_PUNDIT.tooltipViewer.isRefreshingAnnotations;
-			},
-			onclick: function () {
-				_PUNDIT.ga.track('cmenu', 'click', 'show-all-annotations');
-				_PUNDIT.tooltipViewer.showAllAnnotations();
-				return true;
-			}
-		});
-
-		cMenu.addAction({
-			type: ['punditThisPageMenu'],
-			name: 'refreshAnnotationsAndMyItems',
-			label: 'Refresh Annotations and My Items',
-			showIf: function () {
-				// Dont show the button if we are refresing annotations
-				return !_PUNDIT.tooltipViewer.isRefreshingAnnotations;
-			},
-			onclick: function () {//Felix: aktualisierung von annotationen
-				_PUNDIT.ga.track('cmenu', 'click', 'refresh-annotations-and-my-items');
-				_PUNDIT.tooltipViewer.refreshAnnotations();
-				semlibMyItems.loadMyItems();
-				return true;
-			}
-		});
-
-		// TODO: move me to some other button somewhere else?
-		cMenu.addAction({
-			type: ['punditThisPageMenu'],
-			name: 'closeAllOpenedAnnotations',
-			label: 'Close all annotations',
-			showIf: function () {
-				return semlibWindow.isSomePanelOpen();
-			},
-			onclick: function () {
-				_PUNDIT.ga.track('cmenu', 'click', 'close-all-annotations');
-				semlibWindow.closeAllPanels();
-				return true;
-			}
-		});
 
 	} // initBehaviors();
 });

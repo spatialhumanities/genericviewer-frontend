@@ -22,7 +22,7 @@ dojo.declare("pundit.NamespaceHelper", pundit.BaseComponent, {
 
 	constructor: function (options) {
 		var self = this;
-		//edit Felix: IBR namespace
+		//edit IBR: IBR namespace
 		self.geometric_object_class="http://voc.spatialhumanities.de/ibr/classes#geometric_object";
 		self.geometric_object_description="A 3D Geometric Object from a Point Cloud, identified in the GenericViewer Web Application (IBR)";
 		self.collective_object_label="Current Geo-Object Collection";

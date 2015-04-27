@@ -56,13 +56,13 @@ dojo.require("pundit.AnnotationWriter");
 
 // TextFragmentHandler
 dojo.require("dojo.NodeList-manipulate");
-dojo.require("pundit.TextFragmentHandler");
+
 
 // TooltipAnnotationViewer
 dojo.require("dojo.behavior");
 dojo.require("dojox.layout.DragPane");
 dojo.require("dojox.fx.scroll");
-dojo.require("pundit.TooltipAnnotationViewer");
+
 
 // TriplesBucket
 dojo.require("pundit.TriplesBucket");
@@ -81,8 +81,7 @@ dojo.require("dijit.tree.dndSource"); //required for drag and drop
 dojo.require("dijit.Tree");
 dojo.require("dojox.layout.FloatingPane");
 
-// XpointersHelper
-dojo.require("pundit.XpointersHelper");
+
 
 // Storage
 dojo.require("pundit.RemoteStorageHandler");
@@ -99,16 +98,13 @@ dojo.require("pundit.ItemContainerManager");
 // Literals
 dojo.require("pundit.Literals");
 
-// DbpediaSpotlight, dataTXT and Civet
-dojo.require("pundit.DbpediaSpotlight");
-dojo.require("pundit.DataTxt");
-dojo.require("pundit.Civet");
+
 
 // ResourcesPanel
 dojo.require("pundit.ResourcesPanel");
 dojo.require("pundit.RecognizerPanel");
 dojo.require("dojox.xml.DomParser");
-dojo.require("pundit.CommentTagPanel");
+
 
 // AuthenticatedRequests
 dojo.require("pundit.AuthenticatedRequests");
@@ -119,8 +115,7 @@ dojo.require("dijit.Menu");
 dojo.require("dijit.MenuItem");
 dojo.require("pundit.MyPundit");
 
-// ContextualMenu
-dojo.require("pundit.ContextualMenu");
+
 
 // Previewer
 dojo.require("pundit.Previewer");
@@ -130,10 +125,6 @@ dojo.require("pundit.LoadingBox");
 
 // Configuration
 dojo.require("pundit.Configuration");
-
-// Annotators
-dojo.require("pundit.annotators.AnnotatorsConductor");
-dojo.require("pundit.annotators.AnnotatorsBase");
 
 /**
  * @class pundit.Init
@@ -209,8 +200,8 @@ dojo.declare("pundit.Init", pundit.BaseComponent, {
 		p['previewer'] = previewer;
 
 		// TODO: sanitize use of this global var, and remove it
-		cMenu = new pundit.ContextualMenu();
-		p['cMenu'] = cMenu;
+/*		cMenu = new pundit.ContextualMenu();
+		p['cMenu'] = cMenu;*/
 
 		// TODO: sanitize use of this global var, and remove it
 		requester = new pundit.AuthenticatedRequests();
@@ -225,68 +216,20 @@ dojo.declare("pundit.Init", pundit.BaseComponent, {
 
 		p['items'] = new pundit.ItemContainerManager();
 
-		// TODO: sanitize use of this global var, and remove it
-		fragmentHandler = new pundit.TextFragmentHandler();
-		p['fragmentHandler'] = fragmentHandler;
 
-		if (p.config.isModuleActive("pundit.fasttexthandler")) {
-			dojo.require("pundit.FastTextHandler");
-			p['fasttexthandler'] = new pundit.FastTextHandler({
-				name: "fast-text-handler",
-				title: "Connect text",
-				drag: true
-			});
-		}
-
-		if (p.config.isModuleActive("pundit.PageHandler")) {
-			dojo.require("pundit.PageHandler");
-			p['pageHandler'] = new pundit.PageHandler({debug: false});//Felix, debug
-		}
-
-		// Bookmarklet: dojo's build system greps dojo.require to grasp the files
-		// to include into it. We cannot require dinamicly for a bookmarklet, so just
-		// put a dojo.require as workaround
-		if (false) {
-			dojo.require('pundit.annotators.TextFragmentAnnotator');
-		}
-
-		var _foorequire = dojo.require;
-		p['conductor'] = new pundit.annotators.AnnotatorsConductor();
-		for (var an in p.config.modules.annotators) {
-
-			var conf = p.config.modules.annotators[an];
-			if (conf.active === true) {
-				self.log('Loading annotator ' + an);
-				_foorequire('pundit.annotators.' + an);
-				p.conductor.registerAnnotator(new pundit.annotators[an](conf));
-			}
-		}
 
 		// Always load the base selector class and the special vocab selector
 		dojo.require("pundit.selectors.SelectorBase");
 		dojo.require("pundit.selectors.VocabSelector");
 		p['vocab'] = new pundit.selectors.VocabSelector();
 
-		// bookmarklet workaround: same as above
-		if (false) {
-			dojo.require("pundit.selectors.DBPediaSelector");//todo: Nicht benötigte Selektoren abschalten.
-			dojo.require("pundit.selectors.FreebaseSelector");
-			dojo.require("pundit.selectors.KorboBasketSelector");
-			dojo.require("pundit.selectors.MurucaSelector");
-			dojo.require("pundit.selectors.WordnetSelector");
-			dojo.require("pundit.selectors.EuropeanaSelector");
-			dojo.require("pundit.selectors.EuropeanaEDMSelector");
-			dojo.require("pundit.selectors.BibServerSelector");
-			dojo.require("pundit.selectors.DandelionGeoSelector");
-			dojo.require("pundit.selectors.DandelionPOISelector");
-		}
 
 		// Used for other components initialization
 		p.config.activeSelectorsName = [];
 		for (var se in p.config.modules.selectors) {
 			var conf = p.config.modules.selectors[se];
 
-			_foorequire('pundit.selectors.' + se + 'Selector');
+			_dojo.require('pundit.selectors.' + se + 'Selector');
 
 			if (p.configuration._isArray(conf)) {
 
@@ -311,15 +254,7 @@ dojo.declare("pundit.Init", pundit.BaseComponent, {
 
 		}
 
-		// todo -> imageFragmentHandler
-		if (p.config.isModuleActive("pundit.ImageFragmentHandler")) {
-			dojo.require("pundit.ImageFragmentHandler");
-			semlibImageFragmentHandler = new pundit.ImageFragmentHandler();
-		}
 
-		if (p.config.isModuleActive('pundit.NotebookManager')) {
-			dojo.require("pundit.NotebookManager");
-		}
 
 		// TODO: sanitize use of this global var, and remove it
 		// rename to literals creator? handler? whatever
@@ -337,42 +272,12 @@ dojo.declare("pundit.Init", pundit.BaseComponent, {
 			p.config.activeEntitySources[name + "Selector"] = {label: label};
 		}
 
-		// Recognizer
-		if (p.config.isModuleActive('pundit.Recognizer')) {
-			dojo.require("pundit.Recognizer");
-			p['recognizer'] = new pundit.Recognizer();
-		}
-
-		p['commentTag'] = new pundit.CommentTagPanel({
-			name: 'commentTag',
-			preview: true,
-			drag: true,
-			searchType: 'search',
-			namedEntitiesSources: p.config.activeEntitySources
-		});
-//edit Felix: ImageAnnotationPanel raus.
-		// TODO: remove this and use annotators instead
-		// TODO: move 600,400 to component defaults, ready to be overridden
-/*		if (p.config.isModuleActive('pundit.ImageAnnotationPanel')) {
-			dojo.require("pundit.ImageAnnotationPanel");
-			p['imageAnnotationPanel'] = new pundit.ImageAnnotationPanel({
-				name: 'imageAnnotationPanel',
-				title: 'Image Annotation Panel',
-				width: 600,
-				height: 400,
-				drag: true
-			});
-		}*/
 
 		// TODO: sanitize use of this global var, and remove it
 		tripleComposer = new pundit.TripleComposer();
 		p['tripleComposer'] = tripleComposer;
 
-		// TODO: sanitize use of this global var, and remove it
-		// dont use _ !
-		//edit Felix: auskommentiert
-		tooltip_viewer = new pundit.TooltipAnnotationViewer();
-		p['tooltipViewer'] = tooltip_viewer;
+
 
 		// TODO: sanitize use of this global var, and remove it
 		myPundit = new pundit.MyPundit();
@@ -382,27 +287,8 @@ dojo.declare("pundit.Init", pundit.BaseComponent, {
 		// TODO: use a single one with get() and set(), remove all the rest (save, read)
 		p['remoteStore'] = new pundit.RemoteStorageHandler();
 
-		// Help system
-		if (p.config.isModuleActive('pundit.Help')) {
-			dojo.require("pundit.Help");
-			p['help'] = new pundit.Help();
-		}
 
-		if (p.config.isModuleActive('pundit.NamedContentHandler')) {
-			dojo.require("pundit.NamedContentHandler");
-			p['namedContentHandler'] = new pundit.NamedContentHandler();
-		}
 
-		if (p.config.isModuleActive('pundit.ContactHelper')) {
-			dojo.require("pundit.ContactHelper");
-			p['contact'] = new pundit.ContactHelper();
-		}
-
-		// Angular helpers
-/*		if (p.config.isModuleActive('pundit.ng.ImageAnnotatorHelper')) {
-			dojo.require("pundit.ng.ImageAnnotatorHelper");
-			p['ngIA'] = new pundit.ng.ImageAnnotatorHelper();
-		}*/
 
 		if (p.config.isModuleActive('pundit.ng.EntityEditorHelper')) {
 			dojo.require("pundit.ng.EntityEditorHelper");

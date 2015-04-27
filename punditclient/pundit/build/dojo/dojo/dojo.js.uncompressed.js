@@ -253,9 +253,9 @@
 		d.global = this;
 		var bURL='/viewer/punditclient/pundit/build/dojo/dojo/';
 		d.config = /*===== djConfig = =====*/{
-			isDebug: true,//Felix
+			isDebug: true,//IBR
 			debugAtAllCosts: false,
-			baseUrl: bURL//edit felix: für development / debugging
+			baseUrl: bURL//edit IBR: für development / debugging
 		};
 
 		// FIXME: 2.0, drop djConfig support. Use dojoConfig exclusively for global config.
@@ -500,7 +500,7 @@
 		}
 
 		dojo["eval"] = function (/*String*/ scriptFragment) {
-			//Felix
+			//IBR
 			//debugger;
 			//	summary:
 			//		A legacy method created for use exclusively by internal Dojo methods. Do not use
@@ -7114,7 +7114,7 @@
 				//	|	dojo.query("ul > li").addClass("firstLevel");
 
 				node = byId(node);
-				if (node==null)debugger;//Felix
+				if (node==null)debugger;//IBR
 				classStr = str2array(classStr);
 				var cls = node[_className], oldLen;
 				cls = cls ? " " + cls + " " : " ";

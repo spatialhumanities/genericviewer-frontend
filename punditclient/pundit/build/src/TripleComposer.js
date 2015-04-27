@@ -32,7 +32,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 	// Will contain DnD objects for subject, predicate, object
 	tripleDnD: {},
-	collectiveGeoObj: false,//edit Felix
+	collectiveGeoObj: false,//edit IBR
 	collectiveObjIDs: [],
 	// TODO: move this comment to some @property and some into the class declaration
 	/*
@@ -46,22 +46,19 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 		var self = this,
 				pu = "<div id=\"pundit-tc-container\" class=\"pundit-tab pundit-selected\">";
 		pu += "    <div class=\"pundit-tab-header\">"; //todo: Listener für den Save-Button muss auf den ganzen Block, nicht nur auf den Text-Span
-		//pu += "      <span class=\"pundit-gui-button\" id=\"pundit-tc-save-button\"><span class=\"pundit-bicon pundit-save-icon\"></span><span>Save</span></span>";
 		pu += "      <span class=\"pundit-gui-button\" id=\"pundit-tc-add-triple-button\"><span class=\"pundit-bicon pundit-add-triple-icon\"></span>Add a new triple</span>";
 		pu += "    </div>";
-		pu += "    <div id=\"pundit-tc-triples-container\" class=\"pundit-tab-content\">"; //Felix: pundit-stop-wheel-propagation weg
-		/*edit Felix: ist unten in triple-container*/
-		pu += "    </div>";//edit Felix: War über tc-triples-container
+		pu += "    <div id=\"pundit-tc-triples-container\" class=\"pundit-tab-content\">";
+		pu += "    </div>";
 		pu += "    </div>";
 		pu += "  </div>";
 		dojo.query("#pundit-gui-right").append(pu);
 		self.saver = new pundit.AnnotationWriter();
-		/*Felix: Hier steht das Drop-Down Menu für die SPO-Slots. Sichtbarkeit durch opacity als element style dynamisch */
 		self.subjSuggestionPanel = new pundit.ResourcesPanel({
 			name: 'subj-suggestions',
 			searchType: 'filter',
 			field: 'subject',
-			namedEntitiesSources: _PUNDIT.config.activeEntitySources //edit Felix: soll auch ibr_taxonomy im subj-slot angezeigt werden.
+			namedEntitiesSources: _PUNDIT.config.activeEntitySources
 		});
 		self.subjSuggestionPanel.onItemAdded(function (item) {
 			self.addItem(item);
@@ -142,23 +139,20 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 		// Saves the current annotation
 		dojo.connect(dojo.byId('pundit-tc-save-button'), 'onclick', function () {
-			_PUNDIT.ga.track('gui-button', 'click', '#pundit-tc-save-button');
 			//dojo.query('#pundit-tc-container').addClass('pundit-panel-loading');
 			self.saveTriples();
-			//dojo.query('#pundit-tc-container').removeClass('pundit-panel-loading');//edit Felix: Zur Sicherheit, falls ein nicht korrektes Triple gespeichert werden soll.besser mit Timeout
+			//dojo.query('#pundit-tc-container').removeClass('pundit-panel-loading');//edit IBR: Zur Sicherheit, falls ein nicht korrektes Triple gespeichert werden soll.besser mit Timeout
 		});
 
 		//todo felix: sollte eigentlich zu init-behaviours, wird dort aber zu häufig aufgerufen
-		//edit Felix //send current Graph Pattern in Triple Browser as
+		//edit IBR //send current Graph Pattern in Triple Browser as
 		dojo.connect(dojo.byId('pundit-tc-sparql-button'), 'onclick', function () {
-			//_PUNDIT.ga.track('gui-button', 'click', '#pundit-tc-sparql-button');
 			self.triple2Sparql();
 		});//triple2Sparql
 
 
 		// Adds a new triple row
 		dojo.connect(dojo.byId('pundit-tc-add-triple-button'), 'onclick', function () {
-			_PUNDIT.ga.track('gui-button', 'click', '#pundit-tc-add-triple.button');
 			self.subjSuggestionPanel.hide();
 			self.objSuggestionPanel.hide();
 			self.propSuggestionPanel.hide();
@@ -185,7 +179,6 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 						treeItem,
 						uri;
 				if (typeof(source.semlibTree) !== 'undefined') {
-					_PUNDIT.ga.track('items', 'drop', 'triple-composer-drop-from-tree');
 
 					for (var i = nodes.length - 1; i >= 0; i--) {
 						treeItem = source.getItem(nodes[i].id);
@@ -210,7 +203,6 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				}
 
 
-				_PUNDIT.ga.track('items', 'drop', 'triple-composer-drop');
 
 				// DEBUG check that suorce is in semlibwindow to prevent that tags
 				// in the comment tag panel are added
@@ -262,7 +254,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				tripleComposer.collectiveGeoObj = false;
 				tripleComposer.collectiveObjIDs = [];
 			}
-			//edit Felix
+			//edit IBR
 			setTimeout("dojo.behavior.apply();", 50);
 
 		});
@@ -272,7 +264,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 			// Context button shows the contextual menu for this type
 			'#pundit-tc-triples-container li.dojoDndItem span.pundit-icon-context-button': {
 				'onclick': function (e) {
-					cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, dojo.query(e.target).parent()[0].id, 'pundititem');
+					//cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, dojo.query(e.target).parent()[0].id, 'pundititem');
 					dojo.stopEvent(e);
 				}
 			},
@@ -299,7 +291,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 		});
 
 		// Pundit Item: remove if it's a pundit item but it's not consolidated
-		cMenu.addAction({
+		/*cMenu.addAction({
 			type: ['pundititem'],
 			name: 'removePunditItem',
 			label: 'Remove this item',
@@ -307,7 +299,6 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				return true;
 			},
 			onclick: function (id) {
-				_PUNDIT.ga.track('cmenu', 'click', 'triple-composer-remove-item');
 
 				// todo: dont use an ID but the URI, so other
 				// components can use this call to show their context menu
@@ -332,7 +323,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				}
 				return true;
 			}
-		});
+		});*/
 
 	}, // initBehaviours()
 
@@ -415,7 +406,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 				this.onDndCancel();
 			},
-			accept: ["subject", "object"] //edit Felix: War 'subject'. test, ob dadurch andere vokabulare im sugg-panel auftauchen. und um d&d von objekt nach subjekt zu erlauben.
+			accept: ["subject", "object"] //edit IBR: War 'subject'. test, ob dadurch andere vokabulare im sugg-panel auftauchen. und um d&d von objekt nach subjekt zu erlauben.
 		});
 		self.tripleDnD[u]['p'] = new dojo.dnd.Source("pundit-tc-p-" + u, {
 			creator: semlibItems.itemNodeCreator,
@@ -460,35 +451,20 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 			accept: ["subject", "object"]
 		});
 
-		// Remove triple button: destroy the dnd targets, destroy the
-		// pundit row container and finally the tripleDnD element
-		dojo.connect(dojo.byId('punditRemoveTriple' + u), 'onclick', function (e) { //todo Felix: Button kann weg
 
-			/*			_PUNDIT.ga.track('gui-button', 'click', 'triple-composer-remove-triple');
-
-			 self.subjSuggestionPanel.hide();
-			 self.objSuggestionPanel.hide();
-			 self.propSuggestionPanel.hide();
-			 self.removeTripleRow(u);
-			 if (dojo.query('.pundit-tc-dnd-container').length === 0)
-			 self.addDnDTriple(); Felix: Wurde ausgelöst durch Klick auf die Triple Buttons selbst.*/
-		});
 
 		// DnD targets clicks highlights only suitable pundit items for the given box
 		dojo.connect(dojo.byId("pundit-tc-s-" + u), 'onclick', function (e) {
-			_PUNDIT.ga.track('gui-button', 'click', 'triple-composer-subject');
 
 			self.dndTargetsClickHandler(e, this, 's');
 		});
 		dojo.connect(dojo.byId("pundit-tc-p-" + u), 'onclick', function (e) {
-			_PUNDIT.ga.track('gui-button', 'click', 'triple-composer-predicate');
 			self.dndTargetsClickHandler(e, this, 'p');
 		});
 		dojo.connect(dojo.byId("pundit-tc-o-" + u), 'onclick', function (e) {
-			_PUNDIT.ga.track('gui-button', 'click', 'triple-composer-object');
 			self.dndTargetsClickHandler(e, this, 'o');
 		});
-		//edit Felix: Listener auf Save-Button. War ursprünglich nur beim Konstruktor (initBehaviors)) aufgerufen worden.=> todo: deswegen wird SaveTriples 2mal aufgerufen!
+		//edit IBR: Listener auf Save-Button. War ursprünglich nur beim Konstruktor (initBehaviors)) aufgerufen worden.=> todo: deswegen wird SaveTriples 2mal aufgerufen!
 		this.initBehaviors();
 		/*dojo.connect(dojo.byId('pundit-tc-save-button'), 'onclick', function () {
 			_PUNDIT.ga.track('gui-button', 'click', '#pundit-tc-save-button');
@@ -497,7 +473,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 			//dojo.query('#pundit-tc-container').removeClass('pundit-panel-loading');//todo: Felix: Klasse hinzufügen und wieder wegnehmen mit Timeout??
 		});
 
-		//edit Felix //send current Graph Pattern in Triple Browser as
+		//edit IBR //send current Graph Pattern in Triple Browser as
 		dojo.connect(dojo.byId('pundit-tc-sparql-button'), 'onclick', function () {
 			//_PUNDIT.ga.track('gui-button', 'click', '#pundit-tc-sparql-button');
 			self.triple2Sparql();
@@ -592,10 +568,9 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 			self.objSuggestionPanel.hide();
 
 		} else if (type === 's') {
-//edit Felix. Subjekt und Objektposition hier gleich
+//edit IBR. Subjekt und Objektposition hier gleich
 			var acceptedTypes = self.getAcceptedTypes(u, target);//todo: geometric_object hier entfernen
-			var myitems = semlibMyItems.getItemsFromTerm('', acceptedTypes, [],ns.geometric_object_class) ;
-			var pageitems = semlibItems.getItemsFromTerm(ns.text_repository_title, [ns.page], []);
+			var myitems = semlibMyItems.getItemsFromTerm('', acceptedTypes, [ns.geometric_object_class], ns.text_repository_title) ;//keine geometrien und keine items aus dem textrepositorium werden geladen.
 			var displayedFeatures = keys(GV.setting.spatialstore.getSpatialcontext().getDisplayedFeatures());//todo Felix: Fall für leere Featuremenge abfangen
 			var filteredGeometries = displayedFeatures.length == 0 ? [] : semlibMyItems.getItemsfromUris(displayedFeatures, [ns.geometric_object_class]);
 			var geometries = semlibMyItems.getItemsFromTerm('', [ns.geometric_object_class]);
@@ -606,11 +581,11 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 					items: filteredGeometries
 				},
 				geometries: {
-					label: 'Geometries',//edit Felix: hinzugefügt
+					label: 'All Geometries',//edit IBR
 					items: geometries
 				},
 				textrepository: {
-					label: 'Repository texts',//edit Felix: hinzugefügt
+					label: 'Repository texts',//edit IBR
 					items: textrepository
 				},
 				myitems: {
@@ -620,7 +595,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 			}
 
 			for (var v in _PUNDIT['vocab'].vocabs) {
-				var vItems = _PUNDIT['vocab'].getItemsForTermInVocab('', v);//edit Felix: Taxonomien im Suggestion-Panel
+				var vItems = _PUNDIT['vocab'].getItemsForTermInVocab('', v);//edit IBR: Taxonomien im Suggestion-Panel
 				itemsObject[v] = {
 					label: v,
 					items: vItems
@@ -661,10 +636,9 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 		} else if (type === 'o') {
 
-//edit Felix. Subjekt und Objektposition hier gleich
+//edit IBR. subject and object-positions almost identical
 			var acceptedTypes = self.getAcceptedTypes(u, target);//todo: geometric_object hier entfernen
-			var myitems = semlibMyItems.getItemsFromTerm('', acceptedTypes, [],ns.geometric_object_class) ;
-			var pageitems = semlibItems.getItemsFromTerm(ns.text_repository_title, [ns.page], []);
+			var myitems = semlibMyItems.getItemsFromTerm('', acceptedTypes, [ns.geometric_object_class], ns.text_repository_title) ;//keine geometrien und keine items aus dem textrepositorium werden geladen.
 			var displayedFeatures = keys(GV.setting.spatialstore.getSpatialcontext().getDisplayedFeatures());//todo Felix: Fall für leere Featuremenge abfangen
 			var filteredGeometries = displayedFeatures.length == 0 ? [] : semlibMyItems.getItemsfromUris(displayedFeatures, [ns.geometric_object_class]);
 			var geometries = semlibMyItems.getItemsFromTerm('', [ns.geometric_object_class]);
@@ -675,11 +649,11 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 					items: filteredGeometries
 				},
 				geometries: {
-					label: 'Geometries',//edit Felix: hinzugefügt
+					label: 'Geometries',//edit IBR: hinzugefügt
 					items: geometries
 				},
 				textrepository: {
-					label: 'Repository texts',//edit Felix: hinzugefügt
+					label: 'Repository texts',//edit IBR: hinzugefügt
 					items: textrepository
 				},
 				myitems: {
@@ -691,7 +665,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 
 			for (var v in _PUNDIT['vocab'].vocabs) {
-				var vItems = _PUNDIT['vocab'].getItemsForTermInVocab('', v, acceptedTypes);
+				var vItems = _PUNDIT['vocab'].getItemsForTermInVocab('', v);//edit IBR: Taxonomien im Suggestion-Panel
 				itemsObject[v] = {
 					label: v,
 					items: vItems
@@ -1081,37 +1055,32 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				targetType = target.id.substr(10, 1);
 
 		if (targetType === 's') {
-			//Currently no need to loop since just one item for container is accepted
-			/*
-			 self.tripleDnD[row]['p'].forInItems(function(item) {
-			 // If this predicate domain is empty, dont add an empty array
-			 if (item.data.domain.length > 0)
-			 allDomains.push(item.data.domain);
-			 });
-			 return self._intersection(allDomains);
-			 */
-			/*edit Felix: erlaube Geometrien im TripleComposer */
-			return [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];//edit Felix: nur die Typen, die nicht schon in anderen Kategorien vorkommen.
+
+			/*edit Felix: allow geometries in the TripleComposer */
+			return [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];//edit IBR: nur die Typen, die nicht schon in anderen Kategorien vorkommen.
 		}
 		if (targetType === 'p') {
 			// Felix: hier müsste doch ns.property hin.
 		}
 		if (targetType === 'o') {
 			// Get all the common ranges of the predicates in the given row
-			var ranges, allRanges = [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];
-			if (self.tripleDnD[row]['p']._lastX==0&&self.tripleDnD[row]['p']._lastY==0){//edit Felix ASSERT: Prädikat ist leer, keine Einschränkung von Prädikaten.
+/*			var ranges, allRanges = [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];
+			if (self.tripleDnD[row]['p']._lastX==0&&self.tripleDnD[row]['p']._lastY==0){//edit IBR ASSERT: Prädikat ist leer, keine Einschränkung von Prädikaten.
 				return [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];
 			}
 			self.tripleDnD[row]['p'].forInItems(function (item) {
-				// I f this predicate range is empty, dont add an empty array
+				// I f this predicate range is empty, don't add an empty array
 				if (item.data.range.length > 0){
 
 					allRanges.push(item.data.range);}
-				else {//edit Felix: interpretiere leere Range als Wildcard
-					return [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];//edit Felix: nur die Typen, die nicht schon in anderen Kategorien vorkommen.
+				else {//edit IBR: interpretiere leere Range als Wildcard
+					return [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];//edit IBR: nur die Typen, die nicht schon in anderen Kategorien vorkommen.
 				}
 			});
-			return self._intersection(allRanges);
+			return self._intersection(allRanges);*/
+			//edit IBR: Beschränkung möglicher prädikate deaktiviert
+						return [ns.fragments.text, ns.fragments.image, ns.image, ns.page, ns.pundit_VocabCategory];//edit IBR: nur die Typen, die nicht schon in anderen Kategorien vorkommen.
+
 		}
 
 	},
@@ -1202,7 +1171,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 			 zu wechseln, wird das
 			  */
 
-			if (this.collectiveGeoObj) {//edit Felix: Hinzufügung kollektiver Objekte aus Features
+			if (this.collectiveGeoObj) {//edit IBR: Hinzufügung kollektiver Objekte aus Features
 				for (var i = 0; i < _PUNDIT.tripleComposer.collectiveObjIDs.length; i++) {
 					var itemObj = semlibMyItems.getItemFromUri(_PUNDIT.tripleComposer.collectiveObjIDs[i]);//bsp 'http://ibr.spatialhumanities.de/ibr/rest/oberwesel/features/1128'
 					var sItem = createGeoItemFromURI(_PUNDIT.tripleComposer.collectiveObjIDs[i], itemObj.image, itemObj.label, ns.geometric_object_description);
@@ -1282,7 +1251,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 	}, // saveTriples()
 
-	//edit Felix: SPARQL-Anfragen aus dem TripleComposer
+	//edit IBR: SPARQL-Anfragen aus dem TripleComposer
 	triple2Sparql: function () {
 
 		var self = this,
@@ -1381,7 +1350,7 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 		for (var row in self.tripleDnD) {
 			var s = [], p = [], o = [];
 
-			if (this.collectiveGeoObj) {//edit Felix: Hinzufügung kollektiver Objekte aus Features
+			if (this.collectiveGeoObj) {//edit IBR: Hinzufügung kollektiver Objekte aus Features
 
 				for (var i = 0; i < _PUNDIT.tripleComposer.collectiveObjIDs.length; i++) {
 					var itemObj = semlibMyItems.getItemFromUri(_PUNDIT.tripleComposer.collectiveObjIDs[i]); //Bsp. 'http://ibr.spatialhumanities.de/ibr/rest/oberwesel/features/1128'
@@ -1433,9 +1402,8 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 		} else {
 			self.log('saveItems with an empty bucket??!');
 		}
-		this.collectiveGeoObj = false;//edit Felix
+		this.collectiveGeoObj = false;//edit IBR
 		this.collectiveObjIDs = [];//todo: sollte eigentlich in die Fallabfrage für Kollektionen oben.
-		//self.clearDnDTriples();//felix: ist im Original nicht da, deswegen wieder gelöscht.
 
 	}, // saveItems()
 
