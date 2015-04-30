@@ -1,1 +1,1 @@
-({"badPasswordMessage":"Неправильный пароль.","nomatchMessage":"Пароли не совпадают."})
+({"badPasswordMessage": "Неправильный пароль.", "nomatchMessage": "Пароли не совпадают."})

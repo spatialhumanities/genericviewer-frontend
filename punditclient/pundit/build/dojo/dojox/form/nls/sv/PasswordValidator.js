@@ -1,1 +1,1 @@
-({"badPasswordMessage":"Ogiltigt lösenord.","nomatchMessage":"Lösenorden stämmer inte överens."})
+({"badPasswordMessage": "Ogiltigt lösenord.", "nomatchMessage": "Lösenorden stämmer inte överens."})

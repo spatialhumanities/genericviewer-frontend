@@ -1,51 +1,62 @@
-.dojoxUploaderFileList{
-	border:1px solid #ccc;
-	min-height:50px;
+.dojoxUploaderFileList {
+	border: 1px solid #ccc;
+	min-height: 50px;
 }
-.dojoxUploaderFileListTable{
-	width:100%;
-	border-collapse:collapse;
-	margin-top:5px;
+
+.dojoxUploaderFileListTable {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 5px;
 }
-.dojoxUploaderFileListHeader th{
-	background-color:#eee;
-	padding:3px;
+
+.dojoxUploaderFileListHeader th {
+	background-color: #eee;
+	padding: 3px;
 }
-.dojoxUploaderFileListRow{
+
+.dojoxUploaderFileListRow {
 }
-.dojoxUploaderIndex{
-	width:20px;
+
+.dojoxUploaderIndex {
+	width: 20px;
 }
-.dojoxUploaderIcon{
-	width:50px;
+
+.dojoxUploaderIcon {
+	width: 50px;
 }
-.dojoxUploaderFileName{
+
+.dojoxUploaderFileName {
 }
-.dojoxUploaderSize{
-	width:70px;
+
+.dojoxUploaderSize {
+	width: 70px;
 }
-.dojoxUploaderFileListContent{
-	width:100%;
+
+.dojoxUploaderFileListContent {
+	width: 100%;
 }
-.dojoxUploaderFileListProgress{
-	border:1px solid #666;
-	height:15px;
-	position:relative;
-	background:#fff;
-	overflow:hidden;
+
+.dojoxUploaderFileListProgress {
+	border: 1px solid #666;
+	height: 15px;
+	position: relative;
+	background: #fff;
+	overflow: hidden;
 }
-.dojoxUploaderFileListPercentText{
-	position:absolute;
-	right:3px;
-	top:3px;
-	font-size:10px;
-	text-align:right;
+
+.dojoxUploaderFileListPercentText {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	font-size: 10px;
+	text-align: right;
 }
-.dojoxUploaderFileListProgressBar{
-	position:absolute;
-	top:0px;
-	left:0px;
-	height:15px;
-	width:0%;
-	background:#bfe1fd;
+
+.dojoxUploaderFileListProgressBar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 15px;
+	width: 0%;
+	background: #bfe1fd;
 }

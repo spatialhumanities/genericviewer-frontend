@@ -1,1 +1,1 @@
-({"deleteButton":"[Törlés]"})
+({"deleteButton": "[Törlés]"})

@@ -1,1 +1,1 @@
-({"close":"[sulje]","title":"Otsikko","authors":"Tekijät","summary":"Tiivistelmä","content":"Sisältö","contributors":"Lisääjät","updated":"Päivitetty","displayOptions":"[näyttöasetukset]","id":"Tunnus"})
+({"close": "[sulje]", "title": "Otsikko", "authors": "Tekijät", "summary": "Tiivistelmä", "content": "Sisältö", "contributors": "Lisääjät", "updated": "Päivitetty", "displayOptions": "[näyttöasetukset]", "id": "Tunnus"})

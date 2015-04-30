@@ -1,1 +1,1 @@
-({"set":"Ayarla","insertAnchor":"Tutturucu Ekle","title":"Tutturucu Özellikleri","text":"Açıklama:","cancel":"İptal","anchor":"Ad:"})
+({"set": "Ayarla", "insertAnchor": "Tutturucu Ekle", "title": "Tutturucu Özellikleri", "text": "Açıklama:", "cancel": "İptal", "anchor": "Ad:"})

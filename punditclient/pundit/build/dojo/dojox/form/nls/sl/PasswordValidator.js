@@ -1,1 +1,1 @@
-({"badPasswordMessage":"Neveljavno geslo.","nomatchMessage":"Gesli se ne ujemata."})
+({"badPasswordMessage": "Neveljavno geslo.", "nomatchMessage": "Gesli se ne ujemata."})

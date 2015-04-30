@@ -1,7 +1,7 @@
 
 .string,
 .function .title,
-.class .title, 
+.class .title,
 .tag .attribute .value,
 .css .rules .value,
 .preprocessor,
@@ -15,11 +15,13 @@
 .smalltalk .class {
 	color: #800;
 }
+
 .comment,
 .java .annotation,
 .template_comment {
 	color: #888;
 }
+
 .number,
 .regexp,
 .javascript .literal,
@@ -27,6 +29,7 @@
 .smalltalk .char {
 	color: #080;
 }
+
 .javadoc,
 .ruby .string,
 .python .decorator,
@@ -35,8 +38,9 @@
 .smalltalk .array,
 .css .attr_selector,
 .xml .pi {
-	color: #88F;
+	color: #88f;
 }
+
 .keyword,
 .css .id,
 .phpdoc,

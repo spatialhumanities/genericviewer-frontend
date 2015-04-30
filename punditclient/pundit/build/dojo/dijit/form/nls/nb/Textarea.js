@@ -1,1 +1,1 @@
-({"iframeEditTitle":"redigeringsområde","iframeFocusTitle":"ramme for redigeringsområde"})
+({"iframeEditTitle": "redigeringsområde", "iframeFocusTitle": "ramme for redigeringsområde"})

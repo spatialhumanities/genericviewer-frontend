@@ -5,6 +5,7 @@
 	width: 18px;
 	height: 18px;
 }
+
 .dijitDisabled .dijitAdditionalEditorIconPasteFromWord {
 	background-image: url(../icons/pasteFromWordDisabled.gif);
 	background-repeat: no-repeat;
@@ -12,14 +13,16 @@
 	width: 18px;
 	height: 18px;
 }
+
 .tundra .dijitPasteFromWordEmbeddedRTE .dijitEditor,
 .nihilo .dijitPasteFromWordEmbeddedRTE .dijitEditor {
-	border-color: #BFBFBF;
+	border-color: #bfbfbf;
 	border-style: solid;
 	border-width: 1px;
 }
+
 .soria .dijitPasteFromWordEmbeddedRTE .dijitEditor {
-	border-color: #CCCCCC;
+	border-color: #ccc;
 	border-style: solid;
 	border-width: 1px;
 }

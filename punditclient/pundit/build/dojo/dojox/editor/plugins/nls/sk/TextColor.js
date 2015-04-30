@@ -1,1 +1,1 @@
-({"setButtonText":"Nastaviť","cancelButtonText":"Zrušiť"})
+({"setButtonText": "Nastaviť", "cancelButtonText": "Zrušiť"})

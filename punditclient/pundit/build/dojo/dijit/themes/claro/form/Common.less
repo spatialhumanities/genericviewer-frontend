@@ -1,7 +1,5 @@
 /* claro/form/Common.css */
-
 /*========================= common css =========================*/
-
 @import "../variables";
 
 /* 'dijitTextBox' refers to 'dijit(TextBox|DateTextBox|CurrencyTextBox|...)' */
@@ -14,6 +12,7 @@
 	border-left-width: 1px;
 	width: 9px;
 }
+
 .claro .dijitTextBoxError .dijitValidationIcon {
 	width: 0;
 	background-color: transparent !important; /* so the INPUT doesn't obscure the border in rtl+a11y */
@@ -28,12 +27,14 @@
 .claro .dijitInputField .dijitPlaceHolder {
 	padding: @textbox-padding;
 }
+
 .claro .dijitTextBox .dijitInputField {
 	// Subtract 1px from top/bottom because we add 1px to other nodes, see rules below.
 	// Although we are theoretically only adding 1px to top/bottom browsers seem to pad inputs by 1px on left/right,
 	// although that varies by so compensate for that too.
 	padding: @textbox-padding - 1px  @textbox-padding;
 }
+
 .dj_gecko .claro .dijitTextBox .dijitInputInner,
 .dj_webkit .claro .dijitTextBox .dijitInputInner {
 	// Although we are theoretically only adding 1px to top/bottom, some browsers seem to pad inputs by 1px on left/right,
@@ -46,8 +47,9 @@
 	/* color for (outer) border on *TextBox widgets, and border between input and buttons on ComboBox and Spinner */
 	border-color: @border-color;
 	.transition-property(background-color, border);
- 	.transition-duration(.35s);
+	.transition-duration(.35s);
 }
+
 .claro .dijitTextBox {
 	background-color: @textbox-background-color;
 }
@@ -56,8 +58,9 @@
 .claro .dijitTextBoxHover,
 .claro .dijitTextBoxHover .dijitButtonNode {
 	border-color: @hovered-border-color;
- 	.transition-duration(.25s);
+	.transition-duration(.25s);
 }
+
 .claro .dijitTextBoxHover {
 	background-color: @textbox-hovered-background-color;
 	background-image: url('images/textBox_back.png');
@@ -69,6 +72,7 @@
 .claro .dijitTextBoxError .dijitButtonNode {
 	border-color: @error-border-color;
 }
+
 .claro .dijitTextBoxError,
 .claro .dijitTextBoxError .dijitInputContainer {
 	background-color: @textbox-error-background-color;
@@ -77,14 +81,16 @@
 /* focused state */
 .claro .dijitTextBoxFocused,
 .claro .dijitTextBoxFocused .dijitButtonNode {
-	border-color:@focused-border-color;
- 	.transition-duration(.1s);
+	border-color: @focused-border-color;
+	.transition-duration(.1s);
 }
+
 .claro .dijitTextBoxFocused {
 	background-color: @textbox-focused-background-color;
 	background-image: url('images/textBox_back.png');
 	background-repeat: repeat-x;
 }
+
 .claro .dijitTextBoxFocused .dijitInputContainer {
 	background: @textbox-focused-background-color;
 }
@@ -99,6 +105,7 @@
 .claro .dijitTextBoxDisabled .dijitButtonNode {
 	border-color: @disabled-border-color;
 }
+
 .claro .dijitTextBoxDisabled,
 .claro .dijitTextBoxDisabled .dijitInputContainer {
 	background-color: @textbox-disabled-background-color;
@@ -112,11 +119,11 @@
 
 .claro .dijitComboBox .dijitArrowButtonInner {
 	background-image: url("images/commonFormArrows.png");
-	background-position:-35px 53%;
+	background-position: -35px 53%;
 	background-repeat: no-repeat;
 	margin: 0;
-	width:16px;
-	border: 1px solid @arrowbutton-inner-border-color;	// white gutter around the arrow button
+	width: 16px;
+	border: 1px solid @arrowbutton-inner-border-color; // white gutter around the arrow button
 }
 
 .claro .dijitToolbar .dijitComboBox .dijitArrowButtonInner {
@@ -137,7 +144,7 @@
 .claro .dijitComboBox .dijitButtonNode {
 	background-color: @arrowbutton-background-color;
 	background-image: url("images/formHighlight.png");
-	background-repeat:repeat-x;
+	background-repeat: repeat-x;
 }
 
 /* Arrow "hover" effect:
@@ -147,21 +154,24 @@
  */
 .claro .dijitComboBoxOpenOnClickHover .dijitButtonNode,
 .claro .dijitComboBox .dijitDownArrowButtonHover {
-	background-color:@arrowbutton-hovered-background-color;
+	background-color: @arrowbutton-hovered-background-color;
 }
+
 .claro .dijitComboBoxOpenOnClickHover .dijitArrowButtonInner,
 .claro .dijitComboBox .dijitDownArrowButtonHover .dijitArrowButtonInner {
-	background-position:-70px 53%;
+	background-position: -70px 53%;
 }
 
 /* Arrow Button change when drop down is open */
-.claro .dijitComboBox .dijitHasDropDownOpen {	// .dijitHasDropDown is on dijitArrowButton node
+.claro .dijitComboBox .dijitHasDropDownOpen {
+	// .dijitHasDropDown is on dijitArrowButton node
 	background-color: @pressed-background-color;
-	background-position:0 -177px;
-	padding: 1px;		// Since no border on arrow button (see rule below)
-}	
+	background-position: 0 -177px;
+	padding: 1px; // Since no border on arrow button (see rule below)
+}
+
 .claro .dijitComboBox .dijitHasDropDownOpen .dijitArrowButtonInner {
-	background-position:-70px 53%;
+	background-position: -70px 53%;
 	border: 0 none;
 }
 
@@ -169,8 +179,8 @@
 .claro div.dijitComboBoxDisabled .dijitArrowButtonInner {
 	/* specific selector set to override background-position setting from Button.js
 	 * (.claro .dijitComboBoxDisabled .dijitArrowButtonInner) */
-	background-position:0 50%;
-	background-color:@disabled-background-color;
+	background-position: 0 50%;
+	background-color: @disabled-background-color;
 }
 
 /*========================= hacks for browsers =========================*/
@@ -186,9 +196,11 @@
 .dj_ie6 .claro .dijitComboBox .dijitButtonNode {
 	background-image: none;
 }
+
 .dj_borderbox .claro .dijitComboBox .dijitHasDropDownOpen .dijitArrowButtonInner {
-	width:18px;				// quirks mode means border-box sizing, so 18px with the border (same as 16px without border)
+	width: 18px; // quirks mode means border-box sizing, so 18px with the border (same as 16px without border)
 }
+
 .dj_borderbox .claro .dijitComboBoxFocused .dijitHasDropDownOpen .dijitArrowButtonInner {
-	width:16px;				// when no border, then back to 16px just like content-box sizing
+	width: 16px; // when no border, then back to 16px just like content-box sizing
 }

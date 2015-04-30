@@ -1,1 +1,1 @@
-({"blockquote":"Blokovno besedilo"})
+({"blockquote": "Blokovno besedilo"})

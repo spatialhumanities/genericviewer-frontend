@@ -1,1 +1,1 @@
-({"iframeEditTitle":"өңдеу аумағы","iframeFocusTitle":"өңдеу аумағының жақтауы"})
+({"iframeEditTitle": "өңдеу аумағы", "iframeFocusTitle": "өңдеу аумағының жақтауы"})

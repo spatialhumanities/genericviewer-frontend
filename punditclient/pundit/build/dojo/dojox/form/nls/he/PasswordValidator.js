@@ -1,1 +1,1 @@
-({"badPasswordMessage":"סיסמה לא חוקית.","nomatchMessage":"הסיסמאות אינן זהות."})
+({"badPasswordMessage": "סיסמה לא חוקית.", "nomatchMessage": "הסיסמאות אינן זהות."})

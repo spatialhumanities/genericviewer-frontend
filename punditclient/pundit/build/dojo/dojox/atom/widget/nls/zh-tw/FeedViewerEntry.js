@@ -1,1 +1,1 @@
-({"deleteButton":"[刪除]"})
+({"deleteButton": "[刪除]"})

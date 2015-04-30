@@ -1,1 +1,1 @@
-({"iframeEditTitle":"veld bewerken","iframeFocusTitle":"veldkader bewerken"})
+({"iframeEditTitle": "veld bewerken", "iframeFocusTitle": "veldkader bewerken"})

@@ -1,1 +1,1 @@
-({"showBlockNodes":"Zobrazit prvky bloku kódu HTML"})
+({"showBlockNodes": "Zobrazit prvky bloku kódu HTML"})

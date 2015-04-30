@@ -1,1 +1,1 @@
-({"previousMessage":"Prejšnje izbire","nextMessage":"Dodatne izbire"})
+({"previousMessage": "Prejšnje izbire", "nextMessage": "Dodatne izbire"})

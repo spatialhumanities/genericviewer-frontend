@@ -9,94 +9,115 @@
 	background-image: url(../../../../layout/resources/icons/resize.png);
 	line-height: 0px;
 }
+
 .dijitRtl .dojoxResizeHandle {
-        float: right;
-        left: 0px;
-        right: auto;
+	float: right;
+	left: 0px;
+	right: auto;
 	background-image: url(../../../../layout/resources/icons/resizeRtl.png);
 }
+
 .dojoxResizeNW {
 	cursor: nw-resize;
 }
+
 .dijitRtl .dojoxResizeNW {
-        cursor: ne-resize;
+	cursor: ne-resize;
 }
+
 .dojoxResizeNE {
-	cursor: ne-resize; 
+	cursor: ne-resize;
 }
+
 .dijitRtl .dojoxResizeNE {
-        cursor: nw-resize;
+	cursor: nw-resize;
 }
+
 .dojoxResizeW {
-	cursor: w-resize; 
+	cursor: w-resize;
 }
-.dojoxResizeN { 
-	cursor: n-resize; 
+
+.dojoxResizeN {
+	cursor: n-resize;
 }
+
 .dojoxResizeHandleClone {
-	position:absolute; top:0; left:0; 
-	border:1px dashed #666; 
-	z-index:999; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px dashed #666;
+	z-index: 999;
 }
- 
+
 .dojoxEditorStatusBar {
-        overflow: hidden;
-        vertical-align: bottom;
-        padding: 2px; 
+	overflow: hidden;
+	vertical-align: bottom;
+	padding: 2px;
 }
+
 .dojoxEditorStatusBar table {
-        width: 100%;
+	width: 100%;
 }
+
 .dojoxEditorStatusBar .dojoxResizeHandle {
-        position: static;
-        padding: 0px;
-        vertical-align: bottom; 
+	position: static;
+	padding: 0px;
+	vertical-align: bottom;
 }
-.dojoxEditorStatusBar .dojoxEditorStatusBarText{
-        height: 1.5em;
-        vertical-align: middle; 
-        width: 100%;
-        overflow: hidden;
+
+.dojoxEditorStatusBar .dojoxEditorStatusBarText {
+	height: 1.5em;
+	vertical-align: middle;
+	width: 100%;
+	overflow: hidden;
 }
+
 .claro .dojoxEditorStatusBar {
-        background-color: #F1F1F1;
+	background-color: #f1f1f1;
 }
-.claro .dojoxEditorStatusBar .dojoxEditorStatusBarText{
-        border-style: solid;
-        border-width: 1px;
-        border-color: #B5BCC7;
-        
+
+.claro .dojoxEditorStatusBar .dojoxEditorStatusBarText {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b5bcc7;
+
 }
+
 .tundra .dojoxEditorStatusBar {
-        background-color: #EAEAEA;
+	background-color: #eaeaea;
 }
-.tundra .dojoxEditorStatusBar .dojoxEditorStatusBarText{
-        border-style: solid;
-        border-width: 1px;
-        border-color: #CCCCCC;
-        
+
+.tundra .dojoxEditorStatusBar .dojoxEditorStatusBarText {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+
 }
+
 .nihilo .dojoxEditorStatusBar {
-        border-style: solid;
-        background-color: #FFFFFF;
-        border-width: 1px;
-        border-color: #CCCCCC;
+	border-style: solid;
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ccc;
 }
+
 .nihilo .dojoxEditorStatusBar .dojoxEditorStatusBarText {
-        border-style: solid;
-        border-width: 1px;
-        border-color: #CCCCCC;
-        
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+
 }
+
 .soria .dojoxEditorStatusBar {
-        border-style: solid;
-        background-color: #BDD6F0;
-        border-width: 1px;
-        border-color: #698FB3;
+	border-style: solid;
+	background-color: #bdd6f0;
+	border-width: 1px;
+	border-color: #698fb3;
 }
+
 .soria .dojoxEditorStatusBar .dojoxEditorStatusBarText {
-        border-style: solid;
-        border-width: 1px;
-        border-color: #698FB3;
-        
+	border-style: solid;
+	border-width: 1px;
+	border-color: #698fb3;
+
 }

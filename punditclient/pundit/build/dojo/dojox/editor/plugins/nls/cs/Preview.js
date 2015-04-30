@@ -1,1 +1,1 @@
-({"preview":"Náhled"})
+({"preview": "Náhled"})

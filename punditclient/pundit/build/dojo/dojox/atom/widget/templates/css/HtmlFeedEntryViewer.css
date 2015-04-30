@@ -1,90 +1,106 @@
 .feedEntryViewer {
-        color:#000000;
-        background: #FFFFFF;
+	color: #000;
+	background: #fff;
 }
+
 .feedEntryViewerMenuTable {
-        background: #C0C0C0;      
-        border:2px solid;
-        border-top-color: lightgrey;
-        border-left-color: lightgrey;
-        border-right-color: darkgray;
-        border-bottom-color: darkgray;
-		margin: 0;
+	background: #c0c0c0;
+	border: 2px solid;
+	border-top-color: lightgrey;
+	border-left-color: lightgrey;
+	border-right-color: darkgray;
+	border-bottom-color: darkgray;
+	margin: 0;
 }
+
 .feedEntryViewerMenu, .peopleEditorButton {
-        cursor: pointer;
-        color:#0000FF;
-        text-align: left;
-        font-size:  small;
+	cursor: pointer;
+	color: #00f;
+	text-align: left;
+	font-size: small;
 }
+
 .feedEntryViewerDisplayCheckbox {
-        font-size:  small;
-        text-align: left;
+	font-size: small;
+	text-align: left;
 }
+
 .feedEntryViewerMenu:hover, .peopleEditorButton:hover {
-        text-decoration: underline;
+	text-decoration: underline;
 }
+
 .feedEntryViewerContainer, .feedEntryViewerContainer table {
-		border-width: 0;
-		margin: 0;
+	border-width: 0;
+	margin: 0;
 }
+
 .feedEntryViewerTitle {
-        color:#000000;
-        background: #FFFFFF;
-        text-align: left;
-        
-        font-size:  125%;
-        font-weight: bold; 
+	color: #000;
+	background: #fff;
+	text-align: left;
+
+	font-size: 125%;
+	font-weight: bold;
 }
+
 .feedEntryViewerAuthor {
-        color:#000000;
-        background: #FFFFFF;
+	color: #000;
+	background: #fff;
 }
+
 .feedEntryViewerAuthorNames {
-        color:#000000;
-        background: #FFFFFF;
-        text-align: left;
-        
-        font-size:  110%;
-        font-style: italic;
-        font-weight: normal;
+	color: #000;
+	background: #fff;
+	text-align: left;
+
+	font-size: 110%;
+	font-style: italic;
+	font-weight: normal;
 }
+
 .feedEntryViewerSummary {
-        color:#000000;
-        background: #FFFFFF;
+	color: #000;
+	background: #fff;
 }
+
 .feedEntryViewerUpdated {
-        color:#000000;
-        background: #FFFFFF;
+	color: #000;
+	background: #fff;
 }
+
 .feedEntryViewerUpdatedText {
-        color:#000000;
-        background: #FFFFFF;
-        font-size:  110%;
-        font-style: italic;
-        font-weight: normal;
+	color: #000;
+	background: #fff;
+	font-size: 110%;
+	font-style: italic;
+	font-weight: normal;
 }
+
 .feedEntryViewerId {
-        color:#000000;
-        background: #FFFFFF;
+	color: #000;
+	background: #fff;
 }
+
 .feedEntryViewerIdText {
-        color:#000000;
-        background: #FFFFFF;
-        font-style: italic;
-        font-size:  110%;
-        font-weight: normal;
+	color: #000;
+	background: #fff;
+	font-style: italic;
+	font-size: 110%;
+	font-weight: normal;
 }
+
 .feedEntryViewerContent {
-        color:#000000;
-        background: #FFFFFF;
+	color: #000;
+	background: #fff;
 }
+
 .feedEntryViewerContributorNames {
-        color:#000000;
-        text-align: left;
-        
-        font-size:  125%;
-        font-weight: normal;
+	color: #000;
+	text-align: left;
+
+	font-size: 125%;
+	font-weight: normal;
 }
+
 .feedEntryViewer table {
 }

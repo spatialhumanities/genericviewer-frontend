@@ -1,1 +1,1 @@
-({"save":"Mentés"})
+({"save": "Mentés"})

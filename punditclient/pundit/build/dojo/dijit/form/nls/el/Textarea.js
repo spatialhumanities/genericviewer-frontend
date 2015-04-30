@@ -1,1 +1,1 @@
-({"iframeEditTitle":"περιοχή επεξεργασίας","iframeFocusTitle":"πλαίσιο περιοχής επεξεργασίας"})
+({"iframeEditTitle": "περιοχή επεξεργασίας", "iframeFocusTitle": "πλαίσιο περιοχής επεξεργασίας"})

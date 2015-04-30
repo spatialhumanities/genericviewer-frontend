@@ -1,1 +1,1 @@
-({"pageBreak":"Salt de pàgina"})
+({"pageBreak": "Salt de pàgina"})

@@ -3,36 +3,36 @@
  * of the FlashObject library.
  *
  * Use this file to invoke the Macromedia Flash Player Express Install functionality
- * This file is intended for use with the FlashObject embed script. You can download FlashObject 
+ * This file is intended for use with the FlashObject embed script. You can download FlashObject
  * and this file at the following URL: http://blog.deconcept.com/flashobject/
  *
- * Usage: 
+ * Usage:
  *          var ExpressInstall = new ExpressInstall();
- *          
+ *
  *          // test to see if install is needed:
  *          if (ExpressInstall.needsUpdate) { // returns true if update is needed
  *              ExpressInstall.init(); // starts the update
  *          }
  *
- *	NOTE: Your Flash movie must be at least 214px by 137px in order to use ExpressInstall.
+ *    NOTE: Your Flash movie must be at least 214px by 137px in order to use ExpressInstall.
  *
  */
 
-class ExpressInstall{
+class ExpressInstall {
 	public var needsUpdate:Boolean;
 	private var updater:MovieClip;
 	private var hold:MovieClip;
-	
-	public function ExpressInstall(){
+
+	public function ExpressInstall() {
 		// does the user need to update?
-		this.needsUpdate = (_root.MMplayerType == undefined) ? false : true;	
+		this.needsUpdate = (_root.MMplayerType == undefined) ? false : true;
 	}
 
-	public function init():Void{
+	public function init():Void {
 		this.loadUpdater();
 	}
 
-	public function loadUpdater():Void{
+	public function loadUpdater():Void {
 		System.security.allowDomain("fpdownload.macromedia.com");
 
 		// hope that nothing is at a depth of 10000000, you can change this depth if needed, but you want
@@ -45,8 +45,8 @@ class ExpressInstall{
 		this.hold = this.updater.createEmptyMovieClip("hold", 1);
 
 		// can't use movieClipLoader because it has to work in 6.0.65
-		this.updater.onEnterFrame = function():Void {
-			if(typeof this.hold.startUpdate == 'function'){
+		this.updater.onEnterFrame = function ():Void {
+			if (typeof this.hold.startUpdate == 'function') {
 				_self.initUpdater();
 				this.onEnterFrame = null;
 			}
@@ -55,17 +55,17 @@ class ExpressInstall{
 		var cacheBuster:Number = Math.random();
 
 		this.hold.loadMovie("http://fpdownload.macromedia.com/pub/flashplayer/"
-												+"update/current/swf/autoUpdater.swf?"+ cacheBuster);
+				+ "update/current/swf/autoUpdater.swf?" + cacheBuster);
 	}
 
-	private function initUpdater():Void{
+	private function initUpdater():Void {
 		this.hold.redirectURL = _root.MMredirectURL;
 		this.hold.MMplayerType = _root.MMplayerType;
 		this.hold.MMdoctitle = _root.MMdoctitle;
 		this.hold.startUpdate();
 	}
 
-	public function onInstallStatus(msg):Void{
-		getURL("javascript:dojox.flash.install._onInstallStatus('"+msg+"')");
+	public function onInstallStatus(msg):Void {
+		getURL("javascript:dojox.flash.install._onInstallStatus('" + msg + "')");
 	}
 }

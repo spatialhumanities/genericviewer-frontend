@@ -1,1 +1,1 @@
-({"blockquote":"Sitaatti"})
+({"blockquote": "Sitaatti"})

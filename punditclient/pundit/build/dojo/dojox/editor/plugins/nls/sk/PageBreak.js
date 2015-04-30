@@ -1,1 +1,1 @@
-({"pageBreak":"Zlom strany"})
+({"pageBreak": "Zlom strany"})

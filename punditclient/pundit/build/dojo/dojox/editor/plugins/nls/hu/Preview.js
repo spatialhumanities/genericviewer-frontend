@@ -1,1 +1,1 @@
-({"preview":"Előzetes"})
+({"preview": "Előzetes"})

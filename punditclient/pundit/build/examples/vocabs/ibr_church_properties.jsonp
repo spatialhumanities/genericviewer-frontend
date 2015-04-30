@@ -1,0 +1,32 @@
+_PUNDIT.vocab.initJsonpVocab({
+    "name": "spatialhumanities_relations",
+    "label": "IBR Church Relations",
+    "description": "Some properties relating geometries to semantic information.",
+    "type": "relations",
+	"items": [
+				    {
+			    		"type":["predicate"],
+			    		"rdftype":["http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"],
+			    		"label":"fghrefgh",
+			    		"domain":[],
+			    		"range":["http://www.w3.org/2000/01/rdf-schema#Literal"],
+			    		"value":"http://purl.org/dc/terms/date"
+			 		},
+					{
+			    		"type":["predicate"],
+			    		"rdftype":["http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"],
+			    		"label":"fghfgh",
+			    		"domain":[],
+			    		"range":["http://www.w3.org/2000/01/rdf-schema#Literal"],
+			    		"value":"http://schema.org/comment"
+			 		},
+					{
+			    		"type":["predicate"],
+			    		"rdftype":["http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"],
+			    		"label":"hasfghfgh",
+			    		"domain":[],
+			    		"range":[],
+			    		"value":"http://purl.org/dc/terms/creator"
+			 		}
+				]
+});

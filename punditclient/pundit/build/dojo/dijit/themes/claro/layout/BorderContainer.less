@@ -29,7 +29,6 @@ Splitters and gutters:
 .dijitSplitterHActive - for background-color of an active horizontal splitter
 .dijitSplitterVActive - for background-color of an active horizontal splitter
 */
-
 @import "../variables";
 
 .claro .dijitBorderContainer {
@@ -53,9 +52,10 @@ Splitters and gutters:
 	/* except that TabContainer defines borders on it's sub-nodes (tablist and dijitTabPaneWrapper),
 	 * so override rule setting border on domNode
 	 */
-	 border: none;
+	border: none;
 
 }
+
 .claro .dijitBorderContainer-dijitBorderContainer {
 	/* make nested BorderContainers look like a single big widget with lots of splitters */
 	border: 0;
@@ -66,31 +66,31 @@ Splitters and gutters:
 
 .claro .dijitSplitterH,
 .claro .dijitGutterH {
-	background:none;
-	border:0;
-	height:5px;
+	background: none;
+	border: 0;
+	height: 5px;
 }
 
 .claro .dijitSplitterH .dijitSplitterThumb {
-	background:@border-color none;
-	height:1px;
-	top:2px;
-	width:19px;
+	background: @border-color none;
+	height: 1px;
+	top: 2px;
+	width: 19px;
 }
 
 .claro .dijitSplitterV,
 .claro .dijitGutterV {
-	background:none;
-	border:0;
-	width:5px;
+	background: none;
+	border: 0;
+	width: 5px;
 	margin: 0;
 }
 
 .claro .dijitSplitterV .dijitSplitterThumb {
-	background:@border-color none;
-	height:19px;
-	left:2px;
-	width:1px;
+	background: @border-color none;
+	height: 19px;
+	left: 2px;
+	width: 1px;
 	margin: 0;
 }
 
@@ -100,9 +100,8 @@ Splitters and gutters:
 	background: url("images/splitterHorizontalHover.png") no-repeat center top;
 }
 
-
 .claro .dijitSplitterHHover .dijitSplitterThumb {
-	background:@hovered-border-color none;
+	background: @hovered-border-color none;
 }
 
 .claro .dijitSplitterVHover {
@@ -111,18 +110,18 @@ Splitters and gutters:
 }
 
 .claro .dijitSplitterVHover .dijitSplitterThumb {
-	background:@hovered-border-color none;
+	background: @hovered-border-color none;
 }
 
 .dj_ie6 .dijitSplitterHHover,
 .dj_ie6 .claro .dijitSplitterVHover {
 	background-color: @splitter-hovered-background-color;
-	background-image:none;
+	background-image: none;
 }
 
 /* active splitter */
 .claro .dijitSplitterHActive,
 .claro .dijitSplitterVActive {
 	font-size: 1px;
-	background-color:@splitter-dragged-background-color;
+	background-color: @splitter-dragged-background-color;
 }

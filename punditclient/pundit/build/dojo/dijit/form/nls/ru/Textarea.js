@@ -1,1 +1,1 @@
-({"iframeEditTitle":"область редактирования","iframeFocusTitle":"фрейм области редактирования"})
+({"iframeEditTitle": "область редактирования", "iframeFocusTitle": "фрейм области редактирования"})

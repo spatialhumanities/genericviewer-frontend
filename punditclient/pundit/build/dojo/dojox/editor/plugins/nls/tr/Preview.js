@@ -1,1 +1,1 @@
-({"preview":"Önizleme"})
+({"preview": "Önizleme"})
