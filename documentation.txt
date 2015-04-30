@@ -1,4 +1,4 @@
-﻿# Benutzer-Dokumentation
+# Benutzer-Dokumentation
 
 <ul id="contents"></ul>
 
@@ -63,7 +63,7 @@ Bitte beachten Sie für andere Dienste als den GenericViewer den Hinweis, dass d
 
 Zentral bei der räumlichen Erfassung und Bearbeitung ist der `Draw`-Reiter. Der Hauptteil dieses Reiters ist eine Panorama-Ansicht des aktuell gewählten Standpunkts. Sie können sich drehen, indem Sie in das Hauptfenster klicken und dabei die Maus bewegen, mit dem Mausrad können Sie zoomen. Links in diesem Fenster befindet sich eine Werkzeugleiste, unten können Sie das Panoramabild wechseln. Bitte beachten Sie, dass Sie durch den Wechsel des Bildes nicht Ihren Standort wechseln, sondern lediglich die Visualisierung ändern.
 
-Sie können Features anlegen, indem Sie auf eines der Werkzeuge klicken. Zunächst greifen Sie durch eine Zeichnung lediglich Maße ab. Erst durch das Speichern wird eine URI erzeugt, sodass Sie das Feature semantisch annotieren können. Die Position des Features wird druch die hinter dem Panorama liegende Punktwolke bestimmt. Sie sehen also ein Bild, arbeiten aber eigentlich auf der Punktwolke.
+Sie können Features anlegen, indem Sie auf eines der Werkzeuge klicken. Zunächst greifen Sie durch eine Zeichnung lediglich Maße ab. Erst durch das Speichern wird eine URI erzeugt, sodass Sie das Feature semantisch annotieren können. Die Position des Features wird durch die hinter dem Panorama liegende Punktwolke bestimmt. Sie sehen also ein Bild, arbeiten aber eigentlich auf der Punktwolke.
 
 ![Übersicht Draw-Reiter](http://ibr.spatialhumanities.de/ibr/viewer/documentation/draw.png "Übersicht Draw-Reiter")
 
@@ -136,26 +136,24 @@ Damit setzen Sie das Feature als vom aktuellen Standpunkt aus nicht sichtbar.
 
 ## Semantische Verknüpfung
 
-TODO Felix: Was ist das überhaupt?
+Um Geo-Objekte im Semantic Web sinnvoll zu verknüpfen, sind entsprechende adressierbare Ressourcen nötig. Hierzu integriert der GenericViewer im Connect-Reiter den "TripleBrowser" der Annotationssoftware Pundit(Link). Diese ist ursprünglich dazu gedacht, Webseiten und Teile davon semantisch zu annotieren und diese Annotationen in einem Triplestore URI-adressierbar zu speichern. Mit dem TripleBrowser im GenericViewer können diese Verknüpfungen statt über Text(-teil-)en nun über Geometrie gemacht werden. Darüber hinaus ist der TripleBrowser funktional eng mit den anderen Tabs verbunden. Unter anderem hat er eine symmetrische Funktionalität dient nicht nur zur Eingabe, sondern auch zur Abfrage von Daten.
+Das GenericViewer-Programmpaket enthält aber auch eine Stand-Alone-Version des originalen Pundit-Annotators. Die damit erstellten Text- und Bildannotationen werden  dann im GenericViewer angezeigt, wo sie mit Geodaten verknüpft werden können.
 
-TODO Felix: Wie ist der `Connect`-Reiter aufgebaut? ggf. mit Skizze
 
-TODO Felix: Wie macht man eine Annotation, was passiert bei Klick auf "save"?
 
-TODO Felix: Was passiert bei Klick auf "sparql"? mit Verweis auf den `Filter`-Reiter
+### Der Connect-Reiter
+Der Oberfläche des Connect-Reiters besteht aus vier Teilen: 
+- Dem TripleBrowser mit Dropdown-Menüs zur Auswahl und Verknüpfung semantischer Ressourcen.
+- Dem PreviewPanel zur Anzeige von erweiterten Informationen (z.b. Screenshots) zu Ressourcen.
+- Die Buttons zum Speichern und zum Abfragen von Daten.
+Eine Annotation geht folgendermaßen vonstatten: Durch Klick auf eines der Subjekt-, Prädikat- oder Objekt-Panel wird ein Dropdown-Menü ausgefahren, dass die jeweiligen möglichen Bestandteile für ein Datenverknüpfung bereitstellt. Diese Ressourcen können per Klick oder durch Ziehen an die richtige Stelle bewegt werden. Wenn eine Aussage vollständig ist, kann sie durch Klick auf den Button gespeichert werden
+- Die Abfrage von Daten läuft ganz ähnlich: Hier bleibt aber mindestens ein Feld frei. Für dieses Feld lassen sich die  Fragewörter wer oder was denken. Die Frage nach allen Jesus-Darstellungen in einer Kirche wird zum Beispiel gestellt, in dem an Prädikats- und Objektposition die Ressourcen <depicts> <Jesus> gesetzt werden. Durch Klick auf den SPARQL-Button wird dann die entsprechende Abfrage gestellt, deren Ergebnis, alle Geometrien mit einer Jesusdarstellung, in den anderen Tabs dargestellt werden.
 
-### Semantische Objekte
+#### Einbindung und Nutzung von Taxonomien
+Leider besteht keine Möglichkeit, diesen Import generell automatisch über Transformationsroutinen herzustellen. Zumindest für web-adressierbare Katalogartikel steht im GenericViewer aber ein Skript bereit, mit dem bibliographische Angaben und Adressen automatisch eingefügt werden.
 
-TODO Felix: Welche Objekte tauchen bei Subjekt, Prädikat, Objekt zur Auswahl auf?
-
-#### Properties
-TODO Felix: Was sieht man hier?
-
-#### IBR Taxonomy
-TODO Felix: Was sieht man hier?
-
-#### Selected Features
-TODO Felix: Was sieht man hier?
+#### Verbindung Draw/Filter/Overview und Connect-Tab
+Der Connect-Reiter für semantische Daten ist bidirektional mit den anderen Reitern und den dort angezeigten Geo-Daten verbunden: Wenn eine oder mehrere Geometrien in den anderen Reitern ausgewählt oder gespeichert wird, erscheint Sie beim Klick auf den Connect-Reiter sofort im TripleBrowser an Subjekt-Position und kann dort mit semantischen Beschreibungen verknüpft werden. Umgekehrt werden, wie oben beschrieben, für Ergebnisse von SPARQL-Abfragen alle in diesen Ergebnissen enthaltenen Geometrien in den anderen Tabs dagestellt.
 
 ## Abfragen und Filtern
 
