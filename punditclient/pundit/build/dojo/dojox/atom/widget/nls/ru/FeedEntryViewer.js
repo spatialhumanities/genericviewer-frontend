@@ -1,1 +1,1 @@
-({"close": "[закрыть]", "title": "Название", "authors": "Авторы", "summary": "Сводка", "content": "Информационное наполнение", "contributors": "Участники", "updated": "Обновлено", "displayOptions": "[показать опции]", "id": "ИД"})
+({"close":"[закрыть]","title":"Название","authors":"Авторы","summary":"Сводка","content":"Информационное наполнение","contributors":"Участники","updated":"Обновлено","displayOptions":"[показать опции]","id":"ИД"})

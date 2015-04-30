@@ -1,1 +1,1 @@
-({"iframeEditTitle": "muokkausalue", "iframeFocusTitle": "muokkausalueen kehys"})
+({"iframeEditTitle":"muokkausalue","iframeFocusTitle":"muokkausalueen kehys"})

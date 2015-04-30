@@ -1,1 +1,1 @@
-({"close": "[zapri]", "title": "Naslov", "authors": "Avtorji", "summary": "Povzetek", "content": "Vsebina", "contributors": "Kontributorji", "updated": "Posodobljeno", "displayOptions": "[možnosti prikaza]", "id": "ID"})
+({"close":"[zapri]","title":"Naslov","authors":"Avtorji","summary":"Povzetek","content":"Vsebina","contributors":"Kontributorji","updated":"Posodobljeno","displayOptions":"[možnosti prikaza]","id":"ID"})

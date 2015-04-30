@@ -1,46 +1,39 @@
 
 .dijitToasterContent {
-	padding: 1em;
-	padding-top: 0.25em;
-	background: #73c74a;
+	padding:1em;
+	padding-top:0.25em;
+	background:#73c74a;
 }
-
-.dijitToasterMessage {
-	color: #fff;
+.dijitToasterMessage{ 
+	color:#fff;
 }
-
-.dijitToasterWarning {
-}
-
+.dijitToasterWarning{ }
 .dijitToasterError,
-.dijitToasterFatal {
-	font-weight: bold;
-	color: #fff;
+.dijitToasterFatal{
+	font-weight:bold;
+	color:#fff;
 }
-
-.dijitToasterWarning .dijitToasterContent {
-	padding: 1em;
-	padding-top: 0.25em;
-	background: #d4d943;
+.dijitToasterWarning .dijitToasterContent{
+	padding:1em;
+	padding-top:0.25em;
+	background:#d4d943;
+} 
+.dijitToasterError .dijitToasterContent{
+	padding:1em;
+	padding-top:0.25em;
+	background:#c46600;
 }
-
-.dijitToasterError .dijitToasterContent {
-	padding: 1em;
-	padding-top: 0.25em;
-	background: #c46600;
-}
-
+ 
 .dijitToasterClip {
 	position: absolute;
 	z-index: 5000;
 	overflow: hidden;
 }
-
 .dijitToasterContainer {
 	display: block;
 	position: absolute;
 	width: 17.5em;
 	margin: 0px;
-	font: 0.75em Tahoma, Helvetica, Verdana, Arial;
+	font:0.75em Tahoma, Helvetica, Verdana, Arial;
 }
  

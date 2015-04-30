@@ -20,9 +20,10 @@
  *		.dijitColorPalette .dijitPaletteCellSelected .dijitPaletteImg
  *		adds border for active or selected state
  */
+
 @import "variables";
 
-.claro .dijitColorPalette {
+.claro  .dijitColorPalette {
 	border: 1px solid @border-color;
 	background: @colorpalette-background-color;
 	.border-radius(0);
@@ -34,11 +35,9 @@
 	 * overrides border color in dijit.css */
 	border: 1px solid @minor-border-color;
 }
-
 .claro .dijitColorPalette .dijitPaletteCellHover .dijitPaletteImg {
 	border: 1px solid @swatch-hovered-border-color;
 }
-
 .claro .dijitColorPalette .dijitPaletteCellActive .dijitPaletteImg,
 .claro .dijitColorPalette .dijitPaletteCellSelected .dijitPaletteImg {
 	border: 2px solid @swatch-selected-border-color;

@@ -1,1 +1,1 @@
-({"next": "Seuraava", "done": "Valmis", "previous": "Edellinen"})
+({"next":"Seuraava","done":"Valmis","previous":"Edellinen"})

@@ -1,1 +1,1 @@
-({"name": "Név", "size": "Méret (byte)", "path": "Elérési út"})
+({"name":"Név","size":"Méret (byte)","path":"Elérési út"})

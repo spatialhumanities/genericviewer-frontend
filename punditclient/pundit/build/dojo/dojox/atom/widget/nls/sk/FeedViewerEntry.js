@@ -1,1 +1,1 @@
-({"deleteButton": "[Vymazať]"})
+({"deleteButton":"[Vymazať]"})

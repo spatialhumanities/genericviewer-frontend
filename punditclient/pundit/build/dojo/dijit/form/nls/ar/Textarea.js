@@ -1,1 +1,1 @@
-({"iframeEditTitle": "مساحة التحرير", "iframeFocusTitle": "اطار مساحة التحرير"})
+({"iframeEditTitle":"مساحة التحرير","iframeFocusTitle":"اطار مساحة التحرير"})

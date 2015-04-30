@@ -14,40 +14,36 @@
  * 3. disabled Editor iframe container 
  * 		.dijitEditorDisabled - editor's inner iframe container disable status styles: background, border
  */
+
 @import "variables";
 
-.claro .dijitEditorIFrameContainer {
-	padding: 3px 3px 1px 10px;
+.claro .dijitEditorIFrameContainer{
+	padding:3px 3px 1px 10px;
 }
-
 .claro .dijitEditorIFrame {
 	background-color: @textbox-background-color;
 }
-
 .claro .dijitEditor {
 	border: 1px solid @border-color;
 }
-
-.claro .dijitEditor .dijitEditorIFrameContainer {
+.claro .dijitEditor .dijitEditorIFrameContainer{
 	background-color: @textbox-background-color;
 	background-image: url('form/images/textBox_back.png');
-	background-repeat: repeat-x;
+	background-repeat:repeat-x;
 }
-
-.dj_ie6 .claro .dijitEditor .dijitEditorIFrameContainer {
+.dj_ie6 .claro .dijitEditor .dijitEditorIFrameContainer{
 	background-image: none;
 }
-
 .claro .dijitEditorHover .dijitEditorIFrameContainer,
-.claro .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame {
+.claro .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame{
 	background-color: @textbox-hovered-background-color;
 }
-
 .claro .dijitEditorFocused .dijitEditorIFrameContainer,
-.claro .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame {
+.claro .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame{
 	/* TODO: contradicts rule above, which background-color do you want? */
 	background-color: @textbox-focused-background-color;
 }
+
 
 /* Disabled */
 .claro .dijitEditorDisabled {

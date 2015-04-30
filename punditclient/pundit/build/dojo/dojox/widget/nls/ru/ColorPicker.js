@@ -1,1 +1,1 @@
-({"saturationPickerTitle": "Выбор насыщенности", "valueLabel": "з", "blueLabel": "с", "saturationLabel": "н", "greenLabel": "з", "redLabel": "к", "hueLabel": "о", "hexLabel": "шест", "huePickerTitle": "Выбор оттенка", "degLabel": "°"})
+({"saturationPickerTitle":"Выбор насыщенности","valueLabel":"з","blueLabel":"с","saturationLabel":"н","greenLabel":"з","redLabel":"к","hueLabel":"о","hexLabel":"шест","huePickerTitle":"Выбор оттенка","degLabel":"°"})

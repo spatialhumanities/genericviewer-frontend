@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="punditclient/pundit/build/dojo/dijit/form/nls/hu/|punditclient/pundit/build/dojo/dojox/form/nls/ar/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/zh/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/es/|punditclient/pundit/build/dojo/dojox/dtl/contrib/|punditclient/pundit/build/dojo/dojox/lang/oo/|punditclient/pundit/build/dojo/dojo/nls/nb/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/nb/|punditclient/pundit/build/dojo/dijit/form/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/|punditclient/pundit/build/dojo/dojo/nls/ja/|punditclient/pundit/build/dojo/dojo/lib/|punditclient/pundit/build/dojo/dojo/data/api/|punditclient/pundit/build/dojo/dojox/widget/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/widget/nls/hu/|punditclient/pundit/build/dojo/dojo/nls/ar/|punditclient/pundit/build/dojo/dojox/cometd/|punditclient/pundit/build/dojo/dojox/grid/enhanced/plugins/|punditclient/pundit/build/dojo/dojox/form/nls/nb/|punditclient/pundit/build/dojo/dojox/widget/rotator/|punditclient/pundit/build/dojo/dojox/form/nls/ja/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/ar/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ar/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/sl/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/it/|punditclient/pundit/build/dojo/dijit/_editor/nls/sk/|punditclient/pundit/build/dojo/dijit/nls/cs/|punditclient/pundit/build/dojo/dojo/date/|punditclient/pundit/build/dojo/dojox/mdnd/dropMode/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/el/|punditclient/pundit/build/dojo/dijit/_editor/nls/sl/|punditclient/pundit/build/dojo/dojox/calc/|punditclient/pundit/build/dojo/dojox/io/|punditclient/pundit/build/dojo/dojo/cldr/nls/tr/|punditclient/pundit/build/dojo/dojox/encoding/crypto/|draw/|punditclient/pundit/build/dojo/dojox/widget/nls/pt/|punditclient/pundit/build/dojo/dojox/html/ext-dojo/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/sk/|punditclient/pundit/build/dojo/dojo/cldr/nls/he/|punditclient/pundit/build/dojo/dojo/cldr/nls/da/|punditclient/pundit/build/dojo/dojo/nls/zh/|punditclient/pundit/build/dojo/dojo/nls/es/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/zh/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/es/|punditclient/pundit/build/dojo/dojox/highlight/languages/|punditclient/pundit/build/dojo/dojo/cldr/nls/pt/|punditclient/pundit/build/dojo/dojox/form/nls/ro/|punditclient/pundit/build/dojo/dojox/editor/plugins/|punditclient/pundit/build/dojo/dojox/color/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/el/|punditclient/pundit/build/dojo/dojox/string/|punditclient/pundit/build/examples/ia/scripts/|punditclient/pundit/build/dojo/dijit/nls/th/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ca/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/it/|punditclient/pundit/build/dojo/dojo/cldr/|punditclient/pundit/build/examples/files/|punditclient/pundit/build/dojo/dojox/widget/|punditclient/pundit/build/dojo/dojo/nls/it/|punditclient/pundit/build/dojo/dojox/drawing/plugins/tools/|punditclient/pundit/build/dojo/dijit/_editor/nls/ca/|punditclient/pundit/build/dojo/dojox/drawing/annotations/|punditclient/pundit/build/dojo/dojo/cldr/nls/de/|punditclient/pundit/build/dojo/dojox/form/nls/nl/|punditclient/pundit/build/dojo/dojox/widget/nls/de/|punditclient/pundit/build/dojo/dojox/flash/|punditclient/pundit/build/dojo/dojox/widget/nls/tr/|punditclient/pundit/build/dojo/dijit/form/|punditclient/pundit/build/dojo/dojox/form/nls/ru/|punditclient/pundit/build/dojo/dojox/form/nls/fi/|punditclient/pundit/build/dojo/dojox/embed/IE/|punditclient/pundit/build/dojo/dojox/widget/nls/pl/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/kk/|punditclient/pundit/build/dojo/dijit/_editor/nls/ru/|punditclient/pundit/build/dojo/dijit/_editor/nls/fi/|punditclient/pundit/build/dojo/dojox/drawing/ui/|punditclient/pundit/build/dojo/dojox/widget/nls/he/|punditclient/pundit/build/dojo/dojox/widget/nls/da/|punditclient/pundit/build/dojo/dojo/cldr/nls/pl/|punditclient/pundit/build/dojo/dojox/widget/nls/zh-tw/|punditclient/pundit/build/bookmarklet_build/dojo/nls/|punditclient/pundit/build/dojo/dojox/drawing/tools/custom/|punditclient/pundit/build/dojo/dijit/nls/pl/|punditclient/pundit/build/dojo/dojox/charting/widget/|punditclient/pundit/build/dojo/dojo/data/|punditclient/pundit/build/dojo/dijit/nls/he/|punditclient/pundit/build/dojo/dijit/nls/da/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/sv/|openid/|punditclient/pundit/build/dojo/dojo/nls/ru/|punditclient/pundit/build/dojo/dojo/nls/fi/|punditclient/pundit/build/dojo/dijit/form/nls/zh-tw/|punditclient/pundit/build/dojo/dijit/nls/tr/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ko/|punditclient/pundit/build/dojo/dojox/|punditclient/pundit/build/dojo/dojo/cldr/nls/zh-tw/|punditclient/pundit/build/dojo/dojo/cldr/nls/zh-hk/|punditclient/pundit/build/dojo/dijit/_tree/|punditclient/pundit/build/kinetic/|punditclient/pundit/build/dojo/dojo/dnd/|punditclient/pundit/build/dojo/dojox/layout/dnd/|punditclient/pundit/build/dojo/dojo/cldr/nls/cs/|punditclient/pundit/build/dojo/dojo/nls/ro/|punditclient/temp/|punditclient/pundit/build/dojo/dojox/grid/nls/|punditclient/geo2pundit/|punditclient/pundit/build/dojo/dijit/nls/de/|punditclient/pundit/build/dojo/dijit/form/nls/el/|punditclient/pundit/build/dojo/dojox/grid/|punditclient/pundit/build/dojo/dojox/widget/nls/th/|punditclient/pundit/build/dojo/dojox/grid/enhanced/plugins/exporter/|punditclient/pundit/build/dojo/dojox/av/|punditclient/pundit/build/dojo/dojo/nls/nl/|punditclient/pundit/build/dojo/dojox/dtl/ext-dojo/|punditclient/pundit/build/dojo/dojo/cldr/nls/th/|punditclient/pundit/build/dojo/dijit/_editor/nls/fr/|punditclient/pundit/build/dojo/dijit/nls/pt/|punditclient/pundit/build/dojo/dojox/drawing/stencil/|punditclient/pundit/build/dojo/dojox/form/nls/fr/|punditclient/pundit/build/dojo/dojox/math/random/|punditclient/pundit/build/dojo/dojox/lang/aspect/|punditclient/pundit/build/dojo/dojox/widget/nls/cs/|punditclient/pundit/build/bookmarklet_build/dojo/resources/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ar/|punditclient/pundit/build/dojo/dojo/io/|punditclient/pundit/build/dojo/dojox/form/nls/|punditclient/pundit/build/dojo/dijit/_editor/nls/cs/|databaseconnection/|punditclient/pundit/build/dojo/dojox/widget/nls/zh/|punditclient/pundit/build/dojo/dojox/widget/nls/es/|punditclient/pundit/build/dojo/dojo/cldr/nls/el/|punditclient/pundit/build/dojo/dojox/drawing/manager/|punditclient/pundit/build/dojo/dijit/|punditclient/pundit/build/dojo/dojox/layout/|punditclient/pundit/build/dojo/dijit/form/nls/zh/|punditclient/pundit/build/dojo/dijit/form/nls/es/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/hu/|punditclient/pundit/build/dojo/dojox/charting/scaler/|punditclient/pundit/build/dojo/dijit/_editor/nls/th/|punditclient/pundit/build/dojo/dojox/atom/widget/|punditclient/pundit/build/examples/ee/scripts/|punditclient/pundit/build/dojo/dijit/nls/fr/|punditclient/pundit/build/dojo/dojo/cldr/nls/it/|punditclient/pundit/build/dojo/dijit/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/|punditclient/pundit/build/dojo/dojox/widget/nls/it/|punditclient/pundit/build/dojo/dijit/form/nls/it/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/nb/|punditclient/pundit/build/dojo/dojo/cldr/nls/zh-hant/|punditclient/pundit/build/dojo/dojo/cldr/nls/en/|punditclient/pundit/build/dojo/dojox/form/nls/sl/|punditclient/pundit/build/dojo/dojox/drawing/|punditclient/pundit/build/dojo/dojox/drawing/ui/dom/|punditclient/pundit/build/dojo/dijit/form/nls/nb/|punditclient/pundit/build/dojo/dojo/nls/fr/|punditclient/pundit/build/dojo/dojox/form/nls/sk/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/fr/|punditclient/pundit/build/dojo/dojox/charting/plot2d/|punditclient/pundit/build/dojo/dojox/NodeList/|punditclient/pundit/build/dojo/dojox/widget/nls/el/|punditclient/pundit/build/dojo/dojo/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ja/|punditclient/pundit/build/dojo/dijit/form/nls/ja/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/pt/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ro/|punditclient/pundit/build/dojo/dijit/form/nls/ar/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/hr/|punditclient/pundit/build/dojo/dijit/_editor/nls/pl/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/nl/|punditclient/pundit/build/dojo/dojox/storage/|punditclient/pundit/build/legacy/|punditclient/pundit/build/dojo/dijit/_editor/nls/he/|punditclient/pundit/build/dojo/dijit/_editor/nls/da/|punditclient/pundit/build/dojo/dojox/io/proxy/|punditclient/pundit/build/dojo/dojo/nls/zh-tw/|punditclient/pundit/build/dojo/dijit/_editor/nls/tr/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/zh-tw/|punditclient/pundit/build/dojo/dojox/form/nls/ca/|punditclient/pundit/build/dojo/dojox/grid/enhanced/plugins/filter/|punditclient/pundit/build/dojo/dijit/form/nls/ro/|punditclient/pundit/build/dojo/dojox/lang/async/|punditclient/pundit/build/dojo/dojox/geo/charting/widget/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/tr/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/ru/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/fi/|punditclient/pundit/build/dojo/dijit/_editor/nls/kk/|punditclient/pundit/build/dojo/dijit/nls/sk/|punditclient/pundit/build/dojo/dojo/nls/ko/|punditclient/pundit/build/dojo/dojox/form/nls/kk/|punditclient/pundit/build/dojo/dijit/nls/sl/|punditclient/pundit/build/dojo/dojox/form/nls/sv/|spatialstore/|punditclient/pundit/build/dojo/dojox/widget/gauge/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/pl/|punditclient/pundit/build/dojo/dijit/form/nls/nl/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/he/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/da/|punditclient/pundit/build/dojo/dijit/_editor/nls/sv/|punditclient/pundit/build/dojo/dijit/_editor/nls/ko/|punditclient/pundit/build/src/selectors/|punditclient/pundit/build/dojo/dojox/lang/|punditclient/pundit/build/dojo/dojo/nls/kk/|punditclient/pundit/build/dojo/dojo/_firebug/|punditclient/pundit/build/dojo/dojox/form/nls/ko/|punditclient/pundit/build/dojo/dijit/_editor/nls/zh-tw/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ru/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/fi/|punditclient/pundit/build/dojo/dojo/nls/sv/|punditclient/pundit/build/dojo/dojo/cldr/nls/en-au/|punditclient/pundit/build/dojo/dijit/nls/ca/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/de/|punditclient/pundit/build/dojo/dijit/nls/kk/|punditclient/pundit/build/dojo/dojox/embed/|punditclient/pundit/build/dojo/dojox/dnd/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/th/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/ro/|punditclient/pundit/build/dojo/dojox/form/nls/zh-tw/|punditclient/pundit/build/dojo/dojo/cldr/nls/hu/|punditclient/pundit/build/dojo/dojo/nls/ca/|punditclient/pundit/build/docs/|punditclient/pundit/build/dojo/dojox/collections/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/nl/|punditclient/pundit/build/dojo/dijit/nls/sv/|punditclient/pundit/build/dojo/dojo/nls/sl/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/ja/|punditclient/pundit/build/dojo/dijit/nls/ko/|punditclient/pundit/build/dojo/dojo/nls/sk/|punditclient/pundit/build/dojo/dijit/tree/|punditclient/pundit/build/dojo/dijit/nls/zh-tw/|punditclient/pundit/build/dojo/dijit/form/nls/ru/|punditclient/pundit/build/dojo/dijit/form/nls/fi/|punditclient/pundit/build/dojo/dojox/json/|punditclient/pundit/build/dojo/dojox/xml/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/fr/|punditclient/pundit/build/src/|punditclient/pundit/build/dojo/dojox/highlight/|punditclient/pundit/build/dojo/dojox/form/manager/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/robot/|punditclient/pundit/build/dojo/dojox/analytics/|punditclient/pundit/build/dojo/dijit/form/nls/fr/|punditclient/pundit/build/dojo/dojo/nls/th/|punditclient/pundit/build/dojo/dojox/form/nls/cs/|punditclient/pundit/build/dojo/dojox/drawing/tools/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/th/|punditclient/pundit/build/dojo/dojox/fx/ext-dojo/|punditclient/pundit/build/dojo/dojox/widget/nls/fr/|punditclient/pundit/build/dojo/dijit/_editor/nls/pt-pt/|punditclient/pundit/build/dojo/dojo/_base/|punditclient/pundit/build/dojo/dojox/gfx3d/|punditclient/pundit/build/dojo/dijit/nls/it/|punditclient/pundit/build/dojo/dojo/cldr/nls/fr/|input/|punditclient/pundit/build/dojo/dojo/nls/cs/|punditclient/pundit/build/dojo/dojox/form/nls/th/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/cs/|punditclient/pundit/build/dojo/dojox/drawing/util/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/cs/|punditclient/pundit/build/dojo/dojo/|punditclient/pundit/build/dojo/dijit/nls/zh/|punditclient/pundit/build/dojo/dijit/nls/es/|punditclient/pundit/build/dojo/dojox/charting/themes/PlotKit/|punditclient/pundit/build/dojo/dojo/cldr/nls/en-ca/|triplestore/|punditclient/pundit/build/dojo/dojox/charting/action2d/|punditclient/pundit/build/dojo/dijit/nls/ar/|databaseconnection/spatialstore/|punditclient/pundit/build/dojo/dojo/cldr/nls/nl/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ko/|punditclient/pundit/build/dojo/dojox/charting/plot3d/|punditclient/pundit/build/dojo/dojox/highlight/languages/pygments/|punditclient/pundit/build/dojo/dojo/cldr/nls/ro/|punditclient/pundit/build/dojo/dojox/analytics/profiles/|punditclient/pundit/build/dojo/dojox/gantt/|punditclient/pundit/build/docs/assets/js/|punditclient/pundit/build/dojo/dojox/form/nls/he/|punditclient/pundit/build/dojo/dojox/form/nls/da/|punditclient/pundit/build/dojo/dojox/rpc/|punditclient/pundit/build/dojo/dijit/nls/nb/|punditclient/pundit/build/dojo/dojo/cldr/nls/ru/|punditclient/pundit/build/dojo/dojo/cldr/nls/fi/|punditclient/pundit/build/dojo/dojox/form/nls/pl/|punditclient/pundit/build/dojo/dojox/widget/nls/ru/|punditclient/pundit/build/dojo/dojox/widget/nls/fi/|punditclient/pundit/build/dojo/dojo/data/util/|punditclient/pundit/build/dojo/dijit/form/nls/|punditclient/pundit/build/dojo/dojo/cldr/nls/en-gb/|punditclient/pundit/build/dojo/dojox/form/nls/tr/|punditclient/pundit/build/dojo/dijit/nls/ja/|punditclient/pundit/build/dojo/dojox/form/nls/de/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ca/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/sv/|punditclient/pundit/build/dojo/dojox/widget/nls/nl/|punditclient/pundit/build/dojo/dojo/cldr/nls/ja/|punditclient/pundit/build/dojo/dojo/nls/pt/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/ko/|punditclient/pundit/build/dojo/dijit/_editor/nls/de/|punditclient/pundit/build/bookmarklet_build/|punditclient/pundit/build/dojo/dojox/layout/ext-dijit/layout/|punditclient/pundit/build/dojo/dojox/drawing/library/|punditclient/pundit/build/dojo/dojox/css3/|punditclient/pundit/build/dojo/dijit/_editor/plugins/|punditclient/pundit/build/dojo/dijit/form/nls/ca/|punditclient/pundit/build/dojo/dojox/xmpp/|punditclient/pundit/build/dojo/dojox/widget/nls/ro/|punditclient/pundit/build/dojo/dijit/form/nls/sl/|punditclient/pundit/build/dojo/dojox/uuid/|punditclient/pundit/build/dojo/dojo/nls/de/|punditclient/pundit/build/dojo/dijit/_editor/nls/pt/|viewer/|punditclient/pundit/build/dojo/dojox/secure/|punditclient/pundit/build/dojo/dojox/encoding/compression/|punditclient/pundit/build/dojo/dijit/form/nls/sk/|punditclient/pundit/build/dojo/dijit/_editor/nls/|punditclient/pundit/build/dojo/dojox/form/nls/pt/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/sv/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/kk/|punditclient/pundit/build/dojo/dojox/grid/cells/|punditclient/pundit/build/dojo/dojox/geo/charting/|punditclient/pundit/build/dojo/dijit/nls/ro/|punditclient/pundit/build/dojo/dojox/mdnd/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/kk/|punditclient/pundit/build/docs/assets/vendor/prettify/|punditclient/pundit/build/dojo/dojox/wire/ml/|punditclient/pundit/build/dojo/dijit/nls/nl/|punditclient/pundit/build/dojo/dojox/date/hebrew/|punditclient/pundit/build/src/ng/|punditclient/pundit/build/dojo/dojox/mobile/app/|punditclient/pundit/build/dojo/dojox/resources/|punditclient/pundit/build/dojo/dojox/xmpp/widget/|punditclient/pundit/build/dojo/dojo/nls/he/|punditclient/pundit/build/dojo/dojo/nls/da/|punditclient/pundit/build/dojo/dojox/dtl/utils/|punditclient/pundit/build/dojo/dojox/gfx/|punditclient/pundit/build/dojo/dijit/form/nls/ko/|punditclient/pundit/build/dojo/dojo/nls/pl/|punditclient/pundit/build/dojo/dojo/cldr/nls/|punditclient/pundit/build/dojo/dojox/widget/nls/ja/|punditclient/pundit/build/dojo/dojox/jsonPath/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/el/|punditclient/pundit/build/dojo/dojo/cldr/nls/zh/|punditclient/pundit/build/dojo/dojo/cldr/nls/es/|punditclient/pundit/build/dojo/dojox/dtl/tag/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/zh-tw/|punditclient/pundit/build/dojo/dojox/widget/nls/nb/|punditclient/pundit/build/dojo/dijit/resources/|punditclient/pundit/build/bookmarklet_build/dojo/|punditclient/pundit/build/dojo/dojo/nls/tr/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/ca/|punditclient/pundit/build/dojo/dijit/nls/ru/|punditclient/pundit/build/dojo/dijit/nls/fi/|punditclient/pundit/build/dojo/dojo/cldr/nls/nb/|punditclient/pundit/build/dojo/dojox/form/nls/pt-pt/|punditclient/pundit/build/dojo/dojo/fx/|punditclient/pundit/build/dojo/dojox/form/nls/hu/|punditclient/pundit/build/dojo/dojox/grid/enhanced/|punditclient/pundit/build/dojo/dojox/sketch/|punditclient/pundit/build/dojo/dojox/math/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/zh/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/es/|punditclient/pundit/build/dojo/dijit/form/nls/kk/|punditclient/pundit/build/dojo/dojox/timing/|punditclient/pundit/build/dojo/dojox/socket/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/sk/|punditclient/pundit/build/dojo/dijit/_editor/nls/hu/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/it/|punditclient/pundit/build/dojo/dijit/form/nls/sv/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/sk/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/sl/|punditclient/pundit/build/dojo/dojox/widget/nls/|punditclient/pundit/build/dojo/dojo/cldr/nls/ar/|punditclient/pundit/build/examples/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/sl/|punditclient/pundit/build/dojo/dojox/widget/nls/ar/|punditclient/pundit/build/dojo/dijit/nls/|punditclient/utility/|punditclient/pundit/build/dojo/dojox/encoding/digests/|punditclient/pundit/build/src/annotators/|punditclient/pundit/build/dojo/dijit/_editor/nls/ar/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/fr/|punditclient/pundit/build/dojo/dojox/analytics/plugins/|punditclient/pundit/build/dojo/dojox/wire/|punditclient/pundit/build/dojo/dojo/rpc/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/cs/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/pt-pt/|annotationstore/|punditclient/pundit/build/dojo/dojox/form/|punditclient/pundit/build/dojo/dojox/encoding/|punditclient/pundit/build/dojo/dijit/_editor/nls/nb/|punditclient/pundit/build/dojo/dojox/validate/|punditclient/temp/dojo/resources/|punditclient/pundit/build/dojo/dojox/sql/|punditclient/pundit/build/dojo/dojox/date/islamic/|punditclient/pundit/build/dojo/dijit/nls/hu/|punditclient/pundit/build/dojo/dojox/fx/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/th/|punditclient/pundit/build/dojo/dijit/_editor/nls/ja/|punditclient/pundit/build/dojo/dojox/data/util/|punditclient/pundit/build/dojo/dojox/help/|punditclient/pundit/build/dojo/dojo/nls/hu/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/zh-tw/|punditclient/pundit/build/dojo/dojox/mobile/|punditclient/pundit/build/dojo/dojo/store/api/|punditclient/pundit/build/dojo/dijit/form/nls/th/|punditclient/pundit/build/dojo/dojox/testing/|punditclient/pundit/build/dojo/dojo/_base/_loader/|punditclient/pundit/build/dojo/dojox/dtl/render/|punditclient/pundit/build/dojo/dojo/cldr/nls/ca/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/hu/|punditclient/pundit/build/dojo/dojo/store/util/|punditclient/pundit/build/dojo/dojox/date/buddhist/|punditclient/pundit/build/dojo/dojox/widget/nls/ko/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/he/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/da/|punditclient/pundit/build/dojo/dojo/cldr/nls/ko/|punditclient/pundit/build/dojo/dijit/layout/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/tr/|punditclient/pundit/build/dojo/dojo/cldr/nls/sv/|punditclient/pundit/build/dojo/dijit/form/nls/cs/|punditclient/pundit/build/dojo/dijit/_editor/|punditclient/pundit/build/dojo/dijit/_editor/nls/ro/|punditclient/pundit/build/dojo/dojox/widget/nls/sv/|floorplan/|punditclient/pundit/build/dojo/dojox/form/uploader/|punditclient/pundit/build/dojo/dijit/_editor/nls/nl/|punditclient/pundit/build/dojo/dojox/widget/nls/kk/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/pl/|punditclient/pundit/build/dojo/dijit/themes/claro/|punditclient/pundit/build/dojo/dijit/lib/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/de/|punditclient/pundit/build/dojo/dojo/cldr/nls/sk/|punditclient/pundit/build/dojo/dijit/form/nls/he/|punditclient/pundit/build/dojo/dijit/form/nls/da/|punditclient/pundit/build/dojo/dojo/store/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/nl/|punditclient/pundit/build/dojo/dojox/widget/nls/ca/|punditclient/pundit/build/dojo/dijit/form/nls/pl/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/pt/|punditclient/pundit/build/dojo/dojox/av/widget/|punditclient/pundit/build/dojo/dojo/nls/el/|punditclient/pundit/build/dojo/dojo/nls/|punditclient/pundit/build/dojo/dijit/form/nls/tr/|punditclient/pundit/build/dojo/dojox/date/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ro/|gui/|punditclient/pundit/build/dojo/dojox/image/|punditclient/pundit/build/dojo/dojox/form/uploader/plugins/|punditclient/temp/dojo/|punditclient/pundit/build/dojo/dojox/dtl/filter/|punditclient/pundit/build/dojo/dojox/charting/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ru/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/fi/|punditclient/pundit/build/dojo/dojox/drawing/plugins/|punditclient/pundit/build/dojo/dojo/cldr/nls/fr-ch/|punditclient/pundit/build/dojo/dojox/form/nls/el/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/de/|punditclient/pundit/build/dojo/dojox/widget/nls/sk/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/pt/|punditclient/pundit/build/dojo/dojo/cldr/nls/sl/|punditclient/pundit/build/dojo/dijit/_editor/nls/el/|punditclient/pundit/build/dojo/dojox/widget/nls/sl/|punditclient/pundit/build/dojo/dijit/form/nls/pt/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ja/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/pl/|punditclient/pundit/build/dojo/dojox/html/|punditclient/pundit/build/dojo/dojox/form/nls/it/|punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/nb/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/he/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/da/|punditclient/pundit/build/dojo/dojo/lib/plugins/|punditclient/temp/dojo/nls/|punditclient/pundit/build/dojo/dojo/cldr/nls/pt-pt/|punditclient/pundit/build/dojo/dojox/charting/themes/|punditclient/pundit/build/dojo/dojox/charting/axis2d/|punditclient/pundit/build/dojo/dojox/atom/widget/nls/tr/|punditclient/pundit/build/dojo/dijit/_editor/nls/it/|punditclient/pundit/build/dojo/dojox/dtl/|punditclient/pundit/build/dojo/dojox/mdnd/adapter/|punditclient/pundit/build/dojo/dojox/editor/plugins/nls/hu/|punditclient/pundit/build/dojo/dijit/form/nls/de/|punditclient/pundit/|punditclient/pundit/build/dojo/dojox/lang/functional/|punditclient/pundit/build/dojo/dijit/_base/|punditclient/pundit/build/dojo/dojo/resources/|punditclient/pundit/build/dojo/dijit/_editor/nls/zh/|punditclient/pundit/build/dojo/dijit/_editor/nls/es/|punditclient/pundit/build/dojo/dojox/highlight/widget/|punditclient/pundit/build/dojo/dojox/drawing/plugins/drawing/|punditclient/pundit/build/dojo/dojox/data/|punditclient/pundit/build/dojo/dojox/form/nls/zh/|punditclient/pundit/build/dojo/dojox/form/nls/es/|punditclient/pundit/build/dojo/dojox/atom/io/|punditclient/pundit/build/dojo/dijit/nls/el/" kind="src" path=""/>
+	<classpathentry kind="src" path="annotationstore"/>
+	<classpathentry excluding="spatialstore/" kind="src" path="databaseconnection"/>
+	<classpathentry kind="src" path="databaseconnection/spatialstore"/>
+	<classpathentry kind="src" path="draw"/>
+	<classpathentry kind="src" path="floorplan"/>
+	<classpathentry kind="src" path="gui"/>
+	<classpathentry kind="src" path="input"/>
+	<classpathentry kind="src" path="openid"/>
+	<classpathentry kind="src" path="punditclient/geo2pundit"/>
+	<classpathentry excluding="build/dojo/dijit/form/nls/hu/|build/dojo/dojox/form/nls/ar/|build/dojo/dojox/grid/enhanced/nls/zh/|build/dojo/dojox/grid/enhanced/nls/es/|build/dojo/dojox/dtl/contrib/|build/dojo/dojox/lang/oo/|build/dojo/dojo/nls/nb/|build/dojo/dojox/grid/enhanced/nls/|build/dojo/dojox/atom/widget/nls/nb/|build/dojo/dijit/form/nls/pt-pt/|build/dojo/dojox/editor/plugins/nls/|build/dojo/dojo/nls/ja/|build/dojo/dojo/lib/|build/dojo/dojo/data/api/|build/dojo/dojox/widget/nls/pt-pt/|build/dojo/dojox/widget/nls/hu/|build/dojo/dojo/nls/ar/|build/dojo/dojox/cometd/|build/dojo/dojox/grid/enhanced/plugins/|build/dojo/dojox/form/nls/nb/|build/dojo/dojox/widget/rotator/|build/dojo/dojox/form/nls/ja/|build/dojo/dojox/atom/widget/nls/ar/|build/dojo/dojox/grid/enhanced/nls/ar/|build/dojo/dojox/editor/plugins/nls/sl/|build/dojo/dojox/atom/widget/nls/it/|build/dojo/dijit/_editor/nls/sk/|build/dojo/dijit/nls/cs/|build/dojo/dojo/date/|build/dojo/dojox/mdnd/dropMode/|build/dojo/dojox/grid/enhanced/nls/el/|build/dojo/dijit/_editor/nls/sl/|build/dojo/dojox/calc/|build/dojo/dojox/io/|build/dojo/dojo/cldr/nls/tr/|build/dojo/dojox/encoding/crypto/|build/dojo/dojox/widget/nls/pt/|build/dojo/dojox/html/ext-dojo/|build/dojo/dojox/editor/plugins/nls/sk/|build/dojo/dojo/cldr/nls/he/|build/dojo/dojo/cldr/nls/da/|build/dojo/dojo/nls/zh/|build/dojo/dojo/nls/es/|build/dojo/dojox/atom/widget/nls/zh/|build/dojo/dojox/atom/widget/nls/es/|build/dojo/dojox/highlight/languages/|build/dojo/dojo/cldr/nls/pt/|build/dojo/dojox/form/nls/ro/|build/dojo/dojox/editor/plugins/|build/dojo/dojox/color/|build/dojo/dojox/atom/widget/nls/el/|build/dojo/dojox/string/|build/examples/ia/scripts/|build/dojo/dijit/nls/th/|build/dojo/dojox/editor/plugins/nls/ca/|build/dojo/dojox/grid/enhanced/nls/it/|build/dojo/dojo/cldr/|build/examples/files/|build/dojo/dojox/widget/|build/dojo/dojo/nls/it/|build/dojo/dojox/drawing/plugins/tools/|build/dojo/dijit/_editor/nls/ca/|build/dojo/dojox/drawing/annotations/|build/dojo/dojo/cldr/nls/de/|build/dojo/dojox/form/nls/nl/|build/dojo/dojox/widget/nls/de/|build/dojo/dojox/flash/|build/dojo/dojox/widget/nls/tr/|build/dojo/dijit/form/|build/dojo/dojox/form/nls/ru/|build/dojo/dojox/form/nls/fi/|build/dojo/dojox/embed/IE/|build/dojo/dojox/widget/nls/pl/|build/dojo/dojox/editor/plugins/nls/kk/|build/dojo/dijit/_editor/nls/ru/|build/dojo/dijit/_editor/nls/fi/|build/dojo/dojox/drawing/ui/|build/dojo/dojox/widget/nls/he/|build/dojo/dojox/widget/nls/da/|build/dojo/dojo/cldr/nls/pl/|build/dojo/dojox/widget/nls/zh-tw/|build/bookmarklet_build/dojo/nls/|build/dojo/dojox/drawing/tools/custom/|build/dojo/dijit/nls/pl/|build/dojo/dojox/charting/widget/|build/dojo/dojo/data/|build/dojo/dijit/nls/he/|build/dojo/dijit/nls/da/|build/dojo/dojox/editor/plugins/nls/sv/|build/dojo/dojo/nls/ru/|build/dojo/dojo/nls/fi/|build/dojo/dijit/form/nls/zh-tw/|build/dojo/dijit/nls/tr/|build/dojo/dojox/editor/plugins/nls/ko/|build/dojo/dojox/|build/dojo/dojo/cldr/nls/zh-tw/|build/dojo/dojo/cldr/nls/zh-hk/|build/dojo/dijit/_tree/|build/kinetic/|build/dojo/dojo/dnd/|build/dojo/dojox/layout/dnd/|build/dojo/dojo/cldr/nls/cs/|build/dojo/dojo/nls/ro/|build/dojo/dojox/grid/nls/|build/dojo/dijit/nls/de/|build/dojo/dijit/form/nls/el/|build/dojo/dojox/grid/|build/dojo/dojox/widget/nls/th/|build/dojo/dojox/grid/enhanced/plugins/exporter/|build/dojo/dojox/av/|build/dojo/dojo/nls/nl/|build/dojo/dojox/dtl/ext-dojo/|build/dojo/dojo/cldr/nls/th/|build/dojo/dijit/_editor/nls/fr/|build/dojo/dijit/nls/pt/|build/dojo/dojox/drawing/stencil/|build/dojo/dojox/form/nls/fr/|build/dojo/dojox/math/random/|build/dojo/dojox/lang/aspect/|build/dojo/dojox/widget/nls/cs/|build/bookmarklet_build/dojo/resources/|build/dojo/dojox/editor/plugins/nls/ar/|build/dojo/dojo/io/|build/dojo/dojox/form/nls/|build/dojo/dijit/_editor/nls/cs/|build/dojo/dojox/widget/nls/zh/|build/dojo/dojox/widget/nls/es/|build/dojo/dojo/cldr/nls/el/|build/dojo/dojox/drawing/manager/|build/dojo/dijit/|build/dojo/dojox/layout/|build/dojo/dijit/form/nls/zh/|build/dojo/dijit/form/nls/es/|build/dojo/dojox/grid/enhanced/nls/hu/|build/dojo/dojox/charting/scaler/|build/dojo/dijit/_editor/nls/th/|build/dojo/dojox/atom/widget/|build/examples/ee/scripts/|build/dojo/dijit/nls/fr/|build/dojo/dojo/cldr/nls/it/|build/dojo/dijit/nls/pt-pt/|build/dojo/dojox/atom/widget/nls/|build/dojo/dojox/widget/nls/it/|build/dojo/dijit/form/nls/it/|build/dojo/dojox/editor/plugins/nls/nb/|build/dojo/dojo/cldr/nls/zh-hant/|build/dojo/dojo/cldr/nls/en/|build/dojo/dojox/form/nls/sl/|build/dojo/dojox/drawing/|build/dojo/dojox/drawing/ui/dom/|build/dojo/dijit/form/nls/nb/|build/dojo/dojo/nls/fr/|build/dojo/dojox/form/nls/sk/|build/dojo/dojox/atom/widget/nls/fr/|build/dojo/dojox/charting/plot2d/|build/dojo/dojox/NodeList/|build/dojo/dojox/widget/nls/el/|build/dojo/dojo/nls/pt-pt/|build/dojo/dojox/editor/plugins/nls/ja/|build/dojo/dijit/form/nls/ja/|build/dojo/dojox/atom/widget/nls/pt-pt/|build/dojo/dojox/grid/enhanced/nls/pt/|build/dojo/dojox/editor/plugins/nls/ro/|build/dojo/dijit/form/nls/ar/|build/dojo/dojox/grid/enhanced/nls/hr/|build/dojo/dijit/_editor/nls/pl/|build/dojo/dojox/editor/plugins/nls/nl/|build/dojo/dojox/storage/|build/legacy/|build/dojo/dijit/_editor/nls/he/|build/dojo/dijit/_editor/nls/da/|build/dojo/dojox/io/proxy/|build/dojo/dojo/nls/zh-tw/|build/dojo/dijit/_editor/nls/tr/|build/dojo/dojox/grid/enhanced/nls/zh-tw/|build/dojo/dojox/form/nls/ca/|build/dojo/dojox/grid/enhanced/plugins/filter/|build/dojo/dijit/form/nls/ro/|build/dojo/dojox/lang/async/|build/dojo/dojox/geo/charting/widget/|build/dojo/dojox/grid/enhanced/nls/tr/|build/dojo/dojox/atom/widget/nls/ru/|build/dojo/dojox/atom/widget/nls/fi/|build/dojo/dijit/_editor/nls/kk/|build/dojo/dijit/nls/sk/|build/dojo/dojo/nls/ko/|build/dojo/dojox/form/nls/kk/|build/dojo/dijit/nls/sl/|build/dojo/dojox/form/nls/sv/|build/dojo/dojox/widget/gauge/|build/dojo/dojox/grid/enhanced/nls/pl/|build/dojo/dijit/form/nls/nl/|build/dojo/dojox/grid/enhanced/nls/he/|build/dojo/dojox/grid/enhanced/nls/da/|build/dojo/dijit/_editor/nls/sv/|build/dojo/dijit/_editor/nls/ko/|build/src/selectors/|build/dojo/dojox/lang/|build/dojo/dojo/nls/kk/|build/dojo/dojo/_firebug/|build/dojo/dojox/form/nls/ko/|build/dojo/dijit/_editor/nls/zh-tw/|build/dojo/dojox/editor/plugins/nls/ru/|build/dojo/dojox/editor/plugins/nls/fi/|build/dojo/dojo/nls/sv/|build/dojo/dojo/cldr/nls/en-au/|build/dojo/dijit/nls/ca/|build/dojo/dojox/grid/enhanced/nls/de/|build/dojo/dijit/nls/kk/|build/dojo/dojox/embed/|build/dojo/dojox/dnd/|build/dojo/dojox/grid/enhanced/nls/th/|build/dojo/dojox/atom/widget/nls/ro/|build/dojo/dojox/form/nls/zh-tw/|build/dojo/dojo/cldr/nls/hu/|build/dojo/dojo/nls/ca/|build/docs/|build/dojo/dojox/collections/|build/dojo/dojox/atom/widget/nls/nl/|build/dojo/dijit/nls/sv/|build/dojo/dojo/nls/sl/|build/dojo/dojox/atom/widget/nls/ja/|build/dojo/dijit/nls/ko/|build/dojo/dojo/nls/sk/|build/dojo/dijit/tree/|build/dojo/dijit/nls/zh-tw/|build/dojo/dijit/form/nls/ru/|build/dojo/dijit/form/nls/fi/|build/dojo/dojox/json/|build/dojo/dojox/xml/|build/dojo/dojox/editor/plugins/nls/fr/|build/src/|build/dojo/dojox/highlight/|build/dojo/dojox/form/manager/|build/dojo/dojox/editor/plugins/nls/pt-pt/|build/dojo/dojox/robot/|build/dojo/dojox/analytics/|build/dojo/dijit/form/nls/fr/|build/dojo/dojo/nls/th/|build/dojo/dojox/form/nls/cs/|build/dojo/dojox/drawing/tools/|build/dojo/dojox/atom/widget/nls/th/|build/dojo/dojox/fx/ext-dojo/|build/dojo/dojox/widget/nls/fr/|build/dojo/dijit/_editor/nls/pt-pt/|build/dojo/dojo/_base/|build/dojo/dojox/gfx3d/|build/dojo/dijit/nls/it/|build/dojo/dojo/cldr/nls/fr/|build/dojo/dojo/nls/cs/|build/dojo/dojox/form/nls/th/|build/dojo/dojox/atom/widget/nls/cs/|build/dojo/dojox/drawing/util/|build/dojo/dojox/grid/enhanced/nls/cs/|build/dojo/dojo/|build/dojo/dijit/nls/zh/|build/dojo/dijit/nls/es/|build/dojo/dojox/charting/themes/PlotKit/|build/dojo/dojo/cldr/nls/en-ca/|build/dojo/dojox/charting/action2d/|build/dojo/dijit/nls/ar/|build/dojo/dojo/cldr/nls/nl/|build/dojo/dojox/grid/enhanced/nls/ko/|build/dojo/dojox/charting/plot3d/|build/dojo/dojox/highlight/languages/pygments/|build/dojo/dojo/cldr/nls/ro/|build/dojo/dojox/analytics/profiles/|build/dojo/dojox/gantt/|build/docs/assets/js/|build/dojo/dojox/form/nls/he/|build/dojo/dojox/form/nls/da/|build/dojo/dojox/rpc/|build/dojo/dijit/nls/nb/|build/dojo/dojo/cldr/nls/ru/|build/dojo/dojo/cldr/nls/fi/|build/dojo/dojox/form/nls/pl/|build/dojo/dojox/widget/nls/ru/|build/dojo/dojox/widget/nls/fi/|build/dojo/dojo/data/util/|build/dojo/dijit/form/nls/|build/dojo/dojo/cldr/nls/en-gb/|build/dojo/dojox/form/nls/tr/|build/dojo/dijit/nls/ja/|build/dojo/dojox/form/nls/de/|build/dojo/dojox/grid/enhanced/nls/ca/|build/dojo/dojox/atom/widget/nls/sv/|build/dojo/dojox/widget/nls/nl/|build/dojo/dojo/cldr/nls/ja/|build/dojo/dojo/nls/pt/|build/dojo/dojox/atom/widget/nls/ko/|build/dojo/dijit/_editor/nls/de/|build/bookmarklet_build/|build/dojo/dojox/layout/ext-dijit/layout/|build/dojo/dojox/drawing/library/|build/dojo/dojox/css3/|build/dojo/dijit/_editor/plugins/|build/dojo/dijit/form/nls/ca/|build/dojo/dojox/xmpp/|build/dojo/dojox/widget/nls/ro/|build/dojo/dijit/form/nls/sl/|build/dojo/dojox/uuid/|build/dojo/dojo/nls/de/|build/dojo/dijit/_editor/nls/pt/|build/dojo/dojox/secure/|build/dojo/dojox/encoding/compression/|build/dojo/dijit/form/nls/sk/|build/dojo/dijit/_editor/nls/|build/dojo/dojox/form/nls/pt/|build/dojo/dojox/grid/enhanced/nls/sv/|build/dojo/dojox/atom/widget/nls/kk/|build/dojo/dojox/grid/cells/|build/dojo/dojox/geo/charting/|build/dojo/dijit/nls/ro/|build/dojo/dojox/mdnd/|build/dojo/dojox/grid/enhanced/nls/kk/|build/docs/assets/vendor/prettify/|build/dojo/dojox/wire/ml/|build/dojo/dijit/nls/nl/|build/dojo/dojox/date/hebrew/|build/src/ng/|build/dojo/dojox/mobile/app/|build/dojo/dojox/resources/|build/dojo/dojox/xmpp/widget/|build/dojo/dojo/nls/he/|build/dojo/dojo/nls/da/|build/dojo/dojox/dtl/utils/|build/dojo/dojox/gfx/|build/dojo/dijit/form/nls/ko/|build/dojo/dojo/nls/pl/|build/dojo/dojo/cldr/nls/|build/dojo/dojox/widget/nls/ja/|build/dojo/dojox/jsonPath/|build/dojo/dojox/editor/plugins/nls/el/|build/dojo/dojo/cldr/nls/zh/|build/dojo/dojo/cldr/nls/es/|build/dojo/dojox/dtl/tag/|build/dojo/dojox/editor/plugins/nls/zh-tw/|build/dojo/dojox/widget/nls/nb/|build/dojo/dijit/resources/|build/bookmarklet_build/dojo/|build/dojo/dojo/nls/tr/|build/dojo/dojox/atom/widget/nls/ca/|build/dojo/dijit/nls/ru/|build/dojo/dijit/nls/fi/|build/dojo/dojo/cldr/nls/nb/|build/dojo/dojox/form/nls/pt-pt/|build/dojo/dojo/fx/|build/dojo/dojox/form/nls/hu/|build/dojo/dojox/grid/enhanced/|build/dojo/dojox/sketch/|build/dojo/dojox/math/|build/dojo/dojox/editor/plugins/nls/zh/|build/dojo/dojox/editor/plugins/nls/es/|build/dojo/dijit/form/nls/kk/|build/dojo/dojox/timing/|build/dojo/dojox/socket/|build/dojo/dojox/atom/widget/nls/sk/|build/dojo/dijit/_editor/nls/hu/|build/dojo/dojox/editor/plugins/nls/it/|build/dojo/dijit/form/nls/sv/|build/dojo/dojox/grid/enhanced/nls/sk/|build/dojo/dojox/atom/widget/nls/sl/|build/dojo/dojox/widget/nls/|build/dojo/dojo/cldr/nls/ar/|build/examples/|build/dojo/dojox/grid/enhanced/nls/sl/|build/dojo/dojox/widget/nls/ar/|build/dojo/dijit/nls/|build/dojo/dojox/encoding/digests/|build/src/annotators/|build/dojo/dijit/_editor/nls/ar/|build/dojo/dojox/grid/enhanced/nls/fr/|build/dojo/dojox/analytics/plugins/|build/dojo/dojox/wire/|build/dojo/dojo/rpc/|build/dojo/dojox/editor/plugins/nls/cs/|build/dojo/dojox/grid/enhanced/nls/pt-pt/|build/dojo/dojox/form/|build/dojo/dojox/encoding/|build/dojo/dijit/_editor/nls/nb/|build/dojo/dojox/validate/|build/dojo/dojox/sql/|build/dojo/dojox/date/islamic/|build/dojo/dijit/nls/hu/|build/dojo/dojox/fx/|build/dojo/dojox/editor/plugins/nls/th/|build/dojo/dijit/_editor/nls/ja/|build/dojo/dojox/data/util/|build/dojo/dojox/help/|build/dojo/dojo/nls/hu/|build/dojo/dojox/atom/widget/nls/zh-tw/|build/dojo/dojox/mobile/|build/dojo/dojo/store/api/|build/dojo/dijit/form/nls/th/|build/dojo/dojox/testing/|build/dojo/dojo/_base/_loader/|build/dojo/dojox/dtl/render/|build/dojo/dojo/cldr/nls/ca/|build/dojo/dojox/atom/widget/nls/hu/|build/dojo/dojo/store/util/|build/dojo/dojox/date/buddhist/|build/dojo/dojox/widget/nls/ko/|build/dojo/dojox/editor/plugins/nls/he/|build/dojo/dojox/editor/plugins/nls/da/|build/dojo/dojo/cldr/nls/ko/|build/dojo/dijit/layout/|build/dojo/dojox/editor/plugins/nls/tr/|build/dojo/dojo/cldr/nls/sv/|build/dojo/dijit/form/nls/cs/|build/dojo/dijit/_editor/|build/dojo/dijit/_editor/nls/ro/|build/dojo/dojox/widget/nls/sv/|build/dojo/dojox/form/uploader/|build/dojo/dijit/_editor/nls/nl/|build/dojo/dojox/widget/nls/kk/|build/dojo/dojox/editor/plugins/nls/pl/|build/dojo/dijit/themes/claro/|build/dojo/dijit/lib/|build/dojo/dojox/editor/plugins/nls/de/|build/dojo/dojo/cldr/nls/sk/|build/dojo/dijit/form/nls/he/|build/dojo/dijit/form/nls/da/|build/dojo/dojo/store/|build/dojo/dojox/grid/enhanced/nls/nl/|build/dojo/dojox/widget/nls/ca/|build/dojo/dijit/form/nls/pl/|build/dojo/dojox/atom/widget/nls/pt/|build/dojo/dojox/av/widget/|build/dojo/dojo/nls/el/|build/dojo/dojo/nls/|build/dojo/dijit/form/nls/tr/|build/dojo/dojox/date/|build/dojo/dojox/grid/enhanced/nls/ro/|build/dojo/dojox/image/|build/dojo/dojox/form/uploader/plugins/|build/dojo/dojox/dtl/filter/|build/dojo/dojox/charting/|build/dojo/dojox/grid/enhanced/nls/ru/|build/dojo/dojox/grid/enhanced/nls/fi/|build/dojo/dojox/drawing/plugins/|build/dojo/dojo/cldr/nls/fr-ch/|build/dojo/dojox/form/nls/el/|build/dojo/dojox/atom/widget/nls/de/|build/dojo/dojox/widget/nls/sk/|build/dojo/dojox/editor/plugins/nls/pt/|build/dojo/dojo/cldr/nls/sl/|build/dojo/dijit/_editor/nls/el/|build/dojo/dojox/widget/nls/sl/|build/dojo/dijit/form/nls/pt/|build/dojo/dojox/grid/enhanced/nls/ja/|build/dojo/dojox/atom/widget/nls/pl/|build/dojo/dojox/html/|build/dojo/dojox/form/nls/it/|build/dojo/dojox/grid/enhanced/nls/nb/|build/dojo/dojox/atom/widget/nls/he/|build/dojo/dojox/atom/widget/nls/da/|build/dojo/dojo/lib/plugins/|build/dojo/dojo/cldr/nls/pt-pt/|build/dojo/dojox/charting/themes/|build/dojo/dojox/charting/axis2d/|build/dojo/dojox/atom/widget/nls/tr/|build/dojo/dijit/_editor/nls/it/|build/dojo/dojox/dtl/|build/dojo/dojox/mdnd/adapter/|build/dojo/dojox/editor/plugins/nls/hu/|build/dojo/dijit/form/nls/de/|build/dojo/dojox/lang/functional/|build/dojo/dijit/_base/|build/dojo/dojo/resources/|build/dojo/dijit/_editor/nls/zh/|build/dojo/dijit/_editor/nls/es/|build/dojo/dojox/highlight/widget/|build/dojo/dojox/drawing/plugins/drawing/|build/dojo/dojox/data/|build/dojo/dojox/form/nls/zh/|build/dojo/dojox/form/nls/es/|build/dojo/dojox/atom/io/|build/dojo/dijit/nls/el/" kind="src" path="punditclient/pundit"/>
+	<classpathentry excluding="dojo/nls/|dojo/resources/|dojo/" kind="src" path="punditclient/pundit/build/bookmarklet_build"/>
+	<classpathentry excluding="nls/|resources/" kind="src" path="punditclient/pundit/build/bookmarklet_build/dojo"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/bookmarklet_build/dojo/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/bookmarklet_build/dojo/resources"/>
+	<classpathentry excluding="assets/js/|assets/vendor/prettify/" kind="src" path="punditclient/pundit/build/docs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/docs/assets/js"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/docs/assets/vendor/prettify"/>
+	<classpathentry excluding="form/nls/hu/|form/nls/pt-pt/|_editor/nls/sk/|nls/cs/|_editor/nls/sl/|nls/th/|_editor/nls/ca/|form/|_editor/nls/ru/|_editor/nls/fi/|nls/pl/|nls/he/|nls/da/|form/nls/zh-tw/|nls/tr/|_tree/|nls/de/|form/nls/el/|_editor/nls/fr/|nls/pt/|_editor/nls/cs/|form/nls/zh/|form/nls/es/|_editor/nls/th/|nls/fr/|nls/pt-pt/|form/nls/it/|form/nls/nb/|form/nls/ja/|form/nls/ar/|_editor/nls/pl/|_editor/nls/he/|_editor/nls/da/|_editor/nls/tr/|form/nls/ro/|_editor/nls/kk/|nls/sk/|nls/sl/|form/nls/nl/|_editor/nls/sv/|_editor/nls/ko/|_editor/nls/zh-tw/|nls/ca/|nls/kk/|nls/sv/|nls/ko/|tree/|nls/zh-tw/|form/nls/ru/|form/nls/fi/|form/nls/fr/|_editor/nls/pt-pt/|nls/it/|nls/zh/|nls/es/|nls/ar/|nls/nb/|form/nls/|nls/ja/|_editor/nls/de/|_editor/plugins/|form/nls/ca/|form/nls/sl/|_editor/nls/pt/|form/nls/sk/|_editor/nls/|nls/ro/|nls/nl/|form/nls/ko/|resources/|nls/ru/|nls/fi/|form/nls/kk/|_editor/nls/hu/|form/nls/sv/|nls/|_editor/nls/ar/|_editor/nls/nb/|nls/hu/|_editor/nls/ja/|form/nls/th/|layout/|form/nls/cs/|_editor/|_editor/nls/ro/|_editor/nls/nl/|themes/claro/|lib/|form/nls/he/|form/nls/da/|form/nls/pl/|form/nls/tr/|_editor/nls/el/|form/nls/pt/|_editor/nls/it/|form/nls/de/|_base/|_editor/nls/zh/|_editor/nls/es/|nls/el/" kind="src" path="punditclient/pundit/build/dojo/dijit"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_base"/>
+	<classpathentry excluding="nls/sk/|nls/sl/|nls/ca/|nls/ru/|nls/fi/|nls/fr/|nls/cs/|nls/th/|nls/pl/|nls/he/|nls/da/|nls/tr/|nls/kk/|nls/sv/|nls/ko/|nls/zh-tw/|nls/pt-pt/|nls/de/|plugins/|nls/pt/|nls/|nls/hu/|nls/ar/|nls/nb/|nls/ja/|nls/ro/|nls/nl/|nls/el/|nls/it/|nls/zh/|nls/es/" kind="src" path="punditclient/pundit/build/dojo/dijit/_editor"/>
+	<classpathentry excluding="sk/|sl/|ca/|ru/|fi/|fr/|cs/|th/|pl/|he/|da/|tr/|kk/|sv/|ko/|zh-tw/|pt-pt/|de/|pt/|hu/|ar/|nb/|ja/|ro/|nl/|el/|it/|zh/|es/" kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/nls/zh-tw"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_editor/plugins"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/_tree"/>
+	<classpathentry excluding="nls/hu/|nls/pt-pt/|nls/zh-tw/|nls/el/|nls/zh/|nls/es/|nls/it/|nls/nb/|nls/ja/|nls/ar/|nls/ro/|nls/nl/|nls/ru/|nls/fi/|nls/fr/|nls/|nls/ca/|nls/sl/|nls/sk/|nls/ko/|nls/kk/|nls/sv/|nls/th/|nls/cs/|nls/he/|nls/da/|nls/pl/|nls/tr/|nls/pt/|nls/de/" kind="src" path="punditclient/pundit/build/dojo/dijit/form"/>
+	<classpathentry excluding="hu/|pt-pt/|zh-tw/|el/|zh/|es/|it/|nb/|ja/|ar/|ro/|nl/|ru/|fi/|fr/|ca/|sl/|sk/|ko/|kk/|sv/|th/|cs/|he/|da/|pl/|tr/|pt/|de/" kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/form/nls/zh-tw"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/layout"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/lib"/>
+	<classpathentry excluding="cs/|th/|pl/|he/|da/|tr/|de/|pt/|fr/|pt-pt/|sk/|sl/|ca/|kk/|sv/|ko/|zh-tw/|it/|zh/|es/|ar/|nb/|ja/|ro/|nl/|ru/|fi/|hu/|el/" kind="src" path="punditclient/pundit/build/dojo/dijit/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/nls/zh-tw"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/resources"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/themes/claro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dijit/tree"/>
+	<classpathentry excluding="nls/nb/|nls/ja/|lib/|data/api/|nls/ar/|date/|cldr/nls/tr/|cldr/nls/he/|cldr/nls/da/|nls/zh/|nls/es/|cldr/nls/pt/|cldr/|nls/it/|cldr/nls/de/|cldr/nls/pl/|data/|nls/ru/|nls/fi/|cldr/nls/zh-tw/|cldr/nls/zh-hk/|dnd/|cldr/nls/cs/|nls/ro/|nls/nl/|cldr/nls/th/|io/|cldr/nls/el/|cldr/nls/it/|cldr/nls/zh-hant/|cldr/nls/en/|nls/fr/|nls/pt-pt/|nls/zh-tw/|nls/ko/|nls/kk/|_firebug/|nls/sv/|cldr/nls/en-au/|cldr/nls/hu/|nls/ca/|nls/sl/|nls/sk/|nls/th/|_base/|cldr/nls/fr/|nls/cs/|cldr/nls/en-ca/|cldr/nls/nl/|cldr/nls/ro/|cldr/nls/ru/|cldr/nls/fi/|data/util/|cldr/nls/en-gb/|cldr/nls/ja/|nls/pt/|nls/de/|nls/he/|nls/da/|nls/pl/|cldr/nls/|cldr/nls/zh/|cldr/nls/es/|nls/tr/|cldr/nls/nb/|fx/|cldr/nls/ar/|rpc/|nls/hu/|store/api/|_base/_loader/|cldr/nls/ca/|store/util/|cldr/nls/ko/|cldr/nls/sv/|cldr/nls/sk/|store/|nls/el/|nls/|cldr/nls/fr-ch/|cldr/nls/sl/|lib/plugins/|cldr/nls/pt-pt/|resources/" kind="src" path="punditclient/pundit/build/dojo/dojo"/>
+	<classpathentry excluding="_loader/" kind="src" path="punditclient/pundit/build/dojo/dojo/_base"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/_base/_loader"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/_firebug"/>
+	<classpathentry excluding="nls/tr/|nls/he/|nls/da/|nls/pt/|nls/de/|nls/pl/|nls/zh-tw/|nls/zh-hk/|nls/cs/|nls/th/|nls/el/|nls/it/|nls/zh-hant/|nls/en/|nls/en-au/|nls/hu/|nls/fr/|nls/en-ca/|nls/nl/|nls/ro/|nls/ru/|nls/fi/|nls/en-gb/|nls/ja/|nls/|nls/zh/|nls/es/|nls/nb/|nls/ar/|nls/ca/|nls/ko/|nls/sv/|nls/sk/|nls/fr-ch/|nls/sl/|nls/pt-pt/" kind="src" path="punditclient/pundit/build/dojo/dojo/cldr"/>
+	<classpathentry excluding="tr/|he/|da/|pt/|de/|pl/|zh-tw/|zh-hk/|cs/|th/|el/|it/|zh-hant/|en/|en-au/|hu/|fr/|en-ca/|nl/|ro/|ru/|fi/|en-gb/|ja/|zh/|es/|nb/|ar/|ca/|ko/|sv/|sk/|fr-ch/|sl/|pt-pt/" kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/en"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/en-au"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/en-ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/en-gb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/fr-ch"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/zh-hant"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/zh-hk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/cldr/nls/zh-tw"/>
+	<classpathentry excluding="api/|util/" kind="src" path="punditclient/pundit/build/dojo/dojo/data"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/data/api"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/data/util"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/date"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/dnd"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/fx"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/io"/>
+	<classpathentry excluding="plugins/" kind="src" path="punditclient/pundit/build/dojo/dojo/lib"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/lib/plugins"/>
+	<classpathentry excluding="nb/|ja/|ar/|zh/|es/|it/|ru/|fi/|ro/|nl/|fr/|pt-pt/|zh-tw/|ko/|kk/|sv/|ca/|sl/|sk/|th/|cs/|pt/|de/|he/|da/|pl/|tr/|hu/|el/" kind="src" path="punditclient/pundit/build/dojo/dojo/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/nls/zh-tw"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/resources"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/rpc"/>
+	<classpathentry excluding="api/|util/" kind="src" path="punditclient/pundit/build/dojo/dojo/store"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/store/api"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojo/store/util"/>
+	<classpathentry excluding="form/nls/ar/|grid/enhanced/nls/zh/|grid/enhanced/nls/es/|dtl/contrib/|lang/oo/|grid/enhanced/nls/|atom/widget/nls/nb/|editor/plugins/nls/|widget/nls/pt-pt/|widget/nls/hu/|cometd/|grid/enhanced/plugins/|form/nls/nb/|widget/rotator/|form/nls/ja/|atom/widget/nls/ar/|grid/enhanced/nls/ar/|editor/plugins/nls/sl/|atom/widget/nls/it/|mdnd/dropMode/|grid/enhanced/nls/el/|calc/|io/|encoding/crypto/|widget/nls/pt/|html/ext-dojo/|editor/plugins/nls/sk/|atom/widget/nls/zh/|atom/widget/nls/es/|highlight/languages/|form/nls/ro/|editor/plugins/|color/|atom/widget/nls/el/|string/|editor/plugins/nls/ca/|grid/enhanced/nls/it/|widget/|drawing/plugins/tools/|drawing/annotations/|form/nls/nl/|widget/nls/de/|flash/|widget/nls/tr/|form/nls/ru/|form/nls/fi/|embed/IE/|widget/nls/pl/|editor/plugins/nls/kk/|drawing/ui/|widget/nls/he/|widget/nls/da/|widget/nls/zh-tw/|drawing/tools/custom/|charting/widget/|editor/plugins/nls/sv/|editor/plugins/nls/ko/|layout/dnd/|grid/nls/|grid/|widget/nls/th/|grid/enhanced/plugins/exporter/|av/|dtl/ext-dojo/|drawing/stencil/|form/nls/fr/|math/random/|lang/aspect/|widget/nls/cs/|editor/plugins/nls/ar/|form/nls/|widget/nls/zh/|widget/nls/es/|drawing/manager/|layout/|grid/enhanced/nls/hu/|charting/scaler/|atom/widget/|atom/widget/nls/|widget/nls/it/|editor/plugins/nls/nb/|form/nls/sl/|drawing/|drawing/ui/dom/|form/nls/sk/|atom/widget/nls/fr/|charting/plot2d/|NodeList/|widget/nls/el/|editor/plugins/nls/ja/|atom/widget/nls/pt-pt/|grid/enhanced/nls/pt/|editor/plugins/nls/ro/|grid/enhanced/nls/hr/|editor/plugins/nls/nl/|storage/|io/proxy/|grid/enhanced/nls/zh-tw/|form/nls/ca/|grid/enhanced/plugins/filter/|lang/async/|geo/charting/widget/|grid/enhanced/nls/tr/|atom/widget/nls/ru/|atom/widget/nls/fi/|form/nls/kk/|form/nls/sv/|widget/gauge/|grid/enhanced/nls/pl/|grid/enhanced/nls/he/|grid/enhanced/nls/da/|lang/|form/nls/ko/|editor/plugins/nls/ru/|editor/plugins/nls/fi/|grid/enhanced/nls/de/|embed/|dnd/|grid/enhanced/nls/th/|atom/widget/nls/ro/|form/nls/zh-tw/|collections/|atom/widget/nls/nl/|atom/widget/nls/ja/|json/|xml/|editor/plugins/nls/fr/|highlight/|form/manager/|editor/plugins/nls/pt-pt/|robot/|analytics/|form/nls/cs/|drawing/tools/|atom/widget/nls/th/|fx/ext-dojo/|widget/nls/fr/|gfx3d/|form/nls/th/|atom/widget/nls/cs/|drawing/util/|grid/enhanced/nls/cs/|charting/themes/PlotKit/|charting/action2d/|grid/enhanced/nls/ko/|charting/plot3d/|highlight/languages/pygments/|analytics/profiles/|gantt/|form/nls/he/|form/nls/da/|rpc/|form/nls/pl/|widget/nls/ru/|widget/nls/fi/|form/nls/tr/|form/nls/de/|grid/enhanced/nls/ca/|atom/widget/nls/sv/|widget/nls/nl/|atom/widget/nls/ko/|layout/ext-dijit/layout/|drawing/library/|css3/|xmpp/|widget/nls/ro/|uuid/|secure/|encoding/compression/|form/nls/pt/|grid/enhanced/nls/sv/|atom/widget/nls/kk/|grid/cells/|geo/charting/|mdnd/|grid/enhanced/nls/kk/|wire/ml/|date/hebrew/|mobile/app/|resources/|xmpp/widget/|dtl/utils/|gfx/|widget/nls/ja/|jsonPath/|editor/plugins/nls/el/|dtl/tag/|editor/plugins/nls/zh-tw/|widget/nls/nb/|atom/widget/nls/ca/|form/nls/pt-pt/|form/nls/hu/|grid/enhanced/|sketch/|math/|editor/plugins/nls/zh/|editor/plugins/nls/es/|timing/|socket/|atom/widget/nls/sk/|editor/plugins/nls/it/|grid/enhanced/nls/sk/|atom/widget/nls/sl/|widget/nls/|grid/enhanced/nls/sl/|widget/nls/ar/|encoding/digests/|grid/enhanced/nls/fr/|analytics/plugins/|wire/|editor/plugins/nls/cs/|grid/enhanced/nls/pt-pt/|form/|encoding/|validate/|sql/|date/islamic/|fx/|editor/plugins/nls/th/|data/util/|help/|atom/widget/nls/zh-tw/|mobile/|testing/|dtl/render/|atom/widget/nls/hu/|date/buddhist/|widget/nls/ko/|editor/plugins/nls/he/|editor/plugins/nls/da/|editor/plugins/nls/tr/|widget/nls/sv/|form/uploader/|widget/nls/kk/|editor/plugins/nls/pl/|editor/plugins/nls/de/|grid/enhanced/nls/nl/|widget/nls/ca/|atom/widget/nls/pt/|av/widget/|date/|grid/enhanced/nls/ro/|image/|form/uploader/plugins/|dtl/filter/|charting/|grid/enhanced/nls/ru/|grid/enhanced/nls/fi/|drawing/plugins/|form/nls/el/|atom/widget/nls/de/|widget/nls/sk/|editor/plugins/nls/pt/|widget/nls/sl/|grid/enhanced/nls/ja/|atom/widget/nls/pl/|html/|form/nls/it/|grid/enhanced/nls/nb/|atom/widget/nls/he/|atom/widget/nls/da/|charting/themes/|charting/axis2d/|atom/widget/nls/tr/|dtl/|mdnd/adapter/|editor/plugins/nls/hu/|lang/functional/|highlight/widget/|drawing/plugins/drawing/|data/|form/nls/zh/|form/nls/es/|atom/io/" kind="src" path="punditclient/pundit/build/dojo/dojox"/>
+	<classpathentry excluding="profiles/|plugins/" kind="src" path="punditclient/pundit/build/dojo/dojox/analytics"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/analytics/plugins"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/analytics/profiles"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/io"/>
+	<classpathentry excluding="nls/nb/|nls/ar/|nls/it/|nls/zh/|nls/es/|nls/el/|nls/|nls/fr/|nls/pt-pt/|nls/ru/|nls/fi/|nls/ro/|nls/nl/|nls/ja/|nls/th/|nls/cs/|nls/sv/|nls/ko/|nls/kk/|nls/ca/|nls/sk/|nls/sl/|nls/zh-tw/|nls/hu/|nls/pt/|nls/de/|nls/pl/|nls/he/|nls/da/|nls/tr/" kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget"/>
+	<classpathentry excluding="nb/|ar/|it/|zh/|es/|el/|fr/|pt-pt/|ru/|fi/|ro/|nl/|ja/|th/|cs/|sv/|ko/|kk/|ca/|sk/|sl/|zh-tw/|hu/|pt/|de/|pl/|he/|da/|tr/" kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/atom/widget/nls/zh-tw"/>
+	<classpathentry excluding="widget/" kind="src" path="punditclient/pundit/build/dojo/dojox/av"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/av/widget"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/calc"/>
+	<classpathentry excluding="widget/|scaler/|plot2d/|themes/PlotKit/|action2d/|plot3d/|themes/|axis2d/" kind="src" path="punditclient/pundit/build/dojo/dojox/charting"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/action2d"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/axis2d"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/plot2d"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/plot3d"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/scaler"/>
+	<classpathentry excluding="PlotKit/" kind="src" path="punditclient/pundit/build/dojo/dojox/charting/themes"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/themes/PlotKit"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/charting/widget"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/collections"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/color"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/cometd"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/css3"/>
+	<classpathentry excluding="util/" kind="src" path="punditclient/pundit/build/dojo/dojox/data"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/data/util"/>
+	<classpathentry excluding="hebrew/|islamic/|buddhist/" kind="src" path="punditclient/pundit/build/dojo/dojox/date"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/date/buddhist"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/date/hebrew"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/date/islamic"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dnd"/>
+	<classpathentry excluding="plugins/tools/|annotations/|ui/|tools/custom/|stencil/|manager/|ui/dom/|tools/|util/|library/|plugins/|plugins/drawing/" kind="src" path="punditclient/pundit/build/dojo/dojox/drawing"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/annotations"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/library"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/manager"/>
+	<classpathentry excluding="tools/|drawing/" kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/plugins"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/plugins/drawing"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/plugins/tools"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/stencil"/>
+	<classpathentry excluding="custom/" kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/tools"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/tools/custom"/>
+	<classpathentry excluding="dom/" kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/ui"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/ui/dom"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/drawing/util"/>
+	<classpathentry excluding="contrib/|ext-dojo/|utils/|tag/|render/|filter/" kind="src" path="punditclient/pundit/build/dojo/dojox/dtl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dtl/contrib"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dtl/ext-dojo"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dtl/filter"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dtl/render"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dtl/tag"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/dtl/utils"/>
+	<classpathentry excluding="nls/|nls/sl/|nls/sk/|nls/ca/|nls/kk/|nls/sv/|nls/ko/|nls/ar/|nls/nb/|nls/ja/|nls/ro/|nls/nl/|nls/ru/|nls/fi/|nls/fr/|nls/pt-pt/|nls/el/|nls/zh-tw/|nls/zh/|nls/es/|nls/it/|nls/cs/|nls/th/|nls/he/|nls/da/|nls/tr/|nls/pl/|nls/de/|nls/pt/|nls/hu/" kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins"/>
+	<classpathentry excluding="sl/|sk/|ca/|kk/|sv/|ko/|ar/|nb/|ja/|ro/|nl/|ru/|fi/|fr/|pt-pt/|el/|zh-tw/|zh/|es/|it/|cs/|th/|he/|da/|tr/|pl/|de/|pt/|hu/" kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/editor/plugins/nls/zh-tw"/>
+	<classpathentry excluding="IE/" kind="src" path="punditclient/pundit/build/dojo/dojox/embed"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/embed/IE"/>
+	<classpathentry excluding="crypto/|compression/|digests/" kind="src" path="punditclient/pundit/build/dojo/dojox/encoding"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/encoding/compression"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/encoding/crypto"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/encoding/digests"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/flash"/>
+	<classpathentry excluding="nls/ar/|nls/nb/|nls/ja/|nls/ro/|nls/nl/|nls/ru/|nls/fi/|nls/fr/|nls/|nls/sl/|nls/sk/|nls/ca/|nls/kk/|nls/sv/|nls/ko/|nls/zh-tw/|manager/|nls/cs/|nls/th/|nls/he/|nls/da/|nls/pl/|nls/tr/|nls/de/|nls/pt/|nls/pt-pt/|nls/hu/|uploader/|uploader/plugins/|nls/el/|nls/it/|nls/zh/|nls/es/" kind="src" path="punditclient/pundit/build/dojo/dojox/form"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/manager"/>
+	<classpathentry excluding="ar/|nb/|ja/|ro/|nl/|ru/|fi/|fr/|sl/|sk/|ca/|kk/|sv/|ko/|zh-tw/|cs/|th/|he/|da/|pl/|tr/|de/|pt/|pt-pt/|hu/|el/|it/|zh/|es/" kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/nls/zh-tw"/>
+	<classpathentry excluding="plugins/" kind="src" path="punditclient/pundit/build/dojo/dojox/form/uploader"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/form/uploader/plugins"/>
+	<classpathentry excluding="ext-dojo/" kind="src" path="punditclient/pundit/build/dojo/dojox/fx"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/fx/ext-dojo"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/gantt"/>
+	<classpathentry excluding="widget/" kind="src" path="punditclient/pundit/build/dojo/dojox/geo/charting"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/geo/charting/widget"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/gfx"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/gfx3d"/>
+	<classpathentry excluding="enhanced/nls/zh/|enhanced/nls/es/|enhanced/nls/|enhanced/plugins/|enhanced/nls/ar/|enhanced/nls/el/|enhanced/nls/it/|nls/|enhanced/plugins/exporter/|enhanced/nls/hu/|enhanced/nls/pt/|enhanced/nls/hr/|enhanced/nls/zh-tw/|enhanced/plugins/filter/|enhanced/nls/tr/|enhanced/nls/pl/|enhanced/nls/he/|enhanced/nls/da/|enhanced/nls/de/|enhanced/nls/th/|enhanced/nls/cs/|enhanced/nls/ko/|enhanced/nls/ca/|enhanced/nls/sv/|cells/|enhanced/nls/kk/|enhanced/|enhanced/nls/sk/|enhanced/nls/sl/|enhanced/nls/fr/|enhanced/nls/pt-pt/|enhanced/nls/nl/|enhanced/nls/ro/|enhanced/nls/ru/|enhanced/nls/fi/|enhanced/nls/ja/|enhanced/nls/nb/" kind="src" path="punditclient/pundit/build/dojo/dojox/grid"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/cells"/>
+	<classpathentry excluding="nls/zh/|nls/es/|nls/|plugins/|nls/ar/|nls/el/|nls/it/|plugins/exporter/|nls/hu/|nls/pt/|nls/hr/|nls/zh-tw/|plugins/filter/|nls/tr/|nls/pl/|nls/he/|nls/da/|nls/de/|nls/th/|nls/cs/|nls/ko/|nls/ca/|nls/sv/|nls/kk/|nls/sk/|nls/sl/|nls/fr/|nls/pt-pt/|nls/nl/|nls/ro/|nls/ru/|nls/fi/|nls/ja/|nls/nb/" kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced"/>
+	<classpathentry excluding="zh/|es/|ar/|el/|it/|hu/|pt/|hr/|zh-tw/|tr/|pl/|he/|da/|de/|th/|cs/|ko/|ca/|sv/|kk/|sk/|sl/|fr/|pt-pt/|nl/|ro/|ru/|fi/|ja/|nb/" kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/hr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/nls/zh-tw"/>
+	<classpathentry excluding="exporter/|filter/" kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/plugins"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/plugins/exporter"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/enhanced/plugins/filter"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/grid/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/help"/>
+	<classpathentry excluding="languages/|languages/pygments/|widget/" kind="src" path="punditclient/pundit/build/dojo/dojox/highlight"/>
+	<classpathentry excluding="pygments/" kind="src" path="punditclient/pundit/build/dojo/dojox/highlight/languages"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/highlight/languages/pygments"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/highlight/widget"/>
+	<classpathentry excluding="ext-dojo/" kind="src" path="punditclient/pundit/build/dojo/dojox/html"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/html/ext-dojo"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/image"/>
+	<classpathentry excluding="proxy/" kind="src" path="punditclient/pundit/build/dojo/dojox/io"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/io/proxy"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/json"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/jsonPath"/>
+	<classpathentry excluding="oo/|aspect/|async/|functional/" kind="src" path="punditclient/pundit/build/dojo/dojox/lang"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/lang/aspect"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/lang/async"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/lang/functional"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/lang/oo"/>
+	<classpathentry excluding="dnd/|ext-dijit/layout/" kind="src" path="punditclient/pundit/build/dojo/dojox/layout"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/layout/dnd"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/layout/ext-dijit/layout"/>
+	<classpathentry excluding="random/" kind="src" path="punditclient/pundit/build/dojo/dojox/math"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/math/random"/>
+	<classpathentry excluding="dropMode/|adapter/" kind="src" path="punditclient/pundit/build/dojo/dojox/mdnd"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/mdnd/adapter"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/mdnd/dropMode"/>
+	<classpathentry excluding="app/" kind="src" path="punditclient/pundit/build/dojo/dojox/mobile"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/mobile/app"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/NodeList"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/resources"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/robot"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/rpc"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/secure"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/sketch"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/socket"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/sql"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/storage"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/string"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/testing"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/timing"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/uuid"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/validate"/>
+	<classpathentry excluding="nls/pt-pt/|nls/hu/|rotator/|nls/pt/|nls/de/|nls/tr/|nls/pl/|nls/he/|nls/da/|nls/zh-tw/|nls/th/|nls/cs/|nls/zh/|nls/es/|nls/it/|nls/el/|gauge/|nls/fr/|nls/ru/|nls/fi/|nls/nl/|nls/ro/|nls/ja/|nls/nb/|nls/|nls/ar/|nls/ko/|nls/sv/|nls/kk/|nls/ca/|nls/sk/|nls/sl/" kind="src" path="punditclient/pundit/build/dojo/dojox/widget"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/gauge"/>
+	<classpathentry excluding="pt-pt/|hu/|pt/|de/|tr/|pl/|he/|da/|zh-tw/|th/|cs/|zh/|es/|it/|el/|fr/|ru/|fi/|nl/|ro/|ja/|nb/|ar/|ko/|sv/|kk/|ca/|sk/|sl/" kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/ar"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/ca"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/cs"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/da"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/de"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/el"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/es"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/fi"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/fr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/he"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/hu"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/it"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/ja"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/kk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/ko"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/nb"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/nl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/pl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/pt-pt"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/ro"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/ru"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/sk"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/sl"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/sv"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/th"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/tr"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/zh"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/nls/zh-tw"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/widget/rotator"/>
+	<classpathentry excluding="ml/" kind="src" path="punditclient/pundit/build/dojo/dojox/wire"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/wire/ml"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/xml"/>
+	<classpathentry excluding="widget/" kind="src" path="punditclient/pundit/build/dojo/dojox/xmpp"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/dojo/dojox/xmpp/widget"/>
+	<classpathentry excluding="ia/scripts/|files/|ee/scripts/" kind="src" path="punditclient/pundit/build/examples"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/examples/ee/scripts"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/examples/files"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/examples/ia/scripts"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/kinetic"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/legacy"/>
+	<classpathentry excluding="selectors/|ng/|annotators/" kind="src" path="punditclient/pundit/build/src"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/src/annotators"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/src/ng"/>
+	<classpathentry kind="src" path="punditclient/pundit/build/src/selectors"/>
+	<classpathentry excluding="dojo/resources/|dojo/|dojo/nls/" kind="src" path="punditclient/temp"/>
+	<classpathentry excluding="resources/|nls/" kind="src" path="punditclient/temp/dojo"/>
+	<classpathentry kind="src" path="punditclient/temp/dojo/nls"/>
+	<classpathentry kind="src" path="punditclient/temp/dojo/resources"/>
+	<classpathentry kind="src" path="punditclient/utility"/>
+	<classpathentry kind="src" path="spatialstore"/>
+	<classpathentry kind="src" path="triplestore"/>
+	<classpathentry kind="src" path="viewer"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

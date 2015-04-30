@@ -1,1 +1,1 @@
-({"name": "Název", "size": "Velikost (v bajtech)", "path": "Cesta"})
+({"name":"Název","size":"Velikost (v bajtech)","path":"Cesta"})

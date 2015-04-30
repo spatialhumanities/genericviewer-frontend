@@ -1,1 +1,1 @@
-({"badPasswordMessage": "Geçersiz Parola.", "nomatchMessage": "Parolalar eşleşmiyor."})
+({"badPasswordMessage":"Geçersiz Parola.","nomatchMessage":"Parolalar eşleşmiyor."})

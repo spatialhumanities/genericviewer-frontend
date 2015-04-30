@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xsl:stylesheet [
-		<!ENTITY SupportedElements "svg:a|svg:circle|svg:ellipse|svg:g|svg:image|svg:line|svg:path|svg:polygon|svg:polyline|svg:rect|svg:text|svg:textPath|svg:use">
-		]>
+<!ENTITY SupportedElements "svg:a|svg:circle|svg:ellipse|svg:g|svg:image|svg:line|svg:path|svg:polygon|svg:polyline|svg:rect|svg:text|svg:textPath|svg:use">
+]>
 <!-- This is a complete rewrite of the original svg2gfx.xslt used for testing. -->
 <!--
 This version supports polygons, polylines, circles, ellipses, rectangles,
@@ -25,22 +25,22 @@ Questions / comments / bug reports can be sent to Feneric (on Twitter, IRC,
 GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:svg="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:math="http://exslt.org/math"
-                xmlns:exsl="http://exslt.org/common"
-                xmlns:saxon="http://icl.com/saxon"
-                xmlns:xalan="http://xml.apache.org/Xalan"
-                extension-element-prefixes="math exsl saxon xalan">
+        xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:math="http://exslt.org/math"
+	xmlns:exsl="http://exslt.org/common"
+	xmlns:saxon="http://icl.com/saxon"
+	xmlns:xalan="http://xml.apache.org/Xalan"
+	extension-element-prefixes="math exsl saxon xalan">
 	<xsl:output method="text" version="1.0" encoding="UTF-8"/>
 	<xsl:strip-space elements="*"/>
 
 	<!-- We currently need this constant for some transformation calculations. -->
 	<!-- GFX enhancements could obviate it in the future. -->
 	<xsl:variable name="degressInRadian" select="57.295779513082322"/>
-
+	
 	<!-- The following templates process little bits of things that can often occur in multiple contexts -->
-
+	
 	<xsl:template name="kill-extra-spaces" mode="kill-extra-spaces">
 		<xsl:param name="string"/>
 		<!-- Some don't feel that SVG is verbose enough and thus add extra spaces, which when -->
@@ -97,8 +97,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:choose>
 			<xsl:when test="starts-with($background,'url')">
 				<!-- Check if we have a URL (for a gradient or pattern) -->
-				<xsl:variable name="arguments"
-				              select="translate(normalize-space(substring-before(substring-after($background,'('),')')),' ',',')"/>
+				<xsl:variable name="arguments" select="translate(normalize-space(substring-before(substring-after($background,'('),')')),' ',',')"/>
 				<xsl:call-template name="url-processor">
 					<xsl:with-param name="url" select="$arguments"/>
 				</xsl:call-template>
@@ -117,8 +116,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:choose>
 			<xsl:when test="starts-with($color,'rgb')">
 				<!-- Check if we have an RGB triple -->
-				<xsl:variable name="arguments"
-				              select="normalize-space(substring-before(substring-after($color,'('),')'))"/>
+				<xsl:variable name="arguments" select="normalize-space(substring-before(substring-after($color,'('),')'))"/>
 				<xsl:call-template name="rgb-triple-processor">
 					<xsl:with-param name="triple" select="$arguments"/>
 				</xsl:call-template>
@@ -166,7 +164,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-
+	
 	<xsl:template name="rgb-triple-processor" mode="rgb-triple-processor">
 		<xsl:param name="triple"/>
 		<!-- Note that as SVG triples cannot contain alpha values, we hardcode it to be fully opaque -->
@@ -182,7 +180,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:value-of select="normalize-space($blue)"/>
 		<xsl:text>,"a":1},</xsl:text>
 	</xsl:template>
-
+	
 	<xsl:template name="styles-processor" mode="styles-processor">
 		<xsl:param name="styles"/>
 		<!-- Recursively chew through the styles in a traditional CAR / CDR pattern -->
@@ -212,8 +210,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:param name="transforms"/>
 		<!-- Recursively chew through the transforms in a traditional CAR / CDR pattern -->
 		<xsl:variable name="transformsCdr" select="normalize-space(substring-after($transforms,')'))"/>
-		<xsl:variable name="arguments"
-		              select="translate(normalize-space(substring-before(substring-after($transforms,'('),')')),' ',',')"/>
+		<xsl:variable name="arguments" select="translate(normalize-space(substring-before(substring-after($transforms,'('),')')),' ',',')"/>
 		<xsl:choose>
 			<!-- We only handle simple (i.e. nonoverlapping) chained transforms. -->
 			<!-- This covers most real-world cases, and exceptions are generally -->
@@ -266,8 +263,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 					<xsl:when test="function-available('math:sin') and function-available('math:cos')">
 						<xsl:variable name="sinOfAngle" select="math:sin($arguments div $degressInRadian)"/>
 						<xsl:variable name="cosOfAngle" select="math:cos($arguments div $degressInRadian)"/>
-						<xsl:variable name="subarguments"
-						              select="concat($cosOfAngle,',',-$sinOfAngle,',',$sinOfAngle,',',$cosOfAngle)"/>
+						<xsl:variable name="subarguments" select="concat($cosOfAngle,',',-$sinOfAngle,',',$sinOfAngle,',',$cosOfAngle)"/>
 						<xsl:call-template name="arg-processor">
 							<xsl:with-param name="values" select="$subarguments"/>
 							<xsl:with-param name="labels" select="string('xx,yx,xy,yy')"/>
@@ -343,7 +339,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 	<!-- We're temporarily supporting a few SVG features that GFX does not currently support. -->
 	<!-- The biggest of these is gradient transforms; when GFX natively supports it all the -->
 	<!-- kluges made to support it here (including all the following code) should be removed. -->
-
+	
 	<xsl:template name="gradient-transform-helper" mode="gradient-transform-helper">
 		<!-- This nasty little routine helps gradient adjuster and can be -->
 		<!-- removed when GFX gets gradientTransform support. -->
@@ -393,7 +389,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-
+	
 	<xsl:template name="gradient-adjuster" mode="gradient-adjuster">
 		<xsl:param name="node"/>
 		<!-- This code is awful and only meant to serve until GFX gets gradientTransform support. -->
@@ -402,17 +398,13 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<!-- that true gradientTransform support in GFX could provide. -->
 		<xsl:choose>
 			<xsl:when test="starts-with($node/@gradientTransform,'matrix')">
-				<xsl:variable name="args"
-				              select="normalize-space(substring-before(substring-after($node/@gradientTransform,'matrix('),')'))"/>
+				<xsl:variable name="args" select="normalize-space(substring-before(substring-after($node/@gradientTransform,'matrix('),')'))"/>
 				<xsl:variable name="xx" select="substring-before($args,' ')"/>
 				<xsl:variable name="yx" select="substring-before(substring-after($args,' '),' ')"/>
 				<xsl:variable name="xy" select="substring-before(substring-after($args,concat($xx,' ',$yx,' ')),' ')"/>
-				<xsl:variable name="yy"
-				              select="substring-before(substring-after($args,concat($xx,' ',$yx,' ',$xy,' ')),' ')"/>
-				<xsl:variable name="dx"
-				              select="substring-before(substring-after($args,concat($xx,' ',$yx,' ',$xy,' ',$yy,' ')),' ')"/>
-				<xsl:variable name="dy"
-				              select="substring-after($args,concat($xx,' ',$yx,' ',$xy,' ',$yy,' ',$dx,' '))"/>
+				<xsl:variable name="yy" select="substring-before(substring-after($args,concat($xx,' ',$yx,' ',$xy,' ')),' ')"/>
+				<xsl:variable name="dx" select="substring-before(substring-after($args,concat($xx,' ',$yx,' ',$xy,' ',$yy,' ')),' ')"/>
+				<xsl:variable name="dy" select="substring-after($args,concat($xx,' ',$yx,' ',$xy,' ',$yy,' ',$dx,' '))"/>
 				<xsl:call-template name="gradient-transform-helper">
 					<xsl:with-param name="cxa" select="$node/@cx"/>
 					<xsl:with-param name="cya" select="$node/@cy"/>
@@ -429,8 +421,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:when test="starts-with($node/@gradientTransform,'translate')">
-				<xsl:variable name="args"
-				              select="normalize-space(substring-before(substring-after($node/@gradientTransform,'translate('),')'))"/>
+				<xsl:variable name="args" select="normalize-space(substring-before(substring-after($node/@gradientTransform,'translate('),')'))"/>
 				<!-- If only one argument is provided, it's assumed for both -->
 				<xsl:choose>
 					<xsl:when test="contains($args,',')">
@@ -468,8 +459,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="starts-with($node/@gradientTransform,'scale')">
-				<xsl:variable name="args"
-				              select="normalize-space(substring-before(substring-after($node/@gradientTransform,'scale('),')'))"/>
+				<xsl:variable name="args" select="normalize-space(substring-before(substring-after($node/@gradientTransform,'scale('),')'))"/>
 				<!-- If only one argument is provided, it's assumed for both -->
 				<xsl:choose>
 					<xsl:when test="contains($args,',')">
@@ -506,9 +496,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
-			<xsl:otherwise>    <!-- Otherwise it's got to be a rotation -->
-				<xsl:variable name="args"
-				              select="normalize-space(substring-before(substring-after($node/@gradientTransform,'rotate('),')'))"/>
+			<xsl:otherwise>	<!-- Otherwise it's got to be a rotation -->
+				<xsl:variable name="args" select="normalize-space(substring-before(substring-after($node/@gradientTransform,'rotate('),')'))"/>
 				<xsl:choose>
 					<xsl:when test="function-available('math:sin') and function-available('math:cos')">
 						<xsl:variable name="sinOfAngle" select="math:sin($args div $degressInRadian)"/>
@@ -538,9 +527,9 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		</xsl:choose>
 		<xsl:text>,</xsl:text>
 	</xsl:template>
-
+	
 	<!-- The following templates handle related batches of attributes -->
-
+	
 	<xsl:template name="font">
 		<xsl:param name="node"/>
 		<!-- Only include if we have at least some font properties defined -->
@@ -638,13 +627,13 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 	</xsl:template>
 
 	<!-- SVG Attribute Handling -->
-
+	
 	<xsl:template match="@id">
 		<xsl:text>name:"</xsl:text>
 		<xsl:apply-templates/>
 		<xsl:text>",</xsl:text>
 	</xsl:template>
-
+	
 	<xsl:template match="@x|@y|@x1|@x2|@y1|@y2|@cx|@cy|@r|@rx|@ry|@fx|@fy|@width|@height|@offset">
 		<!-- Generic attribute followed by comma -->
 		<xsl:value-of select="local-name()"/>
@@ -652,14 +641,14 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:value-of select="."/>
 		<xsl:text>,</xsl:text>
 	</xsl:template>
-
+	
 	<xsl:template match="@d">
 		<!-- Used only by path objects; often has tons of extra whitespace -->
 		<xsl:text>path:"</xsl:text>
 		<xsl:value-of select="normalize-space(.)"/>
 		<xsl:text>",</xsl:text>
 	</xsl:template>
-
+	
 	<xsl:template match="@fill">
 		<!-- Used by most shapes and can have a URL, a solid color, or "none" -->
 		<xsl:if test=". != 'none'">
@@ -718,14 +707,14 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:call-template name="transform-processor">
 			<xsl:with-param name="transforms" select="."/>
 		</xsl:call-template>
-		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:text>}</xsl:text>		
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
 	<!-- SVG Element Handling -->
-
+	
 	<xsl:template match="svg:a">
 		<xsl:param name="groupAttrs" select="''"/>
 		<!-- Anchors are actually meaningless to us, but their contents should usually be processed. -->
@@ -756,8 +745,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="node" select="."/>
 		</xsl:call-template>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -773,8 +762,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="node" select="."/>
 		</xsl:call-template>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -801,8 +790,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="groupAttrs" select="$newGroupAttrs"/>
 		</xsl:apply-templates>
 		<xsl:text>]</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 		<!-- When GFX gets group fills etc., remove the following line and uncomment the ones below. -->
 		<xsl:apply-templates select="@transform"/>
@@ -810,8 +799,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<!--	<xsl:with-param name="node" select="."/>-->
 		<!--</xsl:call-template>-->
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -850,8 +839,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="node" select="."/>
 		</xsl:call-template>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -879,8 +868,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<!-- <xsl:apply-templates select="@x1|@x2|@y1|@y2"/> -->
 		<!-- <xsl:apply-templates select="@gradientTransform"/> -->
 		<xsl:text>]}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -908,8 +897,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:text>{type:"pattern",</xsl:text>
 		<xsl:apply-templates select="@width|@height|@xlink:href"/>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -946,8 +935,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="node" select="."/>
 		</xsl:call-template>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -978,8 +967,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<!-- <xsl:apply-templates select="@cx|@cy|@r"/> -->
 		<!-- <xsl:apply-templates select="@gradientTransform"/> -->
 		<xsl:text>]}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -1001,8 +990,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="node" select="."/>
 		</xsl:call-template>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -1013,8 +1002,8 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 		<xsl:text>color:</xsl:text>
 		<xsl:apply-templates select="@style"/>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
 
@@ -1029,8 +1018,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 				<xsl:text>shape:{type:"textpath",text:"</xsl:text>
 				<xsl:apply-templates/>
 				<xsl:text>",</xsl:text>
-				<xsl:variable name="arguments"
-				              select="translate(normalize-space(substring-before(substring-after(@xlink:href,'('),')')),' ',',')"/>
+				<xsl:variable name="arguments" select="translate(normalize-space(substring-before(substring-after(@xlink:href,'('),')')),' ',',')"/>
 				<xsl:call-template name="url-processor">
 					<xsl:with-param name="url" select="$arguments"/>
 				</xsl:call-template>
@@ -1062,11 +1050,11 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 			<xsl:with-param name="node" select="."/>
 		</xsl:call-template>
 		<xsl:text>}</xsl:text>
-		<xsl:if test="not(position()=last())">
-			<xsl:text>,</xsl:text>
+		<xsl:if test="not(position()=last())"> 
+			<xsl:text >,</xsl:text> 
 		</xsl:if>
 	</xsl:template>
-
+	
 	<xsl:template match="svg:use">
 		<xsl:param name="groupAttrs" select="''"/>
 		<!-- Use just refers to an existing element, essentially duplicating it. -->
@@ -1088,7 +1076,7 @@ GMail, etc.) or Eric (Saugus.net, ShellTown, etc.)
 	</xsl:template>
 
 	<!-- The main SVG element itself -->
-
+	
 	<xsl:template match="/svg:svg">
 		<xsl:text>[</xsl:text>
 		<xsl:apply-templates select="&SupportedElements;"/>

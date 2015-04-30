@@ -1,1 +1,1 @@
-({"insertEntity": "Wstaw symbol"})
+({"insertEntity":"Wstaw symbol"})

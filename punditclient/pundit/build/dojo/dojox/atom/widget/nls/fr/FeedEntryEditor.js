@@ -1,1 +1,1 @@
-({"edit": "[éditer]", "save": "[sauvegarder]", "cancel": "[annuler]", "doNew": "[nouveau]"})
+({"edit":"[éditer]","save":"[sauvegarder]","cancel":"[annuler]","doNew":"[nouveau]"})

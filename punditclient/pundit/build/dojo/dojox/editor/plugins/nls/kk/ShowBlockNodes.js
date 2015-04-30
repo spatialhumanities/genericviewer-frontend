@@ -1,1 +1,1 @@
-({"showBlockNodes": "HTML блогы элементтерін көрсету"})
+({"showBlockNodes":"HTML блогы элементтерін көрсету"})

@@ -1,19 +1,17 @@
 
 .soria .dijitContentPane {
-	padding: 0;
+    padding: 0;
 }
-
 .soria .dijitTabContainerTop-dijitContentPane,
 .soria .dijitTabContainerLeft-dijitContentPane,
 .soria .dijitTabContainerBottom-dijitContentPane,
 .soria .dijitTabContainerRight-dijitContentPane,
 .soria .dijitAccordionContainer-dijitContentPane {
-	background-color: #fff;
-	padding: 5px;
+    background-color: #fff;
+    padding: 5px;
 }
-
 .soria .dijitSplitContainer-dijitContentPane,
 .soria .dijitBorderContainer-dijitContentPane {
-	background-color: #fff;
-	padding: 5px;
+    background-color: #fff;		
+    padding: 5px;
 }

@@ -1,1 +1,1 @@
-({"next": "Siguiente", "done": "Terminado", "previous": "Anterior"})
+({"next":"Siguiente","done":"Terminado","previous":"Anterior"})

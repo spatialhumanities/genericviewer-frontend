@@ -1,1 +1,1 @@
-({"name": "Nom", "size": "Taille (en octets)", "path": "Chemin"})
+({"name":"Nom","size":"Taille (en octets)","path":"Chemin"})

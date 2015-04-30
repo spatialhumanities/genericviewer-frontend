@@ -1,1 +1,1 @@
-({"name": "Nimi", "size": "Koko (tavuina)", "path": "Polku"})
+({"name":"Nimi","size":"Koko (tavuina)","path":"Polku"})

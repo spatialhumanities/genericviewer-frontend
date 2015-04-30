@@ -25,12 +25,13 @@
  *      
  *      .dijitDisabled .dijitArrowButtonInner  - disabled arrow states 
  */
+
 @import "../variables";
 
 .claro .dijitButtonNode {
 	/* rules for dijit.form.*Button widgets and arrow nodes on ComboBox, Spinner etc. */
 	.transition-property(background-color);
-	.transition-duration(.3s);
+ 	.transition-duration(.3s);
 }
 
 .claro .dijitButton .dijitButtonNode,
@@ -39,18 +40,18 @@
 .claro .dijitToggleButton .dijitButtonNode {
 	/* rules for the dijit.form.*Button widgets (see also ComboButton section below) */
 	border: 1px solid @button-border-color;
-	padding: 2px 4px 4px 4px;
+	padding:2px 4px 4px 4px;
 	background-image: url("images/button.png");
 	background-position: center top;
 	background-repeat: repeat-x;
 	background-color: @button-background-color;
 	.border-radius(@button-border-radius);
-	.box-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
+	.box-shadow(0 1px 1px rgba(0,0,0,0.15));
 }
 
 .claro .dijitComboButton .dijitArrowButton {
 	border-left-width: 0;
-	padding: 4px 2px 4px 2px; /* TODO: still needed? */
+	padding: 4px 2px 4px 2px;	/* TODO: still needed? */
 }
 
 /*arrow styles for down/up/left/right directions*/
@@ -58,35 +59,28 @@
 	width: 15px;
 	height: 15px;
 	margin: 0 auto;
-	background-image: url("images/buttonArrows.png");
-	background-repeat: no-repeat;
-	background-position: -51px 53%;
+	background-image:url("images/buttonArrows.png");
+	background-repeat:no-repeat;
+	background-position:-51px 53%;
 }
-
 .claro .dijitLeftArrowButton .dijitArrowButtonInner {
 	background-position: -77px 53%;
 }
-
 .claro .dijitRightArrowButton .dijitArrowButtonInner {
 	background-position: -26px 53%;
 }
-
 .claro .dijitUpArrowButton .dijitArrowButtonInner {
 	background-position: 0 53%;
 }
-
 .claro .dijitDisabled .dijitArrowButtonInner {
 	background-position: -151px 53%;
 }
-
 .claro .dijitDisabled .dijitLeftArrowButton .dijitArrowButtonInner {
 	background-position: -177px 53%;
 }
-
 .claro .dijitDisabled .dijitRightArrowButton .dijitArrowButtonInner {
 	background-position: -126px 53%;
 }
-
 .claro .dijitDisabled .dijitUpArrowButton .dijitArrowButtonInner {
 	background-position: -100px 53%;
 }
@@ -96,25 +90,29 @@
 	text-align: center;
 }
 
+
+
+
+
 /* hover status */
 .claro .dijitButtonHover .dijitButtonNode,
 .claro .dijitDropDownButtonHover .dijitButtonNode,
-.claro .dijitComboButton .dijitButtonNodeHover,
+.claro .dijitComboButton .dijitButtonNodeHover, 
 .claro .dijitComboButton .dijitDownArrowButtonHover,
 .claro .dijitToggleButtonHover .dijitButtonNode {
 	background-color: @button-hovered-background-color;
-	color: @text-color;
-	.transition-duration(.2s);
+	color:@text-color;
+ 	.transition-duration(.2s);
 }
 
 /* checked status */
-.claro .dijitButtonActive .dijitButtonNode,
+.claro .dijitButtonActive .dijitButtonNode, 
 .claro .dijitDropDownButtonActive .dijitButtonNode,
 .claro .dijitComboButtonActive .dijitButtonNode,
 .claro .dijitToggleButtonActive .dijitButtonNode {
 	background-color: @button-pressed-background-color;
-	.box-shadow(0 0 0 rgba(0, 0, 0, 0));
-	.transition-duration(.1s);
+	.box-shadow(0 0 0 rgba(0,0,0,0));
+ 	.transition-duration(.1s);
 }
 
 /* disabled status */
@@ -129,21 +127,19 @@
 .claro .dijitButtonDisabled .dijitButtonNode,
 .claro .dijitDropDownButtonDisabled .dijitButtonNode,
 .claro .dijitComboButtonDisabled .dijitButtonNode,
-.claro .dijitToggleButtonDisabled .dijitButtonNode {
-	background-position: 0 -149px;
+.claro .dijitToggleButtonDisabled .dijitButtonNode { 
+	background-position:0 -149px;
 	background-color: @disabled-background-color;
 	border: solid 1px @disabled-border-color;
 	color: @disabled-text-color;
-	.box-shadow(0 0 0 rgba(0, 0, 0, 0));
+	.box-shadow(0 0 0 rgba(0,0,0,0));
 }
-
-.claro .dijitComboButtonDisabled .dijitArrowButton {
+.claro .dijitComboButtonDisabled .dijitArrowButton{ 
 	border-left-width: 0;
 }
-
 /* for ComboButton */
 .claro table.dijitComboButton {
-	border-collapse: separate; /* override dijit.css so that ComboBox rounded corners work */
+	border-collapse: separate;	/* override dijit.css so that ComboBox rounded corners work */
 }
 
 .dj_ie6 .claro .dijitButtonNode {
@@ -153,7 +149,6 @@
 .claro .dijitComboButton .dijitStretch {
 	.border-radius(@button-border-radius 0 0 @button-border-radius);
 }
-
 .claro .dijitComboButton .dijitArrowButton {
 	.border-radius(0 @button-border-radius @button-border-radius 0);
 }

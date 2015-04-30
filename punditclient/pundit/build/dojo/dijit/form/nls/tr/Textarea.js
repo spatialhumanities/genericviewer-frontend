@@ -1,1 +1,1 @@
-({"iframeEditTitle": "düzenleme alanı", "iframeFocusTitle": "düzenleme alanı çerçevesi"})
+({"iframeEditTitle":"düzenleme alanı","iframeFocusTitle":"düzenleme alanı çerçevesi"})

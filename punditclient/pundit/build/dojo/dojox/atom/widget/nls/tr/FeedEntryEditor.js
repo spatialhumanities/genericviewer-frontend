@@ -1,1 +1,1 @@
-({"edit": "[düzenle]", "save": "[kaydet]", "cancel": "[iptal]", "doNew": "[yeni]"})
+({"edit":"[düzenle]","save":"[kaydet]","cancel":"[iptal]","doNew":"[yeni]"})

@@ -1,1 +1,1 @@
-({"text": "Beskrivelse:", "insertImageTitle": "Billedegenskaber", "set": "Definér", "newWindow": "Nyt vindue", "topWindow": "Øverste vindue", "target": "Mål:", "createLinkTitle": "Linkegenskaber", "parentWindow": "Overordnet vindue", "currentWindow": "Aktuelt vindue", "url": "URL:"})
+({"text":"Beskrivelse:","insertImageTitle":"Billedegenskaber","set":"Definér","newWindow":"Nyt vindue","topWindow":"Øverste vindue","target":"Mål:","createLinkTitle":"Linkegenskaber","parentWindow":"Overordnet vindue","currentWindow":"Aktuelt vindue","url":"URL:"})
