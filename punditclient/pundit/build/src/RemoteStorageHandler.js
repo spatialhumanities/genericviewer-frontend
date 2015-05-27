@@ -74,25 +74,22 @@ dojo.declare("pundit.RemoteStorageHandler", pundit.BaseComponent, {
 		//Currently is not useful
 	},
 
-	save: function (key, val, removedGeoURIs) {//edit IBR. assert: hier werden geometrien und annotationen gespeichert.
-		var currentTime = new Date(),
-				payload = dojo.toJson({value : val, created: currentTime.getTime()}),
-				rmg=removedGeoURIs == undefined ? []: removedGeoURIs;
-		this.writer.postRemoteStorage(key, payload,rmg);
+	save: function (key, val, opCode) {//edit IBR. assert: hier werden geometrien und annotationen gespeichert.
+
+
+		var payload;
+		if (opCode=='addition'){
+		payload = dojo.toJson(val);}
+		else {
+			payload=val;
+		}
+
+		this.writer.postRemoteStorage(key, payload, opCode);
 	},
-//Felix: hier extra statusvariable für ak
 	read: function (key) {
 		this.reader.getDataFromStorage(key);
 	},
 
-	clearStore: function () {
-		//API has not been implemented yet
-	},
-
-	clearKey: function (key) {
-		//API has not been implemented yet
-
-	},
 
 
 	/*
@@ -122,7 +119,7 @@ dojo.declare("pundit.RemoteStorageHandler", pundit.BaseComponent, {
 		}
 
 		args = {
-			url: ns.annotationServerStorage + key,
+			url: ns.annotationServerStorage + "/" + key,
 			headers: {"Accept": "application/json"},
 			failOk: true,
 			handleAs: "json",
@@ -174,7 +171,7 @@ dojo.declare("pundit.RemoteStorageHandler", pundit.BaseComponent, {
 		var self = this,
 				content = dojo.toJson({value: value, created: (new Date()).getTime()}),
 				args = {
-					url: ns.annotationServerStorage + key,
+					url: ns.annotationServerStorage + "/" + key,
 					postData: content,
 					headers: {"Content-Type": "application/json;charset=UTF-8;"},
 					handleAs: "text",

@@ -254,12 +254,11 @@ dojo.declare("pundit.AnnotationReader", pundit.BaseComponent, {
 
 	}, // getVocabularyFromJsonp
 
-	// TODO: this will be replaced by new ACL system, and obsoleted
-	// see RemoteStorageHandler.js
+
 	getDataFromStorage: function (key) {
 		var self = this,
 				args = {
-					url: ns.annotationServerStorage + key,
+					url: ns.annotationServerStorage + "/" + key,
 					headers: {"Accept": "application/json"},
 					failOk: true,
 					handleAs: "json",
@@ -281,7 +280,7 @@ dojo.declare("pundit.AnnotationReader", pundit.BaseComponent, {
 						self.fireOnStorageError(error);
 					}
 				};
-		var deferred = requester.xGet(args);//Felix: Hier werden die XHR-Calls unter anderem zu pundit/favorites gesendet
+		var deferred = requester.xGet(args);
 		_PUNDIT.ga.track('api', 'get', 'annotationServerStorage/$KEY');
 
 	},

@@ -28,6 +28,10 @@ dojo.declare("pundit.NamespaceHelper", pundit.BaseComponent, {
 		self.collective_object_label="Current Geo-Object Collection";
 		self.text_repository_title="Deutsche Inschriften Online";//Felix: Feld "description" bei DIO-Artikel-Dokumenten. todo: Unterscheidung zwischen HTML und XML-Seiten. Momentan wird beides geladen
 		self.current_geo_collection="Current Geo-Object Collection";
+		self.opcode_delete="deletion";
+		self.opcode_add="addition"; //operation codes for ReST-Calls for geometries
+
+
 		self.rdf_type = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
 		self.rdf_value = "http://www.w3.org/1999/02/22-rdf-syntax-ns#value";
 		self.rdf_property = "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property";
@@ -67,7 +71,7 @@ dojo.declare("pundit.NamespaceHelper", pundit.BaseComponent, {
 		self.annotationServerApiAnnotations = self.annotationServer + "api/annotations/";
 		self.annotationServerApiGeometries = self.annotationServer + "api/services/geometries/";
 		self.annotationServerMetadataSearch = self.annotationServer + "api/annotations/metadata/search";
-		self.annotationServerStorage = self.annotationServer + "api/services/preferences/";
+		self.annotationServerStorage = self.annotationServer + "api/services";
 		self.annotationServerVocabProxy = self.annotationServer + "api/services/proxy";
 		self.annotationServerUsersCurrent = self.annotationServer + "api/users/current";
 		self.annotationServerUsersLogout = self.annotationServer + "api/users/logout";

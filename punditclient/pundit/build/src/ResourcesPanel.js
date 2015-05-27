@@ -96,7 +96,7 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 				label: 'Filtered Geometries',
 				expanded: true
 			},
-			geometries: {//edit IBR: hinzugefügt
+			geometries: {//edit IBR: added
 				label: 'All Geometries',
 				expanded: true
 			},
@@ -104,10 +104,10 @@ dojo.declare("pundit.ResourcesPanel", pundit.BasePanel, {
 				label: 'Repository Texts',//edit IBR: hinzugefügt
 				expanded: true
 			},
-			myitems: {
+/*			myitems: { //edit ibr: disabled due to problems with bookmarklet
 				label: 'My Items',
 				expanded: true
-			}, /*
+			},
 			 pageitems: {//Felix: für suggestionpanels ausschalten.
 			 label: 'Page Items'
 			 },*/

@@ -58,42 +58,6 @@ dojo.declare("pundit.AnnotationWriter", pundit.BaseComponent, {
 
 	}, // writeAnnotationContent
 
-	/*
-	 // TODO change the way target is passed to the server
-	 postJson: function(jsonData, tar, pag) {
-
-	 var self = this,
-	 context = encodeURIComponent(dojo.toJson({
-	 targets: tar,
-	 pageContext: pag
-	 })),
-	 reader = new pundit.AnnotationReader({debug: self.opts.debug});
-
-	 reader.getCurrentNotebookId(function(notebookId) {
-	 var post = {
-	 url: ns.annotationServerApiNotebooks + notebookId + "?context=" + context,
-	 postData: jsonData,
-	 headers: {"Content-Type":"application/json;charset=UTF-8;"},
-	 handleAs: "json",
-	 load: function(data) {
-	 self.log('Saved content to notebook '+notebookId+', annotation id '+data.AnnotationID);
-	 //_PUNDIT.loadingBox.doneWait();
-	 //_PUNDIT.loadingBox.addOk('Annotations saved into the "'+notebookId+'" notebook');
-	 self.fireOnSave(data.AnnotationID);
-	 },
-	 error: function(error) {
-	 alert("Error saving content to notebook");
-	 //_PUNDIT.loadingBox.doneWait();
-	 //_PUNDIT.loadingBox.addKo('Error saving annotations to the server');
-	 // self.fireOnError("DOH");
-	 }
-	 };
-	 // Call the asynchronous xhrPost
-	 requester.xPost(post);
-	 });
-
-	 }, // postJson
-	 */
 
 	deleteAnnotation: function (id, cb) {
 		var self = this,
@@ -144,11 +108,12 @@ dojo.declare("pundit.AnnotationWriter", pundit.BaseComponent, {
 
 	// TODO: this will be replaced by new ACL system, and obsoleted,
 	// see RemoteStorageHandler.js
-	postRemoteStorage: function (key, payload, removedGeoURIs) {//edit IBR: funktionsparameter removed
+	postRemoteStorage: function (key, payload, opcode) {//edit IBR: funktionsparameter removed
 		//edit IBR: QueryParameter, indicating that this is actually a delete operation
-		var rmg=removedGeoURIs == undefined ? []: removedGeoURIs;
+		//var rmg=removedGeoURIs == undefined ? []: removedGeoURIs;
+
 		var args = {
-			url: ns.annotationServerStorage + key + "?geometry_ids="+encodeURIComponent(rmg.toString()),
+			url: ns.annotationServerStorage + "/" + key + "?operation="+opcode,
 			postData: payload,
 			headers: {"Content-Type": "application/json;charset=UTF-8;"},
 			handleAs: "text",

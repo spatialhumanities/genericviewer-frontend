@@ -38,16 +38,13 @@ dojo.declare("pundit.MyItems", pundit.Items, {
 		self.readJobId = null;
 		self.writeJobId = null;
 
-		// TODO: this will be replaced when my items will be just another
-		// korbo vocabulary, after korbo ACL + auth + sso
 		self.store = new pundit.RemoteStorageHandler({debug: self.opts.debug});
-		self.store.onStoreRead(function (favoriteItems) {//todo ibr: causes redundant storage. key needed as argument
-debugger;
-			if (favoriteItems.length === 0) {//warum wird das hier immer ausgelöst? Prüfen, was in den favoriteItems drin ist. Auf Typ (geometry, favorites) prüfen.
-				debugger;
+		self.store.onStoreRead(function (favoriteItems) {
+			if (favoriteItems.length === 0) {
 				//check for datatypes of empty favorite items:
-				self.log('Perfectly virgin favorites: initializing');
-				self.resetFavoriteItems();
+
+				self.log('no favorites or geometric data written so far: initializing');//client-side initalization only necessary for keys "favorites" and "preferences"
+				//self.resetFavoriteItems();//edit Felix: Reset löscht alle items. nicht nötig.
 				favoriteItems = {value: []};
 			}
 
@@ -69,7 +66,7 @@ debugger;
 			// First time we execute this: call the doneBeforeInit command
 			if (self.loadJobId) {
 				_PUNDIT.init.doneBeforeInit(self.loadJobId);
-				self.loadJobId = null;
+				self.loxadJobId = null;
 			}
 			_PUNDIT.loadingBox.setJobOk(self.ddJobId);
 
@@ -91,26 +88,25 @@ debugger;
 
 			// On pundit item remove, save the favorite items: a fav item
 			// could have been removed.
-			self.onItemRemoved(function (removedGeoURIs) {//edit IBR: funktionsparameter geometryURI, die für die Löschung entsprechender Annotationen im TripleStore übergeben wird.
-				self.saveFavoriteItems(removedGeoURIs);
+			self.onItemRemoved(function (removedGeoURIs) {//edit IBR: removedGeoURIs is the array of delta data, i.e the data to be deleted.
+			removedGeoURIs=removedGeoURIs.replace('"','');
+				self.saveFavoriteItems(removedGeoURIs,"deletion");
 			});
-			self.onAllItemsRemoved(function () {
-				self.resetFavoriteItems();
-			});
-			self.onItemAdded(function () {
-				self.saveFavoriteItems([]);
+
+			self.onItemAdded(function (addedItems) {
+				self.saveFavoriteItems(addedItems,"addition");
 			});
 		});
 
 	},
 
-	addItem: function (item, userAdded) {//edit IBR: Sonderfall GeoItem //ASSERT: Ist Geometrie. Nur Geometrien können im Genericviewer gespeichert werden.
+	addItem: function (item, userAdded) {//edit IBR: additional case GeoItem //ASSERT: is a geometry. only geometries can be save in the GenericViewer.
 		this.inherited(arguments);
 
 		if (userAdded && !this.isMyItemTabVisible()) {
 			var self = this;
 			self.newAddedItems.push(item.value);
-			self.fireOnMyItemAdded(self.newAddedItems);
+			self.fireOnMyItemAdded(self.newAddedItems,"addition");
 		}
 	},
 
@@ -127,35 +123,30 @@ debugger;
 
 	// TODO: this will be replaced when my items will be just another
 	// korbo vocabulary, after korbo ACL + auth + sso
-	resetFavoriteItems: function (datakey) {
+	resetFavoriteItems: function (datakey) {//not needed anymore
 		var self = this;
 		//if (datakey==)
-		self.store.save('geometries', [], []);
-		self.store.save('favorites', [], []);
+		//self.store.save('geometries', [], []);
+		//self.store.save('favorites', [], []);//favorites
 	},
 
-	// TODO: this will be replaced when my items will be just another
-	// korbo vocabulary, after korbo ACL + auth + sso
-	saveFavoriteItems: function (removedGeoURIs) {//edit IBR ASSERT: Nur Geometrien werden im GenericViewer gespeichert. removedGEoURIs für den Fall, dass Geom gelöscht wurden
+
+	//for deletions, data is an comma-separated string of URIs. For addition, its an json-array of complete geo-data-sets
+	saveFavoriteItems: function (data, opcode) {//edit IBR ASSERT: Nur Geometrien werden im GenericViewer gespeichert. removedGEoURIs für den Fall, dass Geom gelöscht wurden
 
 		var self = this,
 				favoriteItems = [];
 
 		self.itemsDnD.forInItems(function (item) {
-//edit IBR: Nur Geometrien werden hier gespeichert.
 
-			if (item.data.geometry == true) {
+			if (item.data.geometry == true) {//data sanity check
 
 				favoriteItems.push(item.data);
-			}//todo: fall abfangen, dass favoriteItems gleich [] ist.
+			}
 
 		});
-		if (removedGeoURIs!=undefined){
-			self.store.save('geometries', favoriteItems, removedGeoURIs);
-		}
-		else{
-		self.store.save('geometries', favoriteItems, []);
-			}
+			self.store.save('geometries', data, opcode);
+
 	},
 
 
@@ -166,10 +157,10 @@ debugger;
 		var self = this;
 
 		self.readJobId = _PUNDIT.loadingBox.addJob('Reading your items');
-		echo("store favorites");
+		//echo("store favorites");
 		self.store.read('favorites');//Frage zum debuggen: was wird hier gelesen? warum ist das leer ??
 		//WINDOW.setTimeout("","");//Synchronisierung abwarten => OD
-				echo("store geometries");
+				//echo("store geometries");
 
 		self.store.read('geometries');//edit IBR//todo: lädt er beide Items, und Geometrien?
 	},

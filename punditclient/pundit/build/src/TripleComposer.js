@@ -516,7 +516,6 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 
 		self.addDnDTriple();
 	},
-	/*Felix: Listener für die SPO-Slots*/
 	dndTargetsClickHandler: function (e, target, type) {
 		var self = this,
 				u = dojo.attr(target, 'id').substr(-5),
@@ -587,11 +586,11 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				textrepository: {
 					label: 'Repository texts',//edit IBR
 					items: textrepository
-				},
+				}/*,edit ibr: disabled due to problems with the bookmarklet
 				myitems: {
 					label: 'My Items',
 					items: myitems
-				}
+				}*/
 			}
 
 			for (var v in _PUNDIT['vocab'].vocabs) {
@@ -655,11 +654,11 @@ dojo.declare("pundit.TripleComposer", pundit.BaseComponent, {
 				textrepository: {
 					label: 'Repository texts',//edit IBR: hinzugefügt
 					items: textrepository
-				},
+				}/*,
 				myitems: {
 					label: 'My Items',
 					items: myitems
-				}
+				}*/
 			}
 
 

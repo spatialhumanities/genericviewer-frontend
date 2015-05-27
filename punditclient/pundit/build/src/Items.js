@@ -121,11 +121,11 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 			'onclick': function (e) {
 				var id = dojo.query(e.target).parent()[0].id;
 				var item = self.itemsDnD.getItem(id);
-/*				if (item.data.rdftype.length === 0) {
-					cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, item.data, 'semlibLiteral' + self.name);
-				} else {
-					cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, item.data, 'pundit-' + self.name);
-				}*/
+				/*				if (item.data.rdftype.length === 0) {
+				 cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, item.data, 'semlibLiteral' + self.name);
+				 } else {
+				 cMenu.show(e.pageX - window.pageXOffset, e.pageY - window.pageYOffset, item.data, 'pundit-' + self.name);
+				 }*/
 			}
 		};
 
@@ -137,13 +137,13 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 				previewer.show(item.data.value);
 
 				/*if (tooltip_viewer.isAnnXpointer(item.data.value) || tooltip_viewer.isTempXpointer(item.data.value))
-					tooltip_viewer.highlightByXpointer(item.data.value);*/
+				 tooltip_viewer.highlightByXpointer(item.data.value);*/
 			},
 			'onmouseout': function (e) {
 				var id = (dojo.hasClass(e.target, 'pundit-icon-context-button') || dojo.hasClass(e.target, 'pundit-trim')) ? dojo.query(e.target).parent()[0].id : e.target.id;
 				var item = self.itemsDnD.getItem(id);
 				/*if (tooltip_viewer.isAnnXpointer(item.data.value) || tooltip_viewer.isTempXpointer(item.data.value))
-					tooltip_viewer.removeHighlightByXpointer(item.data.value);*/
+				 tooltip_viewer.removeHighlightByXpointer(item.data.value);*/
 			},
 			'onclick': function (e) {
 				var target = e.target;
@@ -233,7 +233,7 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 			dojo.addClass(node, 'pundit-' + item.type);
 			dojo.addClass(node, 'pundit-shown');
 
-			if (semlibMyItems.filterItemsByRdftype([item],  [ns.geometric_object_class])!=[]&&item.image!=undefined){
+			if (semlibMyItems.filterItemsByRdftype([item], [ns.geometric_object_class]) != [] && item.image != undefined) {
 
 				node.innerHTML = '<span class="pundit-icon-context-button"></span><span class="pundit-trim pundit-item-label">' + label + '</span><span><img src=' + item.image + '></span><span class="pundit-item-add-button"></span><span class="pundit-item-remove-button"></span><span class="pundit-trim pundit-item-rdftype" >&nbsp;(' + rdftype + ')</span>';
 			} else {
@@ -378,7 +378,7 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 					&& dojo.indexOf(self.itemsDnD.map[id].data.rdftype, ns.rdf_property) === -1
 					&& dojo.indexOf(self.itemsDnD.map[id].data.rdftype, ns.page) === -1
 					&& dojo.indexOf(self.itemsDnD.map[id].data.rdftype, ns.geometric_object_class) === -1//Felix
-					)
+			)
 				foo.push(dojo.query('#' + id)[0]);
 		}
 		return foo;
@@ -392,7 +392,9 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 			value = self.itemsDnD.map[id].data[field];
 			if (testFunction(value) === true)
 				foo.push(self.itemsDnD.map[id].data);
-			else if (field=='description'){self.log('added with missing field description');} // Felix: description bei Ressourcen optional
+			else if (field == 'description') {
+				self.log('added with missing field description');
+			} // Felix: description bei Ressourcen optional
 			else self.log("Item " + self.itemsDnD.map[id].data.value + " discarded, missing field " + field);
 		}
 		return foo;
@@ -468,14 +470,14 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 		self.log('ERROR: getItemIdFromUri with wrong uri? ' + uri);
 		return null;
 	},
-	getItemsFromTerm: function (term, rdftypes, rejectedTypes , rejectedTerm) {
+	getItemsFromTerm: function (term, rdftypes, rejectedTypes, rejectedTerm) {
 		var self = this,
 				items = self.getItemsWhereFieldTest('description', function (c) {
 					// No content? no match
 					if (typeof(c) === 'undefined') return false;
 
 					//edit IBR
-						if (c.indexOf(rejectedTerm) != -1) return false;
+					if (c.indexOf(rejectedTerm) != -1) return false;
 
 					//Should i consider also range and domain parameters to reuse
 					//this also inside pundit when suggesting items? Or this has
@@ -498,14 +500,14 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 	getItemsfromUris: function (uris, rdftypes) { //edit IBR: Methode zur Wiedergabe der gerade angezeigten Geometrien. Filterung nach URIs und RDF-Typ
 		var self = this;
 		//var uris=uris;//Bugfix...
-		var items=[];
+		var items = [];
 		for (var id in self.itemsDnD.map) {
-			if (uris.indexOf(self.itemsDnD.map[id].data.value)!=-1) {
+			if (uris.indexOf(self.itemsDnD.map[id].data.value) != -1) {
 				items.push(self.itemsDnD.map[id].data);
 			}
 		}
 
-		if (((typeof(rdftypes) === 'undefined'))){
+		if (((typeof(rdftypes) === 'undefined'))) {
 			return items;
 		}
 
@@ -627,14 +629,16 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 	 * @description Remove an item from the itemsDnD if it's in it given its Uri.
 	 * @param uri {string} The Uri of the item to be removed
 	 */
-	removeItemFromUri: function (uri,uris) {
-		var self=this;
+	removeItemFromUri: function (uri, uris) {
+debugger;
+		var self = this;
 
-		if (uris==undefined){
-//Felix: Original Code. Es wird nur eine uri gelöscht.
-			if (!self.uriInItems(uri)){//für alle geometrien. aber nicht return, wenn eine nicht da ist.
+		if (uris == undefined) {
+
+			if (!self.uriInItems(uri)) {//für alle geometrien. aber nicht return, wenn eine nicht da ist.
 				self.log("call to remove non-existent item; will return.")
-				return;}
+				return;
+			}
 
 			var itemId = self.getItemIdFromUri(uri),
 					item = self.getItemFromUri(uri);//für alle geometrien
@@ -644,34 +648,41 @@ dojo.declare("pundit.Items", pundit.BaseComponent, {
 			self.itemsDnD.sync();//nur einmal (?)
 			self.refreshItemsNumber();//nur einmal
 
-			self.fireOnItemRemoved(item);//nur einmal (?)
+			self.fireOnItemRemoved(item);//edit IBR: deletable items are always passed as arrays (see other branch) */
 			self.log("Removed item from pundit items: " + uri);//egal
 
 			return false;
 
 		} else {
-			var itemIDs=new Array();
-			for (var i=0; i<uris.length;i++){//edit IBR: löschen mehrerer geometrien auf einmal. alter aufruf bleibt möglich
-				var curr=uris[i];
+			var itemIDs = new Array();
+			var uristring = "";
+			for (var i = 0; i < uris.length; i++) {//edit IBR: delete several geometries at a time.
+				var curr = uris[i];
 
-					if (!self.uriInItems(curr)){//für alle geometrien. aber nicht return, wen eine nicht da ist.
-						self.log("call to remove non-existent item; will continue.");
-						continue;
-					}
-
-					var itemId = self.getItemIdFromUri(curr),
-							item = self.getItemFromUri(curr);//für alle geometrien
-					itemIDs.push(itemId);
-
-					self.itemsDnD.delItem(itemId);//für alle geometrien (ist einfacher map-delete
-					dojo.destroy(itemId);//für alle geometrien
-					self.log("Removed some item from pundit items");//egal
-
+				if (!self.uriInItems(curr)) {
+					self.log("call to remove non-existent item; will continue.");
+					continue;
 				}
-				self.itemsDnD.sync();//nur einmal (?)
-				self.refreshItemsNumber();//nur einmal
-				self.fireOnItemRemoved(uris);//nur einmal (?)
-				return false;
+
+				var itemId = self.getItemIdFromUri(curr),
+						item = self.getItemFromUri(curr);
+				itemIDs.push(itemId);
+
+				self.itemsDnD.delItem(itemId);
+				dojo.destroy(itemId);
+				self.log("Removed some item from pundit items");//egal
+
+			}
+			self.itemsDnD.sync();
+			self.refreshItemsNumber();
+			uristring = uris[0];
+			if (uris.length > 1) {
+				for (var i = 1; i < uris.length; i++) {
+					uristring = uristring.concat("," + uris[i]);
+				}
+			}
+			self.fireOnItemRemoved(uristring);
+			return false;
 
 		}
 	},
